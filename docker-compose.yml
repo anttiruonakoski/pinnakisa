@@ -1,0 +1,31 @@
+version: '3.1'
+
+# Use root/example as user/password credentials
+# To rebuild: docker-compose up --build
+services:
+
+    db:
+        image: mysql:5.7
+        container_name: pinnakisa-100lajia-db
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+        env_file: 
+            - ./env/.env-mysql
+        volumes:
+            - ./mysqldump:/docker-entrypoint-initdb.d
+            - mysql-pinnakisa-100lajia:/var/lib/mysql
+
+    backend:
+        image: mikkohei13/pinnakisa-100lajia:latest
+        container_name: pinnakisa-100lajia-backend
+
+        restart: always
+        environment:
+            - PUID=1000
+            - PGID=1000
+        ports:
+            - 85:80
+        volumes:
+            - ./html:/var/www/html
+        
+volumes:
+    mysql-pinnakisa-100lajia:
