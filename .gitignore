@@ -3,6 +3,7 @@ mysqldump/*
 html/system/*
 html/application/config/*
 env/*
+html/backups/*
 
 
 *-BACKUP*
