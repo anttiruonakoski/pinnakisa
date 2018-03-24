@@ -1,795 +1,1062 @@
 ﻿<?php
 $bird[1]['abbr'] = "Anseriformes - Sorsalinnut";
+
 $bird[2]['abbr'] = "CYGOLO";
 $bird[2]['sc'] = "Cygnus olor";
 $bird[2]['fi'] = "Kyhmyjoutsen";
 $bird[2]['sv'] = "Knölsvan";
 $bird[2]['en'] = "Mute Swan";
+
 $bird[3]['abbr'] = "CYGCOL";
 $bird[3]['sc'] = "Cygnus columbianus";
 $bird[3]['fi'] = "Pikkujoutsen";
 $bird[3]['sv'] = "Mindre sångsvan";
 $bird[3]['en'] = "Tundra Swan";
+$bird[3]['rarity'] = 2;
+
 $bird[4]['abbr'] = "CYGCYG";
 $bird[4]['sc'] = "Cygnus cygnus";
 $bird[4]['fi'] = "Laulujoutsen";
 $bird[4]['sv'] = "Sångsvan";
 $bird[4]['en'] = "Whooper Swan";
+
 $bird[5]['abbr'] = "ANSFAB";
 $bird[5]['sc'] = "Anser fabalis";
 $bird[5]['fi'] = "Metsähanhi";
 $bird[5]['sv'] = "Sädgås";
 $bird[5]['en'] = "Bean Goose";
+
 $bird[6]['abbr'] = "ANSBRA";
 $bird[6]['sc'] = "Anser brachyrhynchus";
 $bird[6]['fi'] = "Lyhytnokkahanhi";
 $bird[6]['sv'] = "Spetsbergsgås";
 $bird[6]['en'] = "Pink-footed Goose";
+$bird[6]['rarity'] = 2;
+
 $bird[7]['abbr'] = "ANSALB";
 $bird[7]['sc'] = "Anser albifrons";
 $bird[7]['fi'] = "Tundrahanhi";
 $bird[7]['sv'] = "Bläsgås";
 $bird[7]['en'] = "Greater White-fronted Goose";
+$bird[7]['rarity'] = 2;
+
 $bird[8]['abbr'] = "ANSERY";
 $bird[8]['sc'] = "Anser erythropus";
 $bird[8]['fi'] = "Kiljuhanhi";
 $bird[8]['sv'] = "Fjällgås";
 $bird[8]['en'] = "Lesser White-fronted Goose";
+$bird[8]['rarity'] = 2;
+
 $bird[9]['abbr'] = "ANSANS";
 $bird[9]['sc'] = "Anser anser";
 $bird[9]['fi'] = "Merihanhi";
 $bird[9]['sv'] = "Grågås";
 $bird[9]['en'] = "Greylag Goose";
+
 $bird[10]['abbr'] = "ANSCAE";
 $bird[10]['sc'] = "Anser caerulescens";
 $bird[10]['fi'] = "Lumihanhi";
 $bird[10]['sv'] = "Snögås";
 $bird[10]['en'] = "Snow Goose";
+$bird[10]['rarity'] = 2;
+
 $bird[11]['abbr'] = "BRACAN";
 $bird[11]['sc'] = "Branta canadensis";
 $bird[11]['fi'] = "Kanadanhanhi";
 $bird[11]['sv'] = "Kanadagås";
 $bird[11]['en'] = "Canada Goose";
+
 $bird[12]['abbr'] = "BRALEU";
 $bird[12]['sc'] = "Branta leucopsis";
 $bird[12]['fi'] = "Valkoposkihanhi";
 $bird[12]['sv'] = "Vitkindad gås";
 $bird[12]['en'] = "Barnacle Goose";
+
 $bird[13]['abbr'] = "BRABER";
 $bird[13]['sc'] = "Branta bernicla";
 $bird[13]['fi'] = "Sepelhanhi";
 $bird[13]['sv'] = "Prutgås";
 $bird[13]['en'] = "Brant Goose";
+
 $bird[14]['abbr'] = "BRARUF";
 $bird[14]['sc'] = "Branta ruficollis";
 $bird[14]['fi'] = "Punakaulahanhi";
 $bird[14]['sv'] = "Rödhalsad gås";
 $bird[14]['en'] = "Red-breasted Goose";
+$bird[14]['rarity'] = 2;
+
 $bird[15]['abbr'] = "TADFER";
 $bird[15]['sc'] = "Tadorna ferruginea";
 $bird[15]['fi'] = "Ruostesorsa";
 $bird[15]['sv'] = "Rostand";
 $bird[15]['en'] = "Ruddy Shelduck";
+$bird[15]['rarity'] = 2;
+
 $bird[16]['abbr'] = "TADTAD";
 $bird[16]['sc'] = "Tadorna tadorna";
 $bird[16]['fi'] = "Ristisorsa";
 $bird[16]['sv'] = "Gravand";
 $bird[16]['en'] = "Common Shelduck";
+$bird[16]['rarity'] = 2;
+
 $bird[17]['abbr'] = "AIXGAL";
 $bird[17]['sc'] = "Aix galericulata";
 $bird[17]['fi'] = "Mandariinisorsa";
 $bird[17]['sv'] = "Mandarinand";
 $bird[17]['en'] = "Mandarin Duck";
+$bird[17]['rarity'] = 2;
+
 $bird[18]['abbr'] = "ANAPEN";
 $bird[18]['sc'] = "Anas penelope";
 $bird[18]['fi'] = "Haapana";
 $bird[18]['sv'] = "Bläsand";
 $bird[18]['en'] = "Eurasian Wigeon";
+
 $bird[19]['abbr'] = "ANAAME";
 $bird[19]['sc'] = "Anas americana";
 $bird[19]['fi'] = "Amerikanhaapana";
 $bird[19]['sv'] = "Amerikansk bläsand";
 $bird[19]['en'] = "American Wigeon";
+$bird[19]['rarity'] = 2;
+
 $bird[20]['abbr'] = "ANASTR";
 $bird[20]['sc'] = "Anas strepera";
 $bird[20]['fi'] = "Harmaasorsa";
 $bird[20]['sv'] = "Snatterand";
 $bird[20]['en'] = "Gadwall";
+$bird[20]['rarity'] = 2;
+
 $bird[21]['abbr'] = "ANACRE";
 $bird[21]['sc'] = "Anas crecca";
 $bird[21]['fi'] = "Tavi";
 $bird[21]['sv'] = "Kricka";
 $bird[21]['en'] = "Eurasian Teal";
+
 $bird[22]['abbr'] = "ANACAR";
 $bird[22]['sc'] = "Anas carolinensis";
 $bird[22]['fi'] = "Amerikantavi";
 $bird[22]['sv'] = "Amerikansk kricka";
 $bird[22]['en'] = "Green-winged Teal";
+$bird[22]['rarity'] = 2;
+
 $bird[23]['abbr'] = "ANAPLA";
 $bird[23]['sc'] = "Anas platyrhynchos";
 $bird[23]['fi'] = "Sinisorsa";
 $bird[23]['sv'] = "Gräsand";
 $bird[23]['en'] = "Mallard";
+
 $bird[24]['abbr'] = "ANARUB";
 $bird[24]['sc'] = "Anas rubripes";
 $bird[24]['fi'] = "Nokisorsa";
 $bird[24]['sv'] = "Svartand";
 $bird[24]['en'] = "American Black Duck";
+$bird[24]['rarity'] = 2;
+
 $bird[25]['abbr'] = "ANAACU";
 $bird[25]['sc'] = "Anas acuta";
 $bird[25]['fi'] = "Jouhisorsa";
 $bird[25]['sv'] = "Stjärtand";
 $bird[25]['en'] = "Northern Pintail";
+
 $bird[26]['abbr'] = "ANAQUE";
 $bird[26]['sc'] = "Anas querquedula";
 $bird[26]['fi'] = "Heinätavi";
 $bird[26]['sv'] = "Årta";
 $bird[26]['en'] = "Garganey";
+
 $bird[27]['abbr'] = "ANADIS";
 $bird[27]['sc'] = "Anas discors";
 $bird[27]['fi'] = "Sinisiipitavi";
 $bird[27]['sv'] = "Blåvingad årta";
 $bird[27]['en'] = "Blue-winged Teal";
+$bird[27]['rarity'] = 2;
+
 $bird[28]['abbr'] = "ANACLY";
 $bird[28]['sc'] = "Anas clypeata";
 $bird[28]['fi'] = "Lapasorsa";
 $bird[28]['sv'] = "Skedand";
 $bird[28]['en'] = "Northern Shoveler";
+
 $bird[29]['abbr'] = "NETRUF";
 $bird[29]['sc'] = "Netta rufina";
 $bird[29]['fi'] = "Punapäänarsku";
 $bird[29]['sv'] = "Rödhuvad dykand";
 $bird[29]['en'] = "Red-crested Pochard";
+$bird[29]['rarity'] = 2;
+
 $bird[30]['abbr'] = "AYTFER";
 $bird[30]['sc'] = "Aythya ferina";
 $bird[30]['fi'] = "Punasotka";
 $bird[30]['sv'] = "Brunand";
 $bird[30]['en'] = "Common Pochard";
+
 $bird[31]['abbr'] = "AYTCOL";
 $bird[31]['sc'] = "Aythya collaris";
 $bird[31]['fi'] = "Amerikantukkasotka";
 $bird[31]['sv'] = "Ringand";
 $bird[31]['en'] = "Ring-necked Duck";
+$bird[31]['rarity'] = 2;
+
 $bird[32]['abbr'] = "AYTNYR";
 $bird[32]['sc'] = "Aythya nyroca";
 $bird[32]['fi'] = "Ruskosotka";
 $bird[32]['sv'] = "Vitögd dykand";
 $bird[32]['en'] = "Ferruginous Duck";
+$bird[32]['rarity'] = 2;
+
 $bird[33]['abbr'] = "AYTFUL";
 $bird[33]['sc'] = "Aythya fuligula";
 $bird[33]['fi'] = "Tukkasotka";
 $bird[33]['sv'] = "Vigg";
 $bird[33]['en'] = "Tufted Duck";
+
 $bird[34]['abbr'] = "AYTMAR";
 $bird[34]['sc'] = "Aythya marila";
 $bird[34]['fi'] = "Lapasotka";
 $bird[34]['sv'] = "Bergand";
 $bird[34]['en'] = "Greater Scaup";
+$bird[34]['rarity'] = 2;
+
 $bird[35]['abbr'] = "AYTAFF";
 $bird[35]['sc'] = "Aythya affinis";
 $bird[35]['fi'] = "Pikkulapasotka";
 $bird[35]['sv'] = "Mindre bergand";
 $bird[35]['en'] = "Lesser Scaup ";
+$bird[35]['rarity'] = 2;
+
 $bird[36]['abbr'] = "SOMMOL";
 $bird[36]['sc'] = "Somateria mollissima";
 $bird[36]['fi'] = "Haahka";
 $bird[36]['sv'] = "Ejder";
 $bird[36]['en'] = "Common Eider";
+
 $bird[37]['abbr'] = "SOMSPE";
 $bird[37]['sc'] = "Somateria spectabilis";
 $bird[37]['fi'] = "Kyhmyhaahka";
 $bird[37]['sv'] = "Praktejder";
 $bird[37]['en'] = "King Eider";
+$bird[37]['rarity'] = 2;
+
 $bird[38]['abbr'] = "POLSTE";
 $bird[38]['sc'] = "Polysticta stelleri";
 $bird[38]['fi'] = "Allihaahka";
 $bird[38]['sv'] = "Alförrädare";
 $bird[38]['en'] = "Steller's Eider";
+$bird[38]['rarity'] = 2;
+
 $bird[39]['abbr'] = "HISHIS";
 $bird[39]['sc'] = "Histrionicus histrionicus";
 $bird[39]['fi'] = "Virta-alli";
 $bird[39]['sv'] = "Strömand";
 $bird[39]['en'] = "Harlequin Duck";
+$bird[39]['rarity'] = 2;
+
 $bird[40]['abbr'] = "CLAHYE";
 $bird[40]['sc'] = "Clangula hyemalis";
 $bird[40]['fi'] = "Alli";
 $bird[40]['sv'] = "Alfågel";
 $bird[40]['en'] = "Long-tailed Duck";
+
 $bird[41]['abbr'] = "MELNIG";
 $bird[41]['sc'] = "Melanitta nigra";
 $bird[41]['fi'] = "Mustalintu";
 $bird[41]['sv'] = "Sjöorre";
 $bird[41]['en'] = "Common Scoter";
+
 $bird[42]['abbr'] = "MELAME";
 $bird[42]['sc'] = "Melanitta americana";
 $bird[42]['fi'] = "Amerikanmustalintu";
 $bird[42]['sv'] = "Amerikansk sjöorre";
 $bird[42]['en'] = "Black Scoter";
+$bird[42]['rarity'] = 2;
+
 $bird[43]['abbr'] = "MELPER";
 $bird[43]['sc'] = "Melanitta perspicillata";
 $bird[43]['fi'] = "Pilkkaniska";
 $bird[43]['sv'] = "Vitnackad svärta";
 $bird[43]['en'] = "Surf Scoter";
+$bird[43]['rarity'] = 2;
+
 $bird[44]['abbr'] = "MELFUS";
 $bird[44]['sc'] = "Melanitta fusca";
 $bird[44]['fi'] = "Pilkkasiipi";
 $bird[44]['sv'] = "Svärta";
 $bird[44]['en'] = "Velvet Scoter";
+
 $bird[45]['abbr'] = "MELDEG";
 $bird[45]['sc'] = "Melanitta deglandi";
 $bird[45]['fi'] = "Kyhmypilkkasiipi";
 $bird[45]['sv'] = "Knölsvärta";
 $bird[45]['en'] = "White-winged Scoter";
+$bird[45]['rarity'] = 2;
+
 $bird[46]['abbr'] = "BUCCLA";
 $bird[46]['sc'] = "Bucephala clangula";
 $bird[46]['fi'] = "Telkkä";
 $bird[46]['sv'] = "Knipa";
 $bird[46]['en'] = "Common Goldeneye";
+
 $bird[47]['abbr'] = "MERALB";
 $bird[47]['sc'] = "Mergellus albellus";
 $bird[47]['fi'] = "Uivelo";
 $bird[47]['sv'] = "Salskrake";
 $bird[47]['en'] = "Smew";
+
 $bird[48]['abbr'] = "MERSER";
 $bird[48]['sc'] = "Mergus serrator";
 $bird[48]['fi'] = "Tukkakoskelo";
 $bird[48]['sv'] = "Småskrake";
 $bird[48]['en'] = "Red-breasted Merganser";
+
 $bird[49]['abbr'] = "MERMER";
 $bird[49]['sc'] = "Mergus merganser";
 $bird[49]['fi'] = "Isokoskelo";
 $bird[49]['sv'] = "Storskrake";
 $bird[49]['en'] = "Common Merganser";
+
 $bird[50]['abbr'] = "OXYJAM";
 $bird[50]['sc'] = "Oxyura jamaicensis";
 $bird[50]['fi'] = "Kuparisorsa";
 $bird[50]['sv'] = "Amerikansk kopparand";
 $bird[50]['en'] = "Ruddy Duck";
+$bird[50]['rarity'] = 2;
+
 $bird[51]['abbr'] = "Galliformes - Kanalinnut";
+
 $bird[52]['abbr'] = "TETBON";
 $bird[52]['sc'] = "Tetrastes bonasia";
 $bird[52]['fi'] = "Pyy";
 $bird[52]['sv'] = "Järpe";
 $bird[52]['en'] = "Hazel Grouse";
+
 $bird[53]['abbr'] = "LAGLAG";
 $bird[53]['sc'] = "Lagopus lagopus";
 $bird[53]['fi'] = "Riekko";
 $bird[53]['sv'] = "Dalripa";
 $bird[53]['en'] = "Willow Ptarmigan";
+$bird[53]['rarity'] = 2;
+
 $bird[54]['abbr'] = "LAGMUT";
 $bird[54]['sc'] = "Lagopus muta";
 $bird[54]['fi'] = "Kiiruna";
 $bird[54]['sv'] = "Fjällripa";
 $bird[54]['en'] = "Rock Ptarmigan";
+$bird[54]['rarity'] = 2;
+
 $bird[55]['abbr'] = "TETRIX";
 $bird[55]['sc'] = "Tetrao tetrix";
 $bird[55]['fi'] = "Teeri";
 $bird[55]['sv'] = "Orre";
 $bird[55]['en'] = "Black Grouse";
+
 $bird[56]['abbr'] = "TETURO";
 $bird[56]['sc'] = "Tetrao urogallus";
 $bird[56]['fi'] = "Metso";
 $bird[56]['sv'] = "Tjäder";
 $bird[56]['en'] = "Western Capercaillie";
+
 $bird[57]['abbr'] = "PERPER";
 $bird[57]['sc'] = "Perdix perdix";
 $bird[57]['fi'] = "Peltopyy";
 $bird[57]['sv'] = "Rapphöna";
 $bird[57]['en'] = "Grey Partridge";
+$bird[57]['rarity'] = 2;
+
 $bird[58]['abbr'] = "COTCOT";
 $bird[58]['sc'] = "Coturnix coturnix";
 $bird[58]['fi'] = "Viiriäinen";
 $bird[58]['sv'] = "Vaktel";
 $bird[58]['en'] = "Common Quail";
+$bird[58]['rarity'] = 2;
+
 $bird[59]['abbr'] = "PHACOL";
 $bird[59]['sc'] = "Phasianus colchicus";
 $bird[59]['fi'] = "Fasaani";
 $bird[59]['sv'] = "Fasan";
 $bird[59]['en'] = "Common Pheasant";
+
 $bird[60]['abbr'] = "Gaviiformes - Kuikkalinnut";
+
 $bird[61]['abbr'] = "GAVSTE";
 $bird[61]['sc'] = "Gavia stellata";
 $bird[61]['fi'] = "Kaakkuri";
 $bird[61]['sv'] = "Smålom";
 $bird[61]['en'] = "Red-throated Loon";
+
 $bird[62]['abbr'] = "GAVARC";
 $bird[62]['sc'] = "Gavia arctica";
 $bird[62]['fi'] = "Kuikka";
 $bird[62]['sv'] = "Storlom";
 $bird[62]['en'] = "Black-throated Loon";
+
 $bird[63]['abbr'] = "GAVPAC";
 $bird[63]['sc'] = "Gavia pacifica";
 $bird[63]['fi'] = "Tundrakuikka";
 $bird[63]['sv'] = "Stillahavslom";
 $bird[63]['en'] = "Pacific Loon";
+$bird[63]['rarity'] = 2;
+
 $bird[64]['abbr'] = "GAVIMM";
 $bird[64]['sc'] = "Gavia immer";
 $bird[64]['fi'] = "Amerikanjääkuikka";
 $bird[64]['sv'] = "Svartnäbbad islom";
 $bird[64]['en'] = "Great Northern Loon";
+$bird[64]['rarity'] = 2;
+
 $bird[65]['abbr'] = "GAVADA";
 $bird[65]['sc'] = "Gavia adamsii";
 $bird[65]['fi'] = "Jääkuikka";
 $bird[65]['sv'] = "Vitnäbbad islom";
 $bird[65]['en'] = "Yellow-billed Loon";
+$bird[65]['rarity'] = 2;
+
 $bird[66]['abbr'] = "Podicipediformes - Uikkulinnut";
+
 $bird[67]['abbr'] = "TACRUF";
 $bird[67]['sc'] = "Tachybaptus ruficollis";
 $bird[67]['fi'] = "Pikku-uikku";
 $bird[67]['sv'] = "Smådopping";
 $bird[67]['en'] = "Little Grebe";
+$bird[67]['rarity'] = 2;
+
 $bird[68]['abbr'] = "PODCRI";
 $bird[68]['sc'] = "Podiceps cristatus";
 $bird[68]['fi'] = "Silkkiuikku";
 $bird[68]['sv'] = "Skäggdopping";
 $bird[68]['en'] = "Great Crested Grebe";
+
 $bird[69]['abbr'] = "PODGRI";
 $bird[69]['sc'] = "Podiceps grisegena";
 $bird[69]['fi'] = "Härkälintu";
 $bird[69]['sv'] = "Gråhakedopping";
 $bird[69]['en'] = "Red-necked Grebe";
+
 $bird[70]['abbr'] = "PODAUR";
 $bird[70]['sc'] = "Podiceps auritus";
 $bird[70]['fi'] = "Mustakurkku-uikku";
 $bird[70]['sv'] = "Svarthakedopping";
 $bird[70]['en'] = "Horned Grebe";
+$bird[70]['rarity'] = 2;
+
 $bird[71]['abbr'] = "PODNIG";
 $bird[71]['sc'] = "Podiceps nigricollis";
 $bird[71]['fi'] = "Mustakaulauikku";
 $bird[71]['sv'] = "Svarthalsad dopping";
 $bird[71]['en'] = "Black-necked Grebe";
+$bird[71]['rarity'] = 2;
+
 $bird[72]['abbr'] = "Procellariiformes - Ulappalinnut";
+
 $bird[73]['abbr'] = "FULGLA";
 $bird[73]['sc'] = "Fulmarus glacialis";
 $bird[73]['fi'] = "Myrskylintu";
 $bird[73]['sv'] = "Stormfågel";
 $bird[73]['en'] = "Northern Fulmar";
+$bird[73]['rarity'] = 2;
+
 $bird[74]['abbr'] = "PUFGRI";
 $bird[74]['sc'] = "Puffinus griseus";
 $bird[74]['fi'] = "Nokiliitäjä";
 $bird[74]['sv'] = "Grålira";
 $bird[74]['en'] = "Sooty Shearwater";
+$bird[74]['rarity'] = 2;
+
 $bird[75]['abbr'] = "PUFPUF";
 $bird[75]['sc'] = "Puffinus puffinus";
 $bird[75]['fi'] = "Pikkuliitäjä";
 $bird[75]['sv'] = "Mindre lira";
 $bird[75]['en'] = "Manx Shearwater";
+$bird[75]['rarity'] = 2;
+
 $bird[76]['abbr'] = "HYDPEL";
 $bird[76]['sc'] = "Hydrobates pelagicus";
 $bird[76]['fi'] = "Merikeiju";
 $bird[76]['sv'] = "Stormsvala";
 $bird[76]['en'] = "European Storm Petrel";
+$bird[76]['rarity'] = 2;
+
 $bird[77]['abbr'] = "OCELEU";
 $bird[77]['sc'] = "Oceanodroma leucorhoa";
 $bird[77]['fi'] = "Myrskykeiju";
 $bird[77]['sv'] = "Klykstjärtad stormsvala";
 $bird[77]['en'] = "Leach's Storm Petrel";
+$bird[77]['rarity'] = 2;
+
 $bird[78]['abbr'] = "OCECAS";
 $bird[78]['sc'] = "Oceanodroma castro";
 $bird[78]['fi'] = "Madeirankeiju";
 $bird[78]['sv'] = "Oceanlöpare";
 $bird[78]['en'] = "Band-rumped Storm Petrel";
+$bird[78]['rarity'] = 2;
+
 $bird[79]['abbr'] = "Pelecaniformes - Pelikaanilinnut";
+
 $bird[80]['abbr'] = "MORBAS";
 $bird[80]['sc'] = "Morus bassanus";
 $bird[80]['fi'] = "Suula";
 $bird[80]['sv'] = "Havssula";
 $bird[80]['en'] = "Northern Gannet";
+$bird[80]['rarity'] = 2;
+
 $bird[81]['abbr'] = "PHACAR";
 $bird[81]['sc'] = "Phalacrocorax carbo";
 $bird[81]['fi'] = "Merimetso";
 $bird[81]['sv'] = "Storskarv";
 $bird[81]['en'] = "Great Cormorant";
+
 $bird[82]['abbr'] = "PHAARI";
 $bird[82]['sc'] = "Phalacrocorax aristotelis";
 $bird[82]['fi'] = "Karimetso";
 $bird[82]['sv'] = "Toppskarv";
 $bird[82]['en'] = "European Shag";
+$bird[82]['rarity'] = 2;
+
 $bird[83]['abbr'] = "PELONO";
 $bird[83]['sc'] = "Pelecanus onocrotalus";
 $bird[83]['fi'] = "Pelikaani";
 $bird[83]['sv'] = "Vit pelikan";
 $bird[83]['en'] = "Great White Pelican";
+$bird[83]['rarity'] = 2;
+
 $bird[84]['abbr'] = "Ciconiiformes - Haikaralinnut";
+
 $bird[85]['abbr'] = "BOTSTE";
 $bird[85]['sc'] = "Botaurus stellaris";
 $bird[85]['fi'] = "Kaulushaikara";
 $bird[85]['sv'] = "Rördrom";
 $bird[85]['en'] = "Eurasian Bittern";
+
 $bird[86]['abbr'] = "IXOMIN";
 $bird[86]['sc'] = "Ixobrychus minutus";
 $bird[86]['fi'] = "Pikkuhaikara";
 $bird[86]['sv'] = "Dvärgrördrom";
 $bird[86]['en'] = "Little Bittern";
+$bird[86]['rarity'] = 2;
+
 $bird[87]['abbr'] = "NYCNYC";
 $bird[87]['sc'] = "Nycticorax nycticorax";
 $bird[87]['fi'] = "Yöhaikara";
 $bird[87]['sv'] = "Natthäger";
 $bird[87]['en'] = "Black-crowned Night Heron";
+$bird[87]['rarity'] = 2;
+
 $bird[88]['abbr'] = "ARDRAL";
 $bird[88]['sc'] = "Ardeola ralloides";
 $bird[88]['fi'] = "Rääkkähaikara";
 $bird[88]['sv'] = "Rallhäger";
 $bird[88]['en'] = "Squacco Heron";
+$bird[88]['rarity'] = 2;
+
 $bird[89]['abbr'] = "BUBIBI";
 $bird[89]['sc'] = "Bubulcus ibis";
 $bird[89]['fi'] = "Lehmähaikara";
 $bird[89]['sv'] = "Kohäger";
 $bird[89]['en'] = "Cattle Egret";
+$bird[89]['rarity'] = 2;
+
 $bird[90]['abbr'] = "EGRGAR";
 $bird[90]['sc'] = "Egretta garzetta";
 $bird[90]['fi'] = "Silkkihaikara";
 $bird[90]['sv'] = "Silkeshäger";
 $bird[90]['en'] = "Little Egret";
+$bird[90]['rarity'] = 2;
+
 $bird[91]['abbr'] = "EGRALB";
 $bird[91]['sc'] = "Egretta alba";
 $bird[91]['fi'] = "Jalohaikara";
 $bird[91]['sv'] = "Ägretthäger";
 $bird[91]['en'] = "Great Egret";
+$bird[97]['rarity'] = 2;
+
 $bird[92]['abbr'] = "ARDCIN";
 $bird[92]['sc'] = "Ardea cinerea";
 $bird[92]['fi'] = "Harmaahaikara";
 $bird[92]['sv'] = "Grå häger";
 $bird[92]['en'] = "Grey Heron";
+
 $bird[93]['abbr'] = "ARDPUR";
 $bird[93]['sc'] = "Ardea purpurea";
 $bird[93]['fi'] = "Ruskohaikara";
 $bird[93]['sv'] = "Purpurhäger";
 $bird[93]['en'] = "Purple Heron";
+$bird[93]['rarity'] = 2;
+
 $bird[94]['abbr'] = "CICNIG";
 $bird[94]['sc'] = "Ciconia nigra";
 $bird[94]['fi'] = "Mustahaikara";
 $bird[94]['sv'] = "Svart stork";
 $bird[94]['en'] = "Black Stork";
+$bird[94]['rarity'] = 2;
+
 $bird[95]['abbr'] = "CICCIC";
 $bird[95]['sc'] = "Ciconia ciconia";
 $bird[95]['fi'] = "Kattohaikara";
 $bird[95]['sv'] = "Vit stork";
 $bird[95]['en'] = "White Stork";
+$bird[95]['rarity'] = 2;
+
 $bird[96]['abbr'] = "PLEFAL";
 $bird[96]['sc'] = "Plegadis falcinellus";
 $bird[96]['fi'] = "Pronssi-iibis";
 $bird[96]['sv'] = "Bronsibis";
 $bird[96]['en'] = "Glossy Ibis";
+$bird[96]['rarity'] = 2;
+
 $bird[97]['abbr'] = "PLALEU";
 $bird[97]['sc'] = "Platalea leucorodia";
 $bird[97]['fi'] = "Kapustahaikara";
 $bird[97]['sv'] = "Skedstork";
 $bird[97]['en'] = "Eurasian Spoonbill";
+$bird[97]['rarity'] = 2;
+
 $bird[98]['abbr'] = "Accipitriformes - Päiväpetolinnut";
+
 $bird[99]['abbr'] = "PERAPI";
 $bird[99]['sc'] = "Pernis apivorus";
 $bird[99]['fi'] = "Mehiläishaukka";
 $bird[99]['sv'] = "Bivråk";
 $bird[99]['en'] = "European Honey Buzzard";
+
 $bird[100]['abbr'] = "MILMIG";
 $bird[100]['sc'] = "Milvus migrans";
 $bird[100]['fi'] = "Haarahaukka";
 $bird[100]['sv'] = "Brun glada";
 $bird[100]['en'] = "Black Kite";
+$bird[100]['rarity'] = 2;
+
 $bird[101]['abbr'] = "MILMIL";
 $bird[101]['sc'] = "Milvus milvus";
 $bird[101]['fi'] = "Isohaarahaukka";
 $bird[101]['sv'] = "Röd glada";
 $bird[101]['en'] = "Red Kite";
+$bird[101]['rarity'] = 2;
+
 $bird[102]['abbr'] = "HALHUS";
 $bird[102]['sc'] = "Haliaeetus leucoryphus";
 $bird[102]['fi'] = "Aromerikotka";
 $bird[102]['sv'] = "Bandhavsörn";
 $bird[102]['en'] = "Pallas's Fish Eagle";
+$bird[102]['rarity'] = 2;
+
 $bird[103]['abbr'] = "HALALB";
 $bird[103]['sc'] = "Haliaeetus albicilla";
 $bird[103]['fi'] = "Merikotka";
 $bird[103]['sv'] = "Havsörn";
 $bird[103]['en'] = "White-tailed Eagle";
+
 $bird[104]['abbr'] = "NEOPER";
 $bird[104]['sc'] = "Neophron percnopterus";
 $bird[104]['fi'] = "Pikkukorppikotka";
 $bird[104]['sv'] = "Smutsgam";
 $bird[104]['en'] = "Egyptian Vulture";
+$bird[104]['rarity'] = 2;
+
 $bird[105]['abbr'] = "GYPFUL";
 $bird[105]['sc'] = "Gyps fulvus";
 $bird[105]['fi'] = "Hanhikorppikotka";
 $bird[105]['sv'] = "Gåsgam";
 $bird[105]['en'] = "Griffon Vulture";
+$bird[105]['rarity'] = 2;
+
 $bird[106]['abbr'] = "AEGMON";
 $bird[106]['sc'] = "Aegypius monachus";
 $bird[106]['fi'] = "Munkkikorppikotka";
 $bird[106]['sv'] = "Grågam";
 $bird[106]['en'] = "Cinereous Vulture";
+$bird[106]['rarity'] = 2;
+
 $bird[107]['abbr'] = "CIRGAL";
 $bird[107]['sc'] = "Circaetus gallicus";
 $bird[107]['fi'] = "Käärmekotka";
 $bird[107]['sv'] = "Ormörn";
 $bird[107]['en'] = "Short-toed Snake Eagle";
+$bird[107]['rarity'] = 2;
+
 $bird[108]['abbr'] = "CIRAER";
 $bird[108]['sc'] = "Circus aeruginosus";
 $bird[108]['fi'] = "Ruskosuohaukka";
 $bird[108]['sv'] = "Brun kärrhök";
 $bird[108]['en'] = "Western Marsh Harrier";
+$bird[108]['rarity'] = 2;
+
 $bird[109]['abbr'] = "CIRCYA";
 $bird[109]['sc'] = "Circus cyaneus";
 $bird[109]['fi'] = "Sinisuohaukka";
 $bird[109]['sv'] = "Blå kärrhök";
 $bird[109]['en'] = "Northern Harrier";
+
 $bird[110]['abbr'] = "CIRMAC";
 $bird[110]['sc'] = "Circus macrourus";
 $bird[110]['fi'] = "Arosuohaukka";
 $bird[110]['sv'] = "Stäpphök";
 $bird[110]['en'] = "Pallid Harrier";
+$bird[110]['rarity'] = 2;
+
 $bird[111]['abbr'] = "CIRPYG";
 $bird[111]['sc'] = "Circus pygargus";
 $bird[111]['fi'] = "Niittysuohaukka";
 $bird[111]['sv'] = "Ängshök";
 $bird[111]['en'] = "Montagu's Harrier";
+$bird[111]['rarity'] = 2;
+
 $bird[112]['abbr'] = "ACCGEN";
 $bird[112]['sc'] = "Accipiter gentilis";
 $bird[112]['fi'] = "Kanahaukka";
 $bird[112]['sv'] = "Duvhök";
 $bird[112]['en'] = "Northern Goshawk";
+
 $bird[113]['abbr'] = "ACCNIS";
 $bird[113]['sc'] = "Accipiter nisus";
 $bird[113]['fi'] = "Varpushaukka";
 $bird[113]['sv'] = "Sparvhök";
 $bird[113]['en'] = "Eurasian Sparrowhawk";
+
 $bird[114]['abbr'] = "BUTBUT";
 $bird[114]['sc'] = "Buteo buteo";
 $bird[114]['fi'] = "Hiirihaukka";
 $bird[114]['sv'] = "Ormvråk";
 $bird[114]['en'] = "Common Buzzard";
+
 $bird[115]['abbr'] = "BUTRUF";
 $bird[115]['sc'] = "Buteo rufinus";
 $bird[115]['fi'] = "Arohiirihaukka";
 $bird[115]['sv'] = "Örnvråk";
 $bird[115]['en'] = "Long-legged Buzzard";
+$bird[115]['rarity'] = 2;
+
 $bird[116]['abbr'] = "BUTLAG";
 $bird[116]['sc'] = "Buteo lagopus";
 $bird[116]['fi'] = "Piekana";
 $bird[116]['sv'] = "Fjällvråk";
 $bird[116]['en'] = "Rough-legged Buzzard";
+
 $bird[117]['abbr'] = "AQUPOM";
 $bird[117]['sc'] = "Aquila pomarina";
 $bird[117]['fi'] = "Pikkukiljukotka";
 $bird[117]['sv'] = "Mindre skrikörn";
 $bird[117]['en'] = "Lesser Spotted Eagle";
+$bird[117]['rarity'] = 2;
+
 $bird[118]['abbr'] = "AQUCLA";
 $bird[118]['sc'] = "Aquila clanga";
 $bird[118]['fi'] = "Kiljukotka";
 $bird[118]['sv'] = "Större skrikörn";
 $bird[118]['en'] = "Greater Spotted Eagle";
+$bird[118]['rarity'] = 2;
+
 $bird[119]['abbr'] = "AQUNIP";
 $bird[119]['sc'] = "Aquila nipalensis";
 $bird[119]['fi'] = "Arokotka";
 $bird[119]['sv'] = "Stäppörn";
 $bird[119]['en'] = "Steppe Eagle";
+$bird[119]['rarity'] = 2;
+
 $bird[120]['abbr'] = "AQUHEL";
 $bird[120]['sc'] = "Aquila heliaca";
 $bird[120]['fi'] = "Keisarikotka";
 $bird[120]['sv'] = "Kejsarörn";
 $bird[120]['en'] = "Eastern Imperial Eagle";
+$bird[120]['rarity'] = 2;
+
 $bird[121]['abbr'] = "AQUCHR";
 $bird[121]['sc'] = "Aquila chrysaetos";
 $bird[121]['fi'] = "Maakotka";
 $bird[121]['sv'] = "Kungsörn";
 $bird[121]['en'] = "Golden Eagle";
+
 $bird[122]['abbr'] = "AQUPEN";
 $bird[122]['sc'] = "Aquila pennata";
 $bird[122]['fi'] = "Pikkukotka";
 $bird[122]['sv'] = "Dvärgörn";
 $bird[122]['en'] = "Booted Eagle";
+$bird[122]['rarity'] = 2;
+
 $bird[123]['abbr'] = "PANHAL";
 $bird[123]['sc'] = "Pandion haliaetus";
 $bird[123]['fi'] = "Sääksi";
 $bird[123]['sv'] = "Fiskgjuse";
 $bird[123]['en'] = "Osprey";
+
 $bird[124]['abbr'] = "Falconiformes - Jalohaukkalinnut";
+
 $bird[125]['abbr'] = "FALNAU";
 $bird[125]['sc'] = "Falco naumanni";
 $bird[125]['fi'] = "Pikkutuulihaukka";
 $bird[125]['sv'] = "Rödfalk";
 $bird[125]['en'] = "Lesser Kestrel";
+$bird[125]['rarity'] = 2;
+
 $bird[126]['abbr'] = "FALTIN";
 $bird[126]['sc'] = "Falco tinnunculus";
 $bird[126]['fi'] = "Tuulihaukka";
 $bird[126]['sv'] = "Tornfalk";
 $bird[126]['en'] = "Common Kestrel";
+
 $bird[127]['abbr'] = "FALVES";
 $bird[127]['sc'] = "Falco vespertinus";
 $bird[127]['fi'] = "Punajalkahaukka";
 $bird[127]['sv'] = "Aftonfalk";
 $bird[127]['en'] = "Red-footed Falcon";
+$bird[127]['rarity'] = 2;
+
 $bird[128]['abbr'] = "FALCOL";
 $bird[128]['sc'] = "Falco columbarius";
 $bird[128]['fi'] = "Ampuhaukka";
 $bird[128]['sv'] = "Stenfalk";
 $bird[128]['en'] = "Merlin";
+
 $bird[129]['abbr'] = "FALSUB";
 $bird[129]['sc'] = "Falco subbuteo";
 $bird[129]['fi'] = "Nuolihaukka";
 $bird[129]['sv'] = "Lärkfalk";
 $bird[129]['en'] = "Eurasian Hobby";
+
 $bird[130]['abbr'] = "FALELE";
 $bird[130]['sc'] = "Falco eleonorae";
 $bird[130]['fi'] = "Välimerenhaukka";
 $bird[130]['sv'] = "Eleonorafalk";
 $bird[130]['en'] = "Eleonora's Falcon";
+$bird[130]['rarity'] = 2;
+
 $bird[131]['abbr'] = "FALCHE";
 $bird[131]['sc'] = "Falco cherrug";
 $bird[131]['fi'] = "Aavikkohaukka";
 $bird[131]['sv'] = "Tatarfalk";
 $bird[131]['en'] = "Saker Falcon";
+$bird[131]['rarity'] = 2;
+
 $bird[132]['abbr'] = "FALRUS";
 $bird[132]['sc'] = "Falco rusticolus";
 $bird[132]['fi'] = "Tunturihaukka";
 $bird[132]['sv'] = "Jaktfalk";
 $bird[132]['en'] = "Gyrfalcon";
+$bird[132]['rarity'] = 2;
+
 $bird[133]['abbr'] = "FALPER";
 $bird[133]['sc'] = "Falco peregrinus";
 $bird[133]['fi'] = "Muuttohaukka";
 $bird[133]['sv'] = "Pilgrimsfalk";
 $bird[133]['en'] = "Peregrine Falcon";
+
 $bird[134]['abbr'] = "Gruiformes - Kurkilinnut";
+
 $bird[135]['abbr'] = "RALAQU";
 $bird[135]['sc'] = "Rallus aquaticus";
 $bird[135]['fi'] = "Luhtakana";
 $bird[135]['sv'] = "Vattenrall";
 $bird[135]['en'] = "Water Rail";
+
 $bird[136]['abbr'] = "PORPOR";
 $bird[136]['sc'] = "Porzana porzana";
 $bird[136]['fi'] = "Luhtahuitti";
 $bird[136]['sv'] = "Småfläckig sumphöna";
 $bird[136]['en'] = "Spotted Crake";
+
 $bird[137]['abbr'] = "PORPAR";
 $bird[137]['sc'] = "Porzana parva";
 $bird[137]['fi'] = "Pikkuhuitti";
 $bird[137]['sv'] = "Mindre sumphöna";
 $bird[137]['en'] = "Little Crake";
+$bird[137]['rarity'] = 2;
+
 $bird[138]['abbr'] = "PORPUS";
 $bird[138]['sc'] = "Porzana pusilla";
 $bird[138]['fi'] = "Kääpiöhuitti";
 $bird[138]['sv'] = "Dvärgsumphöna";
 $bird[138]['en'] = "Baillon's Crake";
+$bird[138]['rarity'] = 2;
+
 $bird[139]['abbr'] = "CRECRE";
 $bird[139]['sc'] = "Crex crex";
 $bird[139]['fi'] = "Ruisrääkkä";
 $bird[139]['sv'] = "Kornknarr";
 $bird[139]['en'] = "Corn Crake";
+$bird[139]['rarity'] = 2;
+
 $bird[140]['abbr'] = "GALCHL";
 $bird[140]['sc'] = "Gallinula chloropus";
 $bird[140]['fi'] = "Liejukana";
 $bird[140]['sv'] = "Rörhöna";
 $bird[140]['en'] = "Common Moorhen";
+$bird[140]['rarity'] = 2;
+
 $bird[141]['abbr'] = "PORALL";
 $bird[141]['sc'] = "Porphyrio alleni";
 $bird[141]['fi'] = "Kurnuliejukana";
 $bird[141]['sv'] = "Mindre sultanhöna";
 $bird[141]['en'] = "Allen's Gallinule";
+$bird[141]['rarity'] = 2;
+
 $bird[142]['abbr'] = "FULATR";
 $bird[142]['sc'] = "Fulica atra";
 $bird[142]['fi'] = "Nokikana";
 $bird[142]['sv'] = "Sothöna";
 $bird[142]['en'] = "Eurasian Coot";
+
 $bird[143]['abbr'] = "GRUGRU";
 $bird[143]['sc'] = "Grus grus";
 $bird[143]['fi'] = "Kurki";
 $bird[143]['sv'] = "Trana";
 $bird[143]['en'] = "Common Crane";
+
 $bird[144]['abbr'] = "GRUCAN";
 $bird[144]['sc'] = "Grus canadensis";
 $bird[144]['fi'] = "Hietakurki";
 $bird[144]['sv'] = "Prärietrana";
 $bird[144]['en'] = "Sandhill Crane";
+$bird[144]['rarity'] = 2;
+
 $bird[145]['abbr'] = "GRUVIR";
 $bird[145]['sc'] = "Grus virgo";
 $bird[145]['fi'] = "Neitokurki";
 $bird[145]['sv'] = "Jungfrutrana";
 $bird[145]['en'] = "Demoiselle Crane";
+$bird[145]['rarity'] = 2;
+
 $bird[146]['abbr'] = "TETRAX";
 $bird[146]['sc'] = "Tetrax tetrax";
 $bird[146]['fi'] = "Pikkutrappi";
 $bird[146]['sv'] = "Småtrapp";
 $bird[146]['en'] = "Little Bustard";
+$bird[146]['rarity'] = 2;
+
 $bird[147]['abbr'] = "CHLMAC";
 $bird[147]['sc'] = "Chlamydotis macqueenii";
 $bird[147]['fi'] = "Idänkaulustrappi";
 $bird[147]['sv'] = "Kragtrapp";
 $bird[147]['en'] = "Macqueen's Bustard";
+$bird[147]['rarity'] = 2;
+
 $bird[148]['abbr'] = "OTITAR";
 $bird[148]['sc'] = "Otis tarda";
 $bird[148]['fi'] = "Isotrappi";
 $bird[148]['sv'] = "Stortrapp";
 $bird[148]['en'] = "Great Bustard";
+$bird[148]['rarity'] = 2;
+
 $bird[149]['abbr'] = "Charadriiformes - Rantalinnut";
+
 $bird[150]['abbr'] = "HAEOST";
 $bird[150]['sc'] = "Haematopus ostralegus";
 $bird[150]['fi'] = "Meriharakka";
 $bird[150]['sv'] = "Strandskata";
 $bird[150]['en'] = "Eurasian Oystercatcher";
+
 $bird[151]['abbr'] = "HIMHIM";
 $bird[151]['sc'] = "Himantopus himantopus";
 $bird[151]['fi'] = "Pitkäjalka";
 $bird[151]['sv'] = "Styltlöpare";
 $bird[151]['en'] = "Black-winged Stilt";
+$bird[151]['rarity'] = 2;
+
 $bird[152]['abbr'] = "RECAVO";
 $bird[152]['sc'] = "Recurvirostra avosetta";
 $bird[152]['fi'] = "Avosetti";
 $bird[152]['sv'] = "Skärfläcka";
 $bird[152]['en'] = "Pied Avocet";
+$bird[152]['rarity'] = 2;
+
 $bird[153]['abbr'] = "BUROED";
 $bird[153]['sc'] = "Burhinus oedicnemus";
 $bird[153]['fi'] = "Paksujalka";
 $bird[153]['sv'] = "Tjockfot";
 $bird[153]['en'] = "Eurasian Stone-curlew";
+$bird[153]['rarity'] = 2;
+
 $bird[154]['abbr'] = "CURCUR";
 $bird[154]['sc'] = "Cursorius cursor";
 $bird[154]['fi'] = "Aavikkojuoksija";
 $bird[154]['sv'] = "Ökenlöpare";
 $bird[154]['en'] = "Cream-colored Courser";
+$bird[154]['rarity'] = 2;
+
 $bird[155]['abbr'] = "GLAPRA";
 $bird[155]['sc'] = "Glareola pratincola";
 $bird[155]['fi'] = "Pääskykahlaaja";
 $bird[155]['sv'] = "Rödvingad vadarsvala";
 $bird[155]['en'] = "Collared Pratincole";
+$bird[155]['rarity'] = 2;
+
 $bird[156]['abbr'] = "GLANOR";
 $bird[156]['sc'] = "Glareola nordmanni";
 $bird[156]['fi'] = "Aropääskykahlaaja";
 $bird[156]['sv'] = "Svartvingad vadarsvala";
 $bird[156]['en'] = "Black-winged Pratincole";
+$bird[156]['rarity'] = 2;
+
 $bird[157]['abbr'] = "CHADUB";
 $bird[157]['sc'] = "Charadrius dubius";
 $bird[157]['fi'] = "Pikkutylli";
 $bird[157]['sv'] = "Mindre strandpipare";
 $bird[157]['en'] = "Little Ringed Plover";
+
 $bird[158]['abbr'] = "CHAHIA";
 $bird[158]['sc'] = "Charadrius hiaticula";
 $bird[158]['fi'] = "Tylli";
 $bird[158]['sv'] = "Större strandpipare";
 $bird[158]['en'] = "Common Ringed Plover";
+
 $bird[159]['abbr'] = "CHAALE";
 $bird[159]['sc'] = "Charadrius alexandrinus";
 $bird[159]['fi'] = "Mustajalkatylli";
 $bird[159]['sv'] = "Svartbent strandpipare";
 $bird[159]['en'] = "Kentish Plover";
+$bird[159]['rarity'] = 2;
+
 $bird[160]['abbr'] = "CHAMON";
 $bird[160]['sc'] = "Charadrius mongolus";
 $bird[160]['fi'] = "Ylänkötylli";
 $bird[160]['sv'] = "Mongolpipare";
 $bird[160]['en'] = "Lesser Sand Plover";
+$bird[160]['rarity'] = 2;
+
 $bird[161]['abbr'] = "CHALES";
 $bird[161]['sc'] = "Charadrius leschenaultii";
 $bird[161]['fi'] = "Aavikkotylli";
 $bird[161]['sv'] = "Ökenpipare";
 $bird[161]['en'] = "Greater Sand Plover";
+$bird[161]['rarity'] = 2;
+
 $bird[162]['abbr'] = "CHAASI";
 $bird[162]['sc'] = "Charadrius asiaticus";
 $bird[162]['fi'] = "Kaspiantylli";
 $bird[162]['sv'] = "Kaspisk pipare";
 $bird[162]['en'] = "Caspian Plover";
+$bird[162]['rarity'] = 2;
+
 $bird[163]['abbr'] = "CHAVER";
 $bird[163]['sc'] = "Charadrius veredus";
 $bird[163]['fi'] = "Gobintylli";
 $bird[163]['sv'] = "Orientpipare";
 $bird[163]['en'] = "Oriental Plover";
+$bird[163]['rarity'] = 2;
+
 $bird[164]['abbr'] = "CHAMOR";
 $bird[164]['sc'] = "Charadrius morinellus";
 $bird[164]['fi'] = "Keräkurmitsa";
 $bird[164]['sv'] = "Fjällpipare";
 $bird[164]['en'] = "Eurasian Dotterel";
+
 $bird[165]['abbr'] = "PLUFUL";
 $bird[165]['sc'] = "Pluvialis fulva";
 $bird[165]['fi'] = "Siperiankurmitsa";
 $bird[165]['sv'] = "Sibirisk tundrapipare";
 $bird[165]['en'] = "Pacific Golden Plover";
+$bird[165]['rarity'] = 2;
+
 $bird[166]['abbr'] = "PLUDOM";
 $bird[166]['sc'] = "Pluvialis dominica";
 $bird[166]['fi'] = "Amerikankurmitsa";
 $bird[166]['sv'] = "Amerikansk tundrapipare";
 $bird[166]['en'] = "American Golden Plover";
+$bird[166]['rarity'] = 2;
+
 $bird[167]['abbr'] = "PLUAPR";
 $bird[167]['sc'] = "Pluvialis apricaria";
 $bird[167]['fi'] = "Kapustarinta";
 $bird[167]['sv'] = "Ljungpipare";
 $bird[167]['en'] = "European Golden Plover";
+
 $bird[168]['abbr'] = "PLUSQU";
 $bird[168]['sc'] = "Pluvialis squatarola";
 $bird[168]['fi'] = "Tundrakurmitsa";

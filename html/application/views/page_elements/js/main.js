@@ -30,5 +30,20 @@ $(document).ready(function()
 		$( '.validation-ok' ).delay(4000).fadeOut(1000, function() {
 			// Animation complete.
 		});
+
+		$( "#showRarities" ).click(function() {
+			console.log("Show rarities");
+			$( ".rare" ).show();
+			$( "#hideRarities" ).show();
+			$( "#showRarities" ).hide();			
+		});
+
+		$( "#hideRarities" ).click(function() {
+			console.log("Hide rarities");
+			$( ".rare" ).hide();
+			$( "#showRarities" ).show();
+			$( "#hideRarities" ).hide();
+		});
+
     }
 ); 

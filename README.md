@@ -44,6 +44,9 @@ Lisenssit / Licenses
 TODO
 ----
 
+MUST:
+* Firefox Anttri bugifix
+
 Parannusmahdollisuuksia:
 
 SHOULD:
@@ -64,6 +67,17 @@ NICE:
 * infomessage-tyylit puuttuvat
 * pienennä infomessage-fonttia
 
+<<<<<<< HEAD
+=======
+TODO/100 lajia
+----
+
+- osallistumisen poisto/piilotus
+- harvinaisten piilotus
+	- tarkistuta luokitusrima, luokittele loputkin
+	- birds.php check that doesn't exist: $bird[3]['rarity']
+- testaus
+>>>>>>> 7ff3132... Hide/show rarities
 
 
 

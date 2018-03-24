@@ -546,6 +546,23 @@ Specieslist
 	font-weight: bold;
 }
 
+.rare {
+	display: none;
+}
+
+#rarityVisibility span {
+	background-color: #5b98c7;
+	color: #fff;
+	padding: 3px;
+	cursor: pointer;
+}
+
+#hideRarities {
+	display: none;
+}
+
+
+
 #speciesList input {
 	border: 1px solid #ccc;
 }
