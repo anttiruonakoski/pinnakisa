@@ -75,8 +75,6 @@ $lang['create_user_validation_phone3_label']           = 'Puhelinumeron 3. osa';
 $lang['create_user_validation_company_label']          = 'Yrityksen nimi';
 $lang['create_user_validation_password_label']         = 'Salasana';
 $lang['create_user_validation_password_confirm_label'] = 'Salasanan varmistus';
-$lang['create_user_validation_old_id_label'] 			= 'Numerosi vanhassa pinnakisapalvelussa';
-$lang['create_user_old_id_label']                       = 'Numerosi vanhassa pinnakisapalvelussa:';
 
 // Edit User
 $lang['edit_user_heading']                           = 'Muokkaa käyttäjää';
@@ -100,8 +98,6 @@ $lang['edit_user_validation_company_label']          = 'Yrityksen nimi';
 $lang['edit_user_validation_groups_label']           = 'Ryhmät';
 $lang['edit_user_validation_password_label']         = 'Salasana';
 $lang['edit_user_validation_password_confirm_label'] = 'Salasanan varmistus';
-$lang['edit_user_validation_old_id_label']			 = 'Numerosi vanhassa pinnakisapalvelussa';
-$lang['edit_user_old_id_label']                       = 'Numerosi vanhassa pinnakisapalvelussa:';
 
 // Create Group
 $lang['create_group_title']                  = 'Create Group';

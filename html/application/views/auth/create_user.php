@@ -27,16 +27,6 @@ include "application/views/page_elements/header.php";
             <?php echo form_input($email);?>
       </p>
 
-
-      <p>
-            <?php echo lang('create_user_old_id_label', 'old_id');?> </p>
-            <?php
-            $old_id['autocomplete'] = "off"; 
-            echo form_input($old_id);
-            ?>
-      </p>
-
-
       <p class="required" style="margin-top: 2em;">
             <?php echo lang('create_user_password_label', 'password');?> </p>
             <?php echo form_input($password);?> (vähintään 8 merkkiä)

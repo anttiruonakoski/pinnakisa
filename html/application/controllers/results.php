@@ -165,18 +165,6 @@ class Results extends CI_Controller {
 
 //		echo "<pre>"; print_r ($viewdata['contest']); exit("DEBUG END"); // debug
 
-		/*
-		// Comparison data
-		// 2013 data: this and associated model can be removed in 2/2014, after removing eko2013 from production database. Then refactor variable names here.
-		$this->load->model('comparison_model');
-		$data2013 = $this->comparison_model->loadData($compareTo, $this->ion_auth->user()->row()->id);
-
-//		print_r ($data2013); exit("\n\nDATA DEBUG END"); // debug
-
-		$speciesArray2013 = $data2013['species'];
-		$dailyTicksArray2013 = $data2013['ticks_day'];
-		*/
-
 		$n = 0;
 		
 		// This year's data
