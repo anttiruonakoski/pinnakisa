@@ -72,13 +72,17 @@ NICE:
 TODO/100 lajia
 ----
 
-- osallistumisen poisto/piilotus
+- UI/ulkoasun parantelu
 - harvinaisten piilotus
 	- tarkistuta luokitusrima, luokittele loputkin
 	- birds.php check that doesn't exist: $bird[3]['rarity']
 - testaus
+<<<<<<< HEAD
 >>>>>>> 7ff3132... Hide/show rarities
 
+=======
+- tietoturva: ei oikeutta editoida/poistaa muiden osallistumisia
+>>>>>>> 3656f14... Add deletion feature
 
 
 

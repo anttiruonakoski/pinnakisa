@@ -471,6 +471,21 @@ h4
 	background-color: #cec;
 }
 
+#deleteParticipation {
+	background-color: #a00;
+	color: #fff;
+	padding: 3px;
+	text-decoration: none;
+}
+
+#cancel {
+	background-color: #060;
+	color: #fff;
+	padding: 3px;
+	text-decoration: none;
+}
+
+
 /* ------------------------------
 Specieslist
 */

@@ -21,6 +21,13 @@ class Participation extends CI_Controller {
 			$this->session->set_flashdata('login', 'Kirjaudu sisään osallistuaksesi kisaan.');
 			redirect('welcome/index');
 		}
+		/*
+		// This redirect to welcome when saving a participation for the first time
+		if (!$id && !$this->input->get('contest_id'))
+		{
+			redirect('welcome/index');
+		}
+		*/
 
 		// Preparations
 		$this->load->model('participation_model');
@@ -122,7 +129,64 @@ class Participation extends CI_Controller {
 		}
 
 	}
+
+	// ------------------------------------------------------------------------
 	
+	public function delete($id = FALSE)
+	{
+		// Restrict this page only for logged in users
+		if (!$this->ion_auth->logged_in())
+		{
+			redirect('welcome/index');
+		}
+		if (!$id)
+		{
+			redirect('welcome/index');
+		}
+
+		// Preparations
+		$this->load->model('participation_model');
+		
+		// FETCH THE DATA
+		$viewdata['editableData'] = $this->participation_model->load($id);
+
+		// View
+		$this->load->view('participation_delete', $viewdata);
+	}
+
+	// ------------------------------------------------------------------------
+	
+	public function confirmdeletion($id = FALSE)
+	{
+		// Restrict this page only for logged in users
+		if (!$this->ion_auth->logged_in())
+		{
+			redirect('welcome/index');
+		}
+		if (!$id)
+		{
+			redirect('welcome/index');
+		}
+
+		// Preparations
+		$this->load->model('participation_model');
+		
+		// FETCH THE DATA
+		$deletedId = $this->participation_model->delete($id);
+		if ($deletedId === $id)
+		{
+			$this->session->set_flashdata("login", "Osallistuminen poistettu.");
+			redirect('welcome/index');
+		}
+		else 
+		{
+			exit("Poisto epäonnistui");
+		}
+
+		// View
+		$this->load->view('participation_delete', $viewdata);
+	}
+
 	// ------------------------------------------------------------------------
 
 }

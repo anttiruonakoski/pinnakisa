@@ -195,6 +195,22 @@ class Participation_model extends CI_Model {
 
 	// ------------------------------------------------------------------------
 
+	public function delete($id = FALSE)
+	{
+		if (! $id)
+		{
+			exit("id has to be set when deleting a document.");
+		}
+		
+		// Update document
+		$this->db->where('id', $id);
+		$this->db->delete('kisa_participations'); 
+
+		return $id;
+	}
+
+	// ------------------------------------------------------------------------
+
 }
 
 /* End of file */
