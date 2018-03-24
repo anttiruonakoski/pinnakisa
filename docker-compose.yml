@@ -10,6 +10,8 @@ services:
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         env_file: 
             - ./env/.env-mysql
+        ports:
+            - 3306:3306
         volumes:
             - ./mysqldump:/docker-entrypoint-initdb.d
             - mysql-pinnakisa-100lajia:/var/lib/mysql
@@ -23,9 +25,18 @@ services:
             - PUID=1000
             - PGID=1000
         ports:
-            - 85:80
+            - 70:80
         volumes:
             - ./html:/var/www/html
-        
+
+    adminer:
+        image: adminer:4.3
+        ports:
+            - 8080:8080
+        environment:
+            ADMINER_DESIGN: lucas-sandery
+        depends_on: 
+            - db
+
 volumes:
     mysql-pinnakisa-100lajia:

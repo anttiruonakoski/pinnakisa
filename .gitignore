@@ -1,4 +1,10 @@
 
+mysqldump/*
+html/system/*
+html/application/config/*
+env/*
+
+
 *-BACKUP*
 ion_auth_userguide*
 system*
