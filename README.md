@@ -72,6 +72,13 @@ NICE:
 TODO/100 lajia
 ----
 
+<<<<<<< HEAD
+=======
+- results_summary -sivun laquo vie rootiin, po palvelun etusivulle
+- Remove kms, hours, spontaneos (see participation 19bc9aeee726a628f7a40cdcb34438f2524e0f70 )
+- Näytä pvm jolloin 100 lajia ylitetty
+- Piilota etusivulta kisat, jos ei kirjautunut sisään
+>>>>>>> ebb606a... Add new species list & converter
 - UI/ulkoasun parantelu
 - harvinaisten piilotus
 	- tarkistuta luokitusrima, luokittele loputkin
@@ -84,5 +91,12 @@ TODO/100 lajia
 - tietoturva: ei oikeutta editoida/poistaa muiden osallistumisia
 >>>>>>> 3656f14... Add deletion feature
 
+
+Asentaessa muista
+- tietokantatiedot CI:n -> config/database.php
+- hostname CI:n -> config/config.php
+
+jos käytät Dockeria
+- tietokantatiedot env-tiedostoon
 
 
