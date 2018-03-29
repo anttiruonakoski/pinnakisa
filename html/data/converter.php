@@ -39,5 +39,8 @@ foreach ($lines as $lineNro => $line) {
     $birdNro++;
 }
 
+$json = json_encode($birds);
+file_put_contents("../backups/birds2.json", $json);
+
 print_r ($birds);
 
