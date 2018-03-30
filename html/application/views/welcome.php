@@ -115,11 +115,12 @@ foreach ($publishedContests as $rowNumber => $array)
 //		echo "<p class=\"takePart\">Kirjaudu sisään ja osallistu</p>";
 
 	}
+
 	echo "<h4>" . @$array['name'] . "</h4>
 		<p class='results'>$resultsLink</p>
-		<p class='contestTime'>Kilpailuaika: " . @$array['date_begin'] . " &ndash; " . @$array['date_end'] . "</p>
+		<p class='contestTime'>Kilpailuaika: " . date2Fin(@$array['date_begin']) . " &ndash; " . date2Fin(@$array['date_end']) . "</p>
 		<p class='description'>" . str_replace("\n", "<p>", @$array['description']) . "</p>
-		<p class='infoURL'><a href='" . @$array['url'] . "'>" . @$array['url'] . "</a></p>
+		<p class='infoURL'>Lisää tietoa osoitteesta <a href='" . @$array['url'] . "'>" . @$array['url'] . "</a></p>
 	</div>
 	";
 	

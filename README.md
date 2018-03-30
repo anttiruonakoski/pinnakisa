@@ -73,8 +73,11 @@ TODO/100 lajia
 ----
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - results_summary -sivun laquo vie rootiin, po palvelun etusivulle
+=======
+>>>>>>> f4be055... Show dates in Finnish format
 - Remove kms, hours, spontaneos (see participation 19bc9aeee726a628f7a40cdcb34438f2524e0f70 )
 - Piilota etusivulta kisat, jos ei kirjautunut sisään
 >>>>>>> ebb606a... Add new species list & converter
@@ -86,10 +89,13 @@ TODO/100 lajia
 =======
 - tietoturva: ei oikeutta editoida/poistaa muiden osallistumisia
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3656f14... Add deletion feature
 
 =======
 - pvm suom.muotoon
+=======
+>>>>>>> f4be055... Show dates in Finnish format
 - harvinaisten piilotus välilehdellä
 >>>>>>> 212540c... New bird list with changed order & rarity
 

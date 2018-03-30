@@ -4,6 +4,7 @@ class Results extends CI_Controller {
 
 	public function summary($contest_id)
 	{
+		$this->load->helper('pinna_helper');
 		$viewdata = Array();
 
 		// Basic data about the contest

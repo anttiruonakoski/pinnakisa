@@ -146,6 +146,7 @@ if (!empty($summary))
 		echo "	<td>" . htmlspecialchars($partArray['name'], ENT_COMPAT, 'UTF-8') . "</td>";
 		echo "	<td>" . htmlspecialchars($partArray['location'], ENT_COMPAT, 'UTF-8') . "</td>";
 		echo "	<td>" . htmlspecialchars($partArray['species_count'], ENT_COMPAT, 'UTF-8') . "</td>";
+
 		if ($partArray['spontaneous'] > 0)
 		{
 			echo "	<td>" . htmlspecialchars($partArray['spontaneous'], ENT_COMPAT, 'UTF-8') . "</td>";
@@ -170,6 +171,7 @@ if (!empty($summary))
 		{
 			echo "	<td>&nbsp;</td>";
 		}
+
 		echo "</tr>";
 		
 		$previousSpeciesCount = $partArray['species_count'];

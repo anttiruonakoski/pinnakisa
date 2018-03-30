@@ -4,6 +4,7 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->helper('pinna_helper');
 		$viewdata = Array();
 		
 		if ($this->ion_auth->logged_in())
