@@ -2,7 +2,7 @@
 $title = "Pinnakisa";
 include "page_elements/header.php";
 
-echo "<h1>" . $contest['name'] . "</h1>";
+echo "<h1><a href='" . site_url() . "'>&laquo;</a> " . $contest['name'] . "</h1>";
 
 //echo $this->session->flashdata('login');
 
