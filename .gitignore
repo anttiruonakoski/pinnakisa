@@ -1,6 +1,5 @@
 
 mysqldump/*
-html/system/*
 html/application/config/*
 env/*
 html/backups/*
@@ -8,7 +7,6 @@ html/backups/*
 
 *-BACKUP*
 ion_auth_userguide*
-system*
 user_guide*
 application/sql/mongo*
 
