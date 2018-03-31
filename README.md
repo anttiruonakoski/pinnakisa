@@ -34,6 +34,9 @@ Voit joko asentaa ohjelmiston itse, tai pyytää päästä käyttämään valmii
 6. Rajoita tietokantakäyttäjän oikeudet: vain luku ja kirjoitusoikeudet tarvitaan
 
 
+**HUOM:** Lajiluettelon lajilyhenteitä ei pidä mennä muuttamaan kisan käynnistymisen jälkeen: tämä aiheuttaa virheitä tulossivuilla ja kadottaa havaintoja tallennettaessa.
+
+
 Lisenssit / Licenses
 --------------------
 * Pinnakisapalvelu: [MIT License](LICENSE.md) / Mikko Heikkinen/biomi.org 2013-
@@ -75,19 +78,26 @@ TODO/100 lajia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - results_summary -sivun laquo vie rootiin, po palvelun etusivulle
 =======
 >>>>>>> f4be055... Show dates in Finnish format
 =======
+=======
+- puh ja katuosoite
+>>>>>>> d949029... Front page styles and copy
 - jquery click -> tap ??
 - Fix user info saving feature: http://localhost:70/index.php/auth/edit_user/2
 - Kirjaudu sisään -tyylit kun kirjautuminen erääntynyt
 >>>>>>> d8b764a... Add styles for tab-style button
 - Remove kms, hours, spontaneos (see participation 19bc9aeee726a628f7a40cdcb34438f2524e0f70 )
 - Piilota etusivulta kisat, jos ei kirjautunut sisään
+<<<<<<< HEAD
 >>>>>>> ebb606a... Add new species list & converter
 - UI/ulkoasun parantelu
+=======
+>>>>>>> d949029... Front page styles and copy
 - testaus
 <<<<<<< HEAD
 >>>>>>> 7ff3132... Hide/show rarities
@@ -113,3 +123,13 @@ jos käytät Dockeria
 - tietokantatiedot env-tiedostoon
 
 
+### Asennus...
+
+admin
+admin
+n...3
+
+user nro 1:n voi deletoida
+
+miten sallitaan kirjoitus backups-kansioon? nyt dockerfile:n chmod ei toimi, piti tehdä käsin containerissa
+hawk

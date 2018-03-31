@@ -21,7 +21,7 @@ foreach ($lines as $lineNro => $line) {
     $cells = explode("\t", $line);
 
     // Order
-    if ("Lahko" === $cells[2]) {
+    if ("Lahko" === trim($cells[2])) {
         $birds[$birdNro]['abbr'] = $cells[4];
     }
     // Species

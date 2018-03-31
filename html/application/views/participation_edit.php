@@ -10,7 +10,7 @@ $dateBeginJS = "new Date(" . $dateBeginParts[0] . "," . ($dateBeginParts[1] - 1)
 $title = "Pinnakisa";
 $script = "
 <script>
-	
+
     let tickedSpeciesCount;
     let tickedSpeciesCountEl;
 
@@ -18,14 +18,14 @@ $script = "
 	function updateTotal(t, action, d) {
 		if (d.ticked == 'true' && action == 'add') {
 			return t
-		} 
-		else if (d.ticked == 'true' && action == 'deduct') {	
+		}
+		else if (d.ticked == 'true' && action == 'deduct') {
 				d.ticked = 'false';
 				t -= 1;
-		}	
+		}
 		else {
 			d.ticked = 'true';
-			t += 1;			
+			t += 1;
 		}
 
 		// Update visible total
@@ -35,9 +35,9 @@ $script = "
 			$('span', ele).attr('id','participationTicked');
 			$('span', ele).attr('data-species_count','1');
 			$('#participationTotal').append('(yhteensä ', ele, ')');
-		} 
-		else {			
-		$('#participationTicked').text(t);		
+		}
+		else {
+		$('#participationTicked').text(t);
 		}
 		return t;
 	}
@@ -45,7 +45,7 @@ $script = "
 	$(function() {
 	// datepicker defaults
 		$.datepicker.setDefaults( $.datepicker.regional[ 'fi' ] );
-	});	
+	});
 	// DATE FIELD: datepicker
 	$(function() {
 	  $('.datepicker').click(function() {
@@ -69,7 +69,7 @@ $script = "
 		$(this).parent().find('.iso-8601-format').val('');
 		$(this).parent().find('.datepicker').val('').css('border', '1px solid #ccc');
 		$(this).parent().find('.del').css('display', 'none');
-		$(this).parent().find('.sp').css('font-weight', 'normal');				
+		$(this).parent().find('.sp').css('font-weight', 'normal');
 		let s = $(this).parent().find('.datepicker')[0].dataset;
 		tickedSpeciesCount = updateTotal(tickedSpeciesCount, 'deduct', s);
 	  });
@@ -86,7 +86,7 @@ $script = "
 		$('.submit-button').prop('disabled', false);
 
 		// Initialize datepickers and create alternate iso-8601-format date format field for every datepicker. Finnish format is used for display. Iso-formatted dates are used for data storage.
-		// Clicking datepicker changes css only when any date is selected.  
+		// Clicking datepicker changes css only when any date is selected.
 		$('.datepicker').each(function() {
 	      $(this).datepicker({
 	    	dateFormat: 'd.m.yy',
@@ -97,21 +97,21 @@ $script = "
 	        onSelect: function() {
 	        	$(this).css('border', 'none');
 				$(this).parent().find('.del').css('display', 'inline');
-				$(this).parent().find('.sp').css('font-weight', 'bold');			
+				$(this).parent().find('.sp').css('font-weight', 'bold');
 				let s = $(this)[0].dataset;
 				tickedSpeciesCount = updateTotal(tickedSpeciesCount, 'add', s);
 	        }
 	      });
 	    });
 
-	    // Pass ticked species count 
-	    
-	 	if (document.getElementById('participationTicked') !== null) {	
+	    // Pass ticked species count
+
+	 	if (document.getElementById('participationTicked') !== null) {
 	      tickedSpeciesCount = Number(document.getElementById('participationTicked').dataset.species_count);
 	    } else {
-		  tickedSpeciesCount = 0;	
+		  tickedSpeciesCount = 0;
 	    }
-	     
+
 	});
 
 
@@ -123,7 +123,7 @@ include "page_elements/header.php";
 <div id="contestToTakePart">
 
 <h1>
-<em>Osallistuminen kisaan</em> 
+<em>Osallistuminen kisaan</em>
 <?php
 echo $contest['name'];
 echo " (<a href=\"" . site_url("results/summary") . "/" . $contest['id'] . "\">tulokset</a>)";
@@ -143,7 +143,7 @@ if (@$alreadyTakenPart)
 // echo "Kilpailuaika: " . $contest['date_begin'] . "&ndash;" . $contest['date_end'];
 // echo "<a href=\"" . $contest['url'] . "\" target=\"_blank\">Lue lisää &raquo;</a>";
 ?>
- 
+
 </p>
 
 <?php
@@ -185,7 +185,7 @@ else
 	echo "<p id=\"notification\">Tämä kisa ei ole nyt käynnissä, eikä kilpailutietoja voi muokata.</p>";
 }
 
-?> 
+?>
 
 <input type="hidden" name="contest_id" value="<?php echo @$editableData['contest_id']; ?>" />
 
@@ -235,7 +235,7 @@ if (0 == $sponde)
 }
 
 ?>
-<input type="text" name="spontaneous" value="<?php echo $sponde; ?>" size="10" /> 
+<input type="text" name="spontaneous" value="<?php echo $sponde; ?>" size="10" />
 
 <?php
 
@@ -248,7 +248,7 @@ if (isset($editableData['species_count']))
 }
 echo "</h4>";
 echo "<p>Klikkaa lajin nimeä jos havaitsit lajin tänään, tai päivämääräkenttää jos havaitsit sen aiemmin.</p>";
-echo "<p id='rarityVisibility'><span id='hideRarities'>Vain yleiset lajit</span> <span id='showRarities' class='active'>Kaikki lajit</span></p>";
+echo "<p id='rarityVisibility'><span id='hideRarities'>Näytä vain yleiset lajit</span> <span id='showRarities' class='active'>Näytä kaikki lajit</span></p>";
 
 
 // Species list begins
@@ -272,21 +272,26 @@ foreach ($bird as $key => $arr)
 		{
 			$setClass .= " isSet";
 		}
+
+		// Column breakpoints
+
 		if ("CHAMOR" == $arr['abbr'] || "ANTGUS" == $arr['abbr']) {
 			echo "</div>\n<div class=\"col\">";
 		}
+
 		echo "<p class=\"$setClass\"><em class=\"sp\">" . $arr['fi'];
-		$vn = "species[" . $arr['abbr'] . "]";	
+		$vn = "species[" . $arr['abbr'] . "]";
 		echo "</em> <input type=\"text\" class=\"datepicker\" value=\""	. set_value($vn, date2Fin(@$editableData['species'][$arr['abbr']])) . "\" size=\"8\" data-ticked=\"";
-		
+
 		//has date -> ticked true / false
-		echo (@$editableData['species'][$arr['abbr']]) ? "true" : "false"; 
+		echo (@$editableData['species'][$arr['abbr']]) ? "true" : "false";
 		echo "\" readonly />";
 
 		//this field is actually submitted
 		echo "</em> <input type=\"hidden\" class=\"iso-8601-format\" name=\"$vn\" value=\""	. set_value($vn, @$editableData['species'][$arr['abbr']]) . "\" size=\"8\" readonly />";
 		echo "<span class=\"del\">X</span>\n";
 		echo "</p>\n";
+//		print_r ($arr); // debug
 	}
 	else // If is higher taxon
 	{
