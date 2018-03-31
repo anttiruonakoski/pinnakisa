@@ -37,7 +37,7 @@ class Participation extends CI_Controller {
 		if ("POST" == $_SERVER['REQUEST_METHOD'])
 		{
 //			echo "CASE1 ";
-			// Editing a document, existing or new;
+			// Editing a document, existing or new (that has not been saved to the db because of missing mandatory data);
 			// data comes from POST
 			$viewdata['editableData'] = $this->input->post();
 			
@@ -134,6 +134,9 @@ class Participation extends CI_Controller {
 	
 	public function delete($id = FALSE)
 	{
+//		print_r ($this->ion_auth->user()->row()); // debug: show user info
+
+
 		// Restrict this page only for logged in users
 		if (!$this->ion_auth->logged_in())
 		{
@@ -149,6 +152,12 @@ class Participation extends CI_Controller {
 		
 		// FETCH THE DATA
 		$viewdata['editableData'] = $this->participation_model->load($id);
+
+//		print_r ($viewdata); // debug: view participation info
+		$user = $this->ion_auth->user()->row();
+		if ($viewdata['editableData']['meta_created_user'] !== $user->id) {
+			exit("Editing this participation is not allowed for user " . $user->id);
+		}
 
 		// View
 		$this->load->view('participation_delete', $viewdata);
@@ -170,8 +179,16 @@ class Participation extends CI_Controller {
 
 		// Preparations
 		$this->load->model('participation_model');
-		
+
 		// FETCH THE DATA
+		// AND CHECK IF DELETION ALLOWED
+		$viewdata['editableData'] = $this->participation_model->load($id);
+		$user = $this->ion_auth->user()->row();
+		if ($viewdata['editableData']['meta_created_user'] !== $user->id) {
+			exit("Editing this participation is not allowed for user " . $user->id);
+		}
+		
+		// DELETE THE DATA
 		$deletedId = $this->participation_model->delete($id);
 		if ($deletedId === $id)
 		{

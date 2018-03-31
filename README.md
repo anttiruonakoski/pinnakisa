@@ -79,19 +79,27 @@ TODO/100 lajia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - results_summary -sivun laquo vie rootiin, po palvelun etusivulle
 =======
 >>>>>>> f4be055... Show dates in Finnish format
 =======
 =======
+=======
+- 100 lajia tuloslistasta pois cursor pointer ja ajax
+>>>>>>> ba9e907... Forbid deletion by other user
 - puh ja katuosoite
 >>>>>>> d949029... Front page styles and copy
 - jquery click -> tap ??
 - Fix user info saving feature: http://localhost:70/index.php/auth/edit_user/2
 - Kirjaudu sisään -tyylit kun kirjautuminen erääntynyt
+<<<<<<< HEAD
 >>>>>>> d8b764a... Add styles for tab-style button
 - Remove kms, hours, spontaneos (see participation 19bc9aeee726a628f7a40cdcb34438f2524e0f70 )
+=======
+- Remove kms, hours, spontaneos (see participation 470aa945e7a5f4cc067c9ae1e5125b146989be8c )
+>>>>>>> ba9e907... Forbid deletion by other user
 - Piilota etusivulta kisat, jos ei kirjautunut sisään
 <<<<<<< HEAD
 >>>>>>> ebb606a... Add new species list & converter
@@ -106,12 +114,16 @@ TODO/100 lajia
 - tietoturva: ei oikeutta editoida/poistaa muiden osallistumisia
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3656f14... Add deletion feature
 
 =======
 - pvm suom.muotoon
 =======
 >>>>>>> f4be055... Show dates in Finnish format
+=======
+	Sikäläinen 2ded2f75fd35011f4011eff6c12e74791bcaca91
+>>>>>>> ba9e907... Forbid deletion by other user
 - harvinaisten piilotus välilehdellä
 >>>>>>> 212540c... New bird list with changed order & rarity
 
