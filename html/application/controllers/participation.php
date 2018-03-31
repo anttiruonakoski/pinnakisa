@@ -37,7 +37,7 @@ class Participation extends CI_Controller {
 		if ("POST" == $_SERVER['REQUEST_METHOD'])
 		{
 //			echo "CASE1 ";
-			// Editing a document, existing or new (that has not been saved to the db because of missing mandatory data);
+			// Returning to the form after save to re-edit a document, existing or new (that has not been saved to the db because of missing mandatory data);
 			// data comes from POST
 			$viewdata['editableData'] = $this->input->post();
 			
@@ -53,6 +53,12 @@ class Participation extends CI_Controller {
 			// Starting to edit existing document, or editing document just put into database;
 			// load data from database based on id
 			$viewdata['editableData'] = $this->participation_model->load($id);
+
+			// CHECK IF CORRECT USER
+			$user = $this->ion_auth->user()->row();
+			if ($viewdata['editableData']['meta_created_user'] !== $user->id) {
+				exit("Editing this participation is not allowed for user " . $user->id);
+			}				
 		}
 		else
 		{

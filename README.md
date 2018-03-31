@@ -108,6 +108,7 @@ TODO/100 lajia
 >>>>>>> d949029... Front page styles and copy
 - testaus
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7ff3132... Hide/show rarities
 
 =======
@@ -124,6 +125,8 @@ TODO/100 lajia
 =======
 	Sikäläinen 2ded2f75fd35011f4011eff6c12e74791bcaca91
 >>>>>>> ba9e907... Forbid deletion by other user
+=======
+>>>>>>> a34a4b3... Forbid edit by other user
 - harvinaisten piilotus välilehdellä
 >>>>>>> 212540c... New bird list with changed order & rarity
 
