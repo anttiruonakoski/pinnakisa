@@ -248,7 +248,7 @@ if (isset($editableData['species_count']))
 }
 echo "</h4>";
 echo "<p>Klikkaa lajin nimeä jos havaitsit lajin tänään, tai päivämääräkenttää jos havaitsit sen aiemmin.</p>";
-echo "<p id='rarityVisibility'><span id='showRarities'>Näytä myös harvinaiset</span> <span id='hideRarities'>Piilota harvinaiset</span></p>";
+echo "<p id='rarityVisibility'><span id='hideRarities'>Vain yleiset lajit</span> <span id='showRarities' class='active'>Kaikki lajit</span></p>";
 
 
 // Species list begins

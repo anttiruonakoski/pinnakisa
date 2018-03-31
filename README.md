@@ -74,10 +74,16 @@ TODO/100 lajia
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - results_summary -sivun laquo vie rootiin, po palvelun etusivulle
 =======
 >>>>>>> f4be055... Show dates in Finnish format
+=======
+- jquery click -> tap ??
+- Fix user info saving feature: http://localhost:70/index.php/auth/edit_user/2
+- Kirjaudu sisään -tyylit kun kirjautuminen erääntynyt
+>>>>>>> d8b764a... Add styles for tab-style button
 - Remove kms, hours, spontaneos (see participation 19bc9aeee726a628f7a40cdcb34438f2524e0f70 )
 - Piilota etusivulta kisat, jos ei kirjautunut sisään
 >>>>>>> ebb606a... Add new species list & converter

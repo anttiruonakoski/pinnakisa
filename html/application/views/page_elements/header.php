@@ -42,7 +42,7 @@ else
 		<!--<script>window.jQuery || document.write('<script src="application/views/page_elements/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
 
 		<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-		<script src="<?php echo base_url(); ?>application/views/page_elements/js/main.js"></script>
+		<script src="<?php echo base_url(); ?>application/views/page_elements/js/main.js?<?php echo rand(0, 1000); ?>"></script>
 		<script src="<?php echo base_url(); ?>application/views/page_elements/js/vendor/tablesorter/jquery.tablesorter.min.js"></script>
 		<?php echo @$script; ?>
     </head>

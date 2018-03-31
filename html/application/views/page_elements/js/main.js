@@ -34,15 +34,15 @@ $(document).ready(function()
 		$( "#showRarities" ).click(function() {
 			console.log("Show rarities");
 			$( ".rare" ).show();
-			$( "#hideRarities" ).show();
-			$( "#showRarities" ).hide();			
+			$( "#hideRarities" ).addClass("active");
+			$( "#showRarities" ).removeClass("active");
 		});
 
 		$( "#hideRarities" ).click(function() {
 			console.log("Hide rarities");
 			$( ".rare" ).hide();
-			$( "#showRarities" ).show();
-			$( "#hideRarities" ).hide();
+			$( "#showRarities" ).addClass("active");
+			$( "#hideRarities" ).removeClass("active");
 		});
 
     }
