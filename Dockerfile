@@ -15,9 +15,16 @@ RUN a2enmod rewrite
 # Add app
 COPY ./html /var/www/html
 
+# Add entrypoint script 
+COPY ./scripts/ /init-scripts/
+RUN chmod a+x /init-scripts/custom-entrypoint-script.sh
+
+# Run custom script to allow writing backup logs 
+ENTRYPOINT ["/init-scripts/custom-entrypoint-script.sh"]
+
 # Allow writing backup logs
-RUN chmod a+w /var/www/html/backups
-RUN chmod a+x /var/www/html/backups
+#RUN chmod a+w /var/www/html/backups
+#RUN chmod a+x /var/www/html/backups
 
 EXPOSE 80
 WORKDIR /var/www/
