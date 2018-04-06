@@ -10,20 +10,18 @@ $dateBeginJS = "new Date(" . $dateBeginParts[0] . "," . ($dateBeginParts[1] - 1)
 $title = "100 lajia";
 $script = "
 <script>
-	//	$.datepicker.formatDate('ISO_8601', date, settings)
+	
+
 	$(function() {
+	// datepicker defaults
 		$.datepicker.setDefaults( $.datepicker.regional[ 'fi' ] );
-		$('.datepicker').datepicker({
-			minDate: " . $dateBeginJS . ",
-			maxDate: '0'
-		});
-	});
+	});	
 	// DATE FIELD: datepicker
 	$(function() {
 	  $('.datepicker').click(function() {
-		$(this).css('border', 'none');
-		$(this).parent().find('.del').css('display', 'inline');
-		$(this).parent().find('.sp').css('font-weight', 'bold');
+		//$(this).css('border', 'none');
+		//$(this).parent().find('.del').css('display', 'inline');
+		//$(this).parent().find('.sp').css('font-weight', 'bold');
 		event.preventDefault(); // Prevents keyboard in mobile; this has to be the last rule b/c Firefox 24.0 won't apply (CSS) rules after this.
 	  });
 	});
@@ -38,6 +36,7 @@ $script = "
 	// DELETE: remove date
 	$(function() {
 	  $('.del').click(function() {
+		$(this).parent().find('.iso-8601-format').val('');
 		$(this).parent().find('.datepicker').val('').css('border', '1px solid #ccc');
 		$(this).parent().find('.del').css('display', 'none');
 		$(this).parent().find('.sp').css('font-weight', 'normal');
@@ -55,10 +54,25 @@ $script = "
 		// Enable submit button
 		$('.submit-button').prop('disabled', false);
 
+
+		// Initialize datepickers and create alternate iso-8601-format date format field for every datepicker. Finnish format is used for display. Iso-formatted dates are used for data storage.
+		// Clicking datepicker changes css only when any date is selected.  
+		$('.datepicker').each(function() {
+	      $(this).datepicker({
+	      	dateFormat: 'd.m.yy',
+	      	minDate: ". $dateBeginJS .",
+	      	maxDate: '0',
+	      	altFormat: 'yy-mm-dd',
+	        altField: $(this).parent().find('.iso-8601-format'),
+	        onSelect: function() {
+	        	$(this).css('border', 'none');
+				$(this).parent().find('.del').css('display', 'inline');
+				$(this).parent().find('.sp').css('font-weight', 'bold');
+	        }
+	      });
+	    });
+	     
 	});
-
-
-
 
 
  </script>
@@ -115,7 +129,7 @@ if (! empty($flash))
 </div>
 
 <?php
-// echo "<pre>ARRAY: "; print_r ($editableData); echo "</pre>"; // debug
+//echo "<pre>ARRAY: "; print_r ($editableData); echo "</pre>"; // debug
 
 $submitButton = "";
 if ("published" == $contest['status'])
@@ -196,8 +210,9 @@ foreach ($bird as $key => $arr)
 			echo "</div>\n<div class=\"col\">";
 		}
 		echo "<p class=\"$setClass\"><em class=\"sp\">" . $arr['fi'];
-		$vn = "species[" . $arr['abbr'] . "]";
-		echo "</em> <input type=\"text\" class=\"datepicker\" name=\"$vn\" value=\""	. set_value($vn, @$editableData['species'][$arr['abbr']]) . "\" size=\"8\" readonly />";
+		$vn = "species[" . $arr['abbr'] . "]";	
+		echo "</em> <input type=\"text\" class=\"datepicker\" value=\""	. set_value($vn, date2Fin(@$editableData['species'][$arr['abbr']])) . "\" size=\"8\" readonly />";
+		echo "</em> <input type=\"hidden\" class=\"iso-8601-format\" name=\"$vn\" value=\""	. set_value($vn, @$editableData['species'][$arr['abbr']]) . "\" size=\"8\" readonly />";
 		echo "<span class=\"del\">X</span>\n";
 		echo "</p>\n";
 //		print_r ($arr); // debug
