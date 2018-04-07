@@ -36,6 +36,7 @@ pinna-tietosuojaseloste.pdf
 .DS_Store
 Thumbs.db
 web.config
+<<<<<<< HEAD
 
 # 100lajia & Docker
 
@@ -43,3 +44,6 @@ env/*
 html/*
 mysqldump/*
 
+=======
+html/application/libraries/MY_Session.php
+>>>>>>> Dynamically calculate and display ticked species total counter
