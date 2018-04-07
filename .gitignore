@@ -41,3 +41,4 @@ pinna-tietosuojaseloste.pdf
 .DS_Store
 Thumbs.db
 web.config
+html/application/libraries/MY_Session.php
