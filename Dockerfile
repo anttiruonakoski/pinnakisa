@@ -1,6 +1,5 @@
 # Build this using following commands
-# docker build -t mikkohei13/pinnakisa-100lajia:latest .
-# docker push mikkohei13/pinnakisa-100lajia:latest
+# docker build -t pinnakisa-dev:latest .
 
 FROM php:7.2-apache
 

@@ -6,7 +6,7 @@ services:
 
     db:
         image: mysql:5.7
-        container_name: pinnakisa-100lajia-db
+        container_name: pinnakisa-dev
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         env_file: 
             - ./env/.env-mysql
@@ -14,10 +14,10 @@ services:
             - 3306:3306
         volumes:
             - ./mysqldump:/docker-entrypoint-initdb.d
-            - mysql-pinnakisa-100lajia:/var/lib/mysql
+            - mysql-pinnakisa-dev:/var/lib/mysql
 
     backend:
-        image: mikkohei13/pinnakisa-100lajia:latest
+        image: pinnakisa-dev:latest
         container_name: pinnakisa-100lajia
 
         restart: always
@@ -39,4 +39,4 @@ services:
             - db
 
 volumes:
-    mysql-pinnakisa-100lajia:
+    mysql-pinnakisa-dev::
