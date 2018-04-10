@@ -3,18 +3,18 @@
 class Participation extends CI_Controller {
 
 	// ------------------------------------------------------------------------
-	
+
 	public function index()
 	{
 
 	}
-	
+
 	// ------------------------------------------------------------------------
-	
+
 	public function edit($id = FALSE)
 	{
 		// TODO: (?) Jos contest_id:n jättää pois uuteen kisaan ilmoittautuessa, tuloksana kasa CI:n virheilmoituksia
-	
+
 		// Restrict this page only for logged in users
 		if (!$this->ion_auth->logged_in())
 		{
@@ -32,7 +32,7 @@ class Participation extends CI_Controller {
 		// Preparations
 		$this->load->model('participation_model');
 		$viewdata['editableData'] = FALSE;
-		
+
 		// FETCH THE DATA
 		if ("POST" == $_SERVER['REQUEST_METHOD'])
 		{
@@ -40,7 +40,7 @@ class Participation extends CI_Controller {
 			// Returning to the form after save to re-edit a document, existing or new (that has not been saved to the db because of missing mandatory data);
 			// data comes from POST
 			$viewdata['editableData'] = $this->input->post();
-			
+
 			// If editing existing, fetch the id
 			if ($id)
 			{
@@ -58,7 +58,7 @@ class Participation extends CI_Controller {
 			$user = $this->ion_auth->user()->row();
 			if ($viewdata['editableData']['meta_created_user'] !== $user->id) {
 				exit("Editing this participation is not allowed for user " . $user->id);
-			}				
+			}
 		}
 		else
 		{
@@ -67,11 +67,11 @@ class Participation extends CI_Controller {
 			// no data
 			$viewdata['editableData']['contest_id'] = $this->input->get('contest_id');
 		}
-	
+
 		// VALIDATE THE DATA
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('name', 'Nimi', 'required');
-		$this->form_validation->set_rules('location', 'Kilpailualue', 'required');
+		$this->form_validation->set_rules('location', 'Asuinpaikkakunta', 'required');
 		$this->form_validation->set_rules('contest_id', 'Kisan tunniste', 'required');
 		$this->form_validation->set_rules('form_loaded', 'Lomake ei ollut latautunut kokonaan ennen kuin tallensit sen. Jos käytät hidasta verkkoyhteyttä, odota hetki pidempään ennen kuin yrität tallennusta uudelleen.', 'required', 'form_loaded_check');
 
@@ -82,17 +82,17 @@ class Participation extends CI_Controller {
 		{
 //			echo "CASE B 1";
 			$this->session->set_flashdata("flash", "Täytä kaikki pakolliset kentät");
-			
+
 			// Get contest data
 			$this->load->model('contest_model');
 			$viewdata['contest'] = $this->contest_model->load($viewdata['editableData']['contest_id']);
-			
+
 			if (! $id)
 			{
 				// Check my previous participations in this contest
 				$viewdata['alreadyTakenPart'] = $this->participation_model->alreadyTakenPart($viewdata['editableData']['contest_id']);
 			}
-			
+
 			// if location has controlled vocabulary
 			if ($viewdata['contest']['location_list'] != "0")
 			{
@@ -103,7 +103,7 @@ class Participation extends CI_Controller {
 					$viewdata['locationArray'][$name] = $name . " " . $notes;
 				}
 			}
-			
+
 			// Validation not run or not passed; go to form
 			$this->load->view('participation_edit', $viewdata);
 		}
@@ -125,7 +125,7 @@ class Participation extends CI_Controller {
 				// Inserting returns an ID for the document
 				$id = $this->participation_model->insert($viewdata['editableData']);
 			}
-			
+
 			// Go to form with id
 			$this->session->set_flashdata("flash", "Tiedot tallennettiin onnistuneesti");
 			redirect("/participation/edit/$id");
@@ -134,7 +134,7 @@ class Participation extends CI_Controller {
 	}
 
 	// ------------------------------------------------------------------------
-	
+
 	public function delete($id = FALSE)
 	{
 //		print_r ($this->ion_auth->user()->row()); // debug: show user info
@@ -152,7 +152,7 @@ class Participation extends CI_Controller {
 
 		// Preparations
 		$this->load->model('participation_model');
-		
+
 		// FETCH THE DATA
 		$viewdata['editableData'] = $this->participation_model->load($id);
 
@@ -167,7 +167,7 @@ class Participation extends CI_Controller {
 	}
 
 	// ------------------------------------------------------------------------
-	
+
 	public function confirmdeletion($id = FALSE)
 	{
 		// Restrict this page only for logged in users
@@ -190,7 +190,7 @@ class Participation extends CI_Controller {
 		if ($viewdata['editableData']['meta_created_user'] !== $user->id) {
 			exit("Editing this participation is not allowed for user " . $user->id);
 		}
-		
+
 		// DELETE THE DATA
 		$deletedId = $this->participation_model->delete($id);
 		if ($deletedId === $id)
@@ -198,7 +198,7 @@ class Participation extends CI_Controller {
 			$this->session->set_flashdata("login", "Osallistuminen poistettu.");
 			redirect('welcome/index');
 		}
-		else 
+		else
 		{
 			exit("Poisto epäonnistui");
 		}
