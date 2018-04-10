@@ -259,7 +259,7 @@
 2870	x	Lahko	Pteroclidiformes	Hietakanalinnut		
 2890	x	SYRPAR	Syrrhaptes paradoxus	Arokyyhky	Stäppflyghöna	Pallas's Sandgrouse
 2900		Lahko	Columbiformes	Kyyhkylinnut		
-2920		COLLIV	Columba livia	Kalliokyyhky	Klippduva	Common Pigeon
+2920		COLLIV	Columba livia	Kesykyyhky (pulu)	Klippduva	Common Pigeon
 2930		COLOEN	Columba oenas	Uuttukyyhky	Skogsduva	Stock Dove
 2940		COLPAL	Columba palumbus	Sepelkyyhky	Ringduva	Common Wood Pigeon
 2950	x	STRDEC	Streptopelia decaocto	Turkinkyyhky	Turkduva	Eurasian Collared Dove
@@ -456,7 +456,7 @@
 5150		CORNIX	Corvus corone cornix	Varis	Kråka	Hooded Crow
 5160		CORRAX	Corvus corax	Korppi	Korp	Northern Raven
 5180		STUVUL	Sturnus vulgaris	Kottarainen	Stare	Common Starling
-5190		PASROS	Pastor roseus	Punakottarainen	Rosenstare	Rosy Starling
+5190	x	PASROS	Pastor roseus	Punakottarainen	Rosenstare	Rosy Starling
 5210		PASDOM	Passer domesticus	Varpunen	Gråsparv	House Sparrow
 5220	x	PASHIS	Passer hispaniolensis	Pensasvarpunen	Spansk sparv	Spanish Sparrow
 5230		PASMON	Passer montanus	Pikkuvarpunen	Pilfink	Eurasian Tree Sparrow

@@ -73,6 +73,8 @@ NICE:
 TODO/100 lajia
 ----
 
+- results_species sivun alussa &#65279; -> harmaa palkki
+
 - puh ja katuosoite
 - jquery click -> tap ??
 - Kirjaudu sisään -tyylit kun kirjautuminen erääntynyt

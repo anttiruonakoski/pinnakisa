@@ -5,7 +5,7 @@ include "page_elements/header.php";
 
 <h1>Tunnista ja havaitse 100 lintulajia vuoden 2018 aikana!</h1>
 
-<p>Tunnista 100 lintulajia -haasteen tavoitteena on lintuharrastuksen ja luonnon tuntemuksen lisääminen sekä maamme upean luonnon juhlistaminen. Viime vuonna haaste otettiin innokkaasti vastaan, ja yli 1700 ihmistä ilmoitti havainneensa vähintään 100 lintulajia vuoden aikana. Kuinka moni saavuttaa sadan lajin rajapyykin 1.1.–31.12.2018?</p>
+<p>Saavutatko sinä 100 lajin rajapyykin? Haasta myös kaverisi mukaan!</p>
 
 
 <?php
@@ -49,8 +49,8 @@ if (! empty($participations))
 	{
 		$temp = "
 		<div class=\"participation\">
-			<h4><a href=\"" . site_url("participation/edit/" . $array['id']) . "\">Muokkaa tätä osallistumista<!--" . $allContests[$array['contest_id']]['name'] . "--></a></h4>
-			<p> " . $array['location'] . "<br /> " . $array['name'] . "</p>
+		<p>" . $array['name'] . ", " . $array['location'] . "</p>
+		<p class=\"takePart\"><a href=\"" . site_url("participation/edit/" . $array['id']) . "\">Päivitä omaa lajiluetteloa<!--" . $allContests[$array['contest_id']]['name'] . "--></a></p>
 		</div>
 		";
 		
@@ -80,7 +80,7 @@ if ($this->ion_auth->logged_in())
 		echo "<div class=\"participationsCol active\" id=\"active\">";
 		
 		// Published
-		echo "<h3>Osallistumiseni</h3>";
+		echo "<h3><!--Osallistumiseni--></h3>";
 		echo $htmlPublished;
 
 		echo "</div>";
@@ -98,13 +98,33 @@ echo "<div class=\"contestsCol active\">";
 
 echo "<!--<h3>Osallistu tästä</h3>-->";
 
-if ($alreadyParticipated) {
-	echo "<p id='alreadyParticipated2'>Olet jo osallistunut haasteeseen (ks. yllä), mutta voit tallentaa tässä uuden osallistumisen toisen henkilön puolesta (esim. perheenjäsenen).</p>";
+if (! $alreadyParticipated) {
+
+	foreach ($publishedContests as $rowNumber => $array)
+	{
+	//	print_r ($array); continue; // debug
+
+		echo "
+		<div class=\"contest\">
+		";
+		if ($this->ion_auth->logged_in())
+		{
+			$temp = "participation/edit/?contest_id=" . $array['id'];
+			echo "<p class=\"takePart\"><a href=\"" . site_url($temp) . "\">Osallistu haasteeseen</a></p>";
+		}
+		else
+		{
+			echo "<p class=\"notLoggedIn\"><a href=\"" . site_url("/auth/login") . "\">Kirjaudu sisään</a> tai <a href=\"" . site_url("/auth/create_user") . "\">rekisteröidy</a> osallistuaksesi</p>";
+
+		}
+		$helper[$array['id']] = @$array['name'];
+	}
+	echo "</div>";
+
 }
 
 foreach ($publishedContests as $rowNumber => $array)
 {
-//	print_r ($array); continue; // debug
 
 	// Tulospalvelulinkki
 	if ($array['location_list'])
@@ -123,20 +143,6 @@ foreach ($publishedContests as $rowNumber => $array)
 		";
 	}
 
-
-	echo "
-	<div class=\"contest\">
-	";
-	if ($this->ion_auth->logged_in())
-	{
-		$temp = "participation/edit/?contest_id=" . $array['id'];
-		echo "<p class=\"takePart\"><a href=\"" . site_url($temp) . "\">Osallistu haasteeseen</a></p>";
-	}
-	else
-	{
-		echo "<p class=\"notLoggedIn\"><a href=\"" . site_url("/auth/login") . "\">Kirjaudu sisään</a> tai <a href=\"" . site_url("/auth/create_user") . "\">rekisteröidy</a> osallistuaksesi</p>";
-
-	}
 	echo "<!--<h4>" . @$array['name'] . "</h4>-->
 		<p class='description'>" . str_replace("\n", "<p>", @$array['description']) . "</p>
 		<p class='contestTime'>Osallistumisaika: " . date2Fin(@$array['date_begin']) . " &ndash; " . date2Fin(@$array['date_end']) . "</p>
@@ -144,10 +150,8 @@ foreach ($publishedContests as $rowNumber => $array)
 		<p class='results'>$resultsLink</p>
 	</div>
 	";
-	
-	$helper[$array['id']] = @$array['name'];
+
 }
-echo "</div>";
 
 // --------------------------------------------
 // Old contests
@@ -211,6 +215,11 @@ if ($this->ion_auth->logged_in())
 	}
 }
 ?>
+
+<p id="logos">
+    <a href="https://www.birdlife.fi/"><img src="<?php echo base_url(); ?>application/views/page_elements/birdlife.png"></a>
+    <a href="https://www.birdlife.fi/100lintulajia"><img src="<?php echo base_url(); ?>application/views/page_elements/100lajia.jpg"></a>
+</p>
 
 <?php
 include "page_elements/footer.php";

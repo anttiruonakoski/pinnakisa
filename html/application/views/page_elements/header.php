@@ -30,13 +30,6 @@ else
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
         
-        <!-- TODO: 
-        siirrä nämä bodyn loppuun
-        muuta foldername automaattiseksi
-        kevennä css-teemaa themebuilderilla
-        includde js ehdollisesti: määrittele tämä viewin alussa jQuery = TRUE
-        -->
-        
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<!--<script>window.jQuery || document.write('<script src="application/views/page_elements/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
@@ -65,19 +58,23 @@ else
 		echo " class=\"guest $dev_class\"";
 	}
 	
-	?>>
-
-<p id="toolNavi">
+	?>><p id="toolNavi">
 <?php
 
 echo $dev_info;
 echo "<span><a href=\"" . base_url() . "\" id=\"home\">Etusivu</a></span> ";
+if ($this->ion_auth->logged_in())
+{	
+	echo "<span><a href=\"" . site_url("redirect/participation") . "\" id=\"home\">Oma lajiluettelo</a></span> ";
+}
+echo "<span><a href=\"" . site_url("redirect/results") . "\" id=\"home\">Tulokset</a></span> ";
+echo " <span>•</span> ";
 
 $userData = $this->ion_auth->user()->row();
 
 if ($this->ion_auth->logged_in())
 {	
-    echo "<span>Olet kirjautunut tunnuksella <strong>" . htmlspecialchars($userData->email, ENT_COMPAT, 'UTF-8') . "</strong></span> ";
+    echo "<span><strong>" . htmlspecialchars($userData->email, ENT_COMPAT, 'UTF-8') . "</strong></span> ";
 	if ($this->ion_auth->is_admin())
 	{
 		echo " <span><strong id=\"youAreAdmin\" title=\"Olet administrator\">admin</strong></span> ";
@@ -88,7 +85,7 @@ if ($this->ion_auth->logged_in())
 }
 else
 {
-	echo "<span><a href=\"" . site_url("auth/login") . "\" title=\"Kirjaudu sisään tallentaaksesi havaintoja\">Kirjaudu sisään</a></span> ";
+	echo "<span><a href=\"" . site_url("auth/login") . "\" title=\"Kirjaudu sisään osallistuaksesi\">Kirjaudu sisään</a></span> ";
 	echo "<span><a href=\"" . site_url("auth/create_user") . "\">Rekisteröidy</a></span> ";
 //	echo "<span><a href=\"" . site_url("auth/forgot_password") . "\">Unohtuiko salasana?</a></span> ";
 }

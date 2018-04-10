@@ -1,4 +1,4 @@
-<p id="clearer">&nbsp;</p>
+<p id="clearer"></p>
 </div> <!-- Content -->
 
 <p id="footer">
