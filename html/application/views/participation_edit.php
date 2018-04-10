@@ -10,42 +10,42 @@ $dateBeginJS = "new Date(" . $dateBeginParts[0] . "," . ($dateBeginParts[1] - 1)
 $title = "100 lajia";
 $script = "
 <script>
-	
+
     let tickedSpeciesCount;
-    let tickedSpeciesCountEl;
 
     // Change total ticks counter dynamically
 	function updateTotal(t, action, d) {
-		if (d.ticked == 'true' && action == 'add') {
-			return t
-		} 
-		else if (d.ticked == 'true' && action == 'deduct') {	
-				d.ticked = 'false';
-				t -= 1;
-		}	
-		else {
-			d.ticked = 'true';
-			t += 1;			
-		}
 
-		// Update visible total
-		// Create element, if this is the first time editing participation
-		if (document.getElementById('participationTicked') == null) {
-			let ele = $('<span id=\"participationTicked\" data-species_count=\"1\">1</span>');
-			$('span', ele).attr('id','participationTicked');
-			$('span', ele).attr('data-species_count','1');
-			$('#participationTotal').append('(yhteensä ', ele, ')');
-		} 
-		else {			
-		$('#participationTicked').text(t);		
-		}
-		return t;
+	// Create element if participation is unsaved and this is thefirst tick
+	if (document.getElementById('participationTicked') == null && t == 0) {
+		let ele = $('<span id=\"participationTicked\" data-species_count=\"1\">1</span>');
+		$('span', ele).attr('id','participationTicked');
+		$('span', ele).attr('data-species_count','1');
+		$('#participationTotal').append('(yhteensä ', ele, ')');
+	}
+
+	if (d.ticked == 'true' && action == 'add') {
+		return t
+	}
+	else if (d.ticked == 'true' && action == 'deduct') {
+			d.ticked = 'false';
+			t -= 1;
+	}
+	else {
+		d.ticked = 'true';
+		t += 1;
+	}
+
+	// Update visible total
+	$('#participationTicked').text(t);
+
+	return t;
 	}
 
 	$(function() {
 	// datepicker defaults
 		$.datepicker.setDefaults( $.datepicker.regional[ 'fi' ] );
-	});	
+	});
 	// DATE FIELD: datepicker
 	$(function() {
 	  $('.datepicker').click(function() {
@@ -69,7 +69,7 @@ $script = "
 		$(this).parent().find('.iso-8601-format').val('');
 		$(this).parent().find('.datepicker').val('').css('border', '1px solid #ccc');
 		$(this).parent().find('.del').css('display', 'none');
-		$(this).parent().find('.sp').css('font-weight', 'normal');				
+		$(this).parent().find('.sp').css('font-weight', 'normal');
 		let s = $(this).parent().find('.datepicker')[0].dataset;
 		tickedSpeciesCount = updateTotal(tickedSpeciesCount, 'deduct', s);
 	  });
@@ -86,7 +86,7 @@ $script = "
 		$('.submit-button').prop('disabled', false);
 
 		// Initialize datepickers and create alternate iso-8601-format date format field for every datepicker. Finnish format is used for display. Iso-formatted dates are used for data storage.
-		// Clicking datepicker changes css only when any date is selected.  
+		// Clicking datepicker changes css only when any date is selected.
 		$('.datepicker').each(function() {
 	      $(this).datepicker({
 	    	dateFormat: 'd.m.yy',
@@ -97,21 +97,23 @@ $script = "
 	        onSelect: function() {
 	        	$(this).css('border', 'none');
 				$(this).parent().find('.del').css('display', 'inline');
-				$(this).parent().find('.sp').css('font-weight', 'bold');			
+				$(this).parent().find('.sp').css('font-weight', 'bold');
 				let s = $(this)[0].dataset;
 				tickedSpeciesCount = updateTotal(tickedSpeciesCount, 'add', s);
 	        }
 	      });
 	    });
 
-	    // Pass ticked species count 
-	    
-	 	if (document.getElementById('participationTicked') !== null) {	
-	      tickedSpeciesCount = Number(document.getElementById('participationTicked').dataset.species_count);
-	    } else {
-		  tickedSpeciesCount = 0;	
-	    }
-	     
+	    // Pass ticked species count
+	    tickedSpeciesCount = $('#speciesList').find('p.isSet').length;
+
+	    // Create element, if the participation is unsaved, but has any ticks
+		if (document.getElementById('participationTicked') == null && tickedSpeciesCount > 0) {
+			let ele = $('<span id=\"participationTicked\" data-species_count=\"1\"/>').html(tickedSpeciesCount);
+			$('span', ele).attr('id','participationTicked');
+			$('span', ele).attr('data-species_count',tickedSpeciesCount);
+			$('#participationTotal').append('(yhteensä ', ele, ')');
+		}
 	});
 
 
@@ -123,7 +125,7 @@ include "page_elements/header.php";
 <div id="contestToTakePart">
 
 <h1>
-<em>Osallistuminen </em> 
+<em>Osallistuminen </em>
 <?php
 echo $contest['name'];
 echo " <em>-haasteeseen ";
@@ -146,7 +148,7 @@ if (@$alreadyTakenPart)
 // echo "Kilpailuaika: " . $contest['date_begin'] . "&ndash;" . $contest['date_end'];
 // echo "<a href=\"" . $contest['url'] . "\" target=\"_blank\">Lue lisää &raquo;</a>";
 ?>
- 
+
 </p>
 
 <?php
@@ -188,7 +190,7 @@ else
 	echo "<p id=\"notification\">Osallistuminen ei ole nyt käynnissä, eikä tietoja voi muokata.</p>";
 }
 
-?> 
+?>
 
 <input type="hidden" name="contest_id" value="<?php echo @$editableData['contest_id']; ?>" />
 
@@ -250,11 +252,11 @@ foreach ($bird as $key => $arr)
 			echo "</div>\n<div class=\"col\">";
 		}
 		echo "<p class=\"$setClass\"><em class=\"sp\">" . $arr['fi'];
-		$vn = "species[" . $arr['abbr'] . "]";	
+		$vn = "species[" . $arr['abbr'] . "]";
 		echo "</em> <input type=\"text\" class=\"datepicker\" value=\""	. set_value($vn, date2Fin(@$editableData['species'][$arr['abbr']])) . "\" size=\"8\" data-ticked=\"";
-		
+
 		//has date -> ticked true / false
-		echo (@$editableData['species'][$arr['abbr']]) ? "true" : "false"; 
+		echo (@$editableData['species'][$arr['abbr']]) ? "true" : "false";
 		echo "\" readonly />";
 
 		//this field is actually submitted
