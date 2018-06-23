@@ -15,12 +15,12 @@ if (! empty($flash))
 }
 
 //voi vaatia korjaamista, selvitä toiminta. git cherry-pickin yhteydessä jäi epäselväksi
-+/*
-+if (! $this->ion_auth->logged_in())
-+{
-+	echo " <a href=\"" . site_url("/auth/login") . "\">Kirjaudu ensin sisään</a> osallistuaksesi.";
-+}
-+*/
+
+// if (! $this->ion_auth->logged_in())
+// {
+// 	echo " <a href=\"" . site_url("/auth/login") . "\">Kirjaudu ensin sisään</a> osallistuaksesi.";
+// }
+
 
 //echo "<pre>"; print_r ($participations); echo "</pre>"; // debug
 
@@ -45,7 +45,7 @@ if (! empty($participations))
 			<p><a href=\"" . site_url("participation/edit/" . $array['id']) . "\">" . $allContests[$array['contest_id']]['name'] . "</a><br /> " . $array['location'] . "<br /> " . $array['name'] . "</p>
 		</div>
 		";
-		
+
 		if ("published" == $allContests[$array['contest_id']]["status"])
 		{
 			$htmlPublished .= $temp;
@@ -67,7 +67,7 @@ if ($this->ion_auth->logged_in())
 	if (! empty($htmlPublished))
 	{
 		echo "<div class=\"participationsCol active\" id=\"active\">";
-		
+
 		// Published
 		echo "<h3>Käynnissä olevat osallistumiseni</h3>";
 		echo $htmlPublished;
@@ -126,7 +126,7 @@ foreach ($publishedContests as $rowNumber => $array)
 		<p class='infoURL'>Lisää tietoa osoitteesta <a href='" . @$array['url'] . "'>" . @$array['url'] . "</a></p>
 	</div>
 	";
-	
+
 	$helper[$array['id']] = @$array['name'];
 }
 echo "</div>";
@@ -146,7 +146,7 @@ foreach ($archivedContests as $rowNumber => $array)
 		<p class='infoURL'><a href='" . @$array['url'] . "'>" . @$array['url'] . "</a></p>
 	</div>
 	";
-	
+
 	$helper[$array['id']] = @$array['name'];
 }
 
@@ -160,7 +160,7 @@ if ($this->ion_auth->logged_in())
 	if (! empty($htmlOther))
 	{
 		echo "<div class=\"participationsCol passive\" id=\"passive\">";
-		
+
 		// Drafts and archived
 		echo "<h3>Päättyneet osallistumiseni</h3>";
 		echo $htmlOther;
@@ -175,7 +175,7 @@ if ($this->ion_auth->logged_in())
 ?>
 
 <p>
-Jos haluat perustaa uuden kisan, ota yhteyttä osoitteeseen 
+Jos haluat perustaa uuden kisan, ota yhteyttä osoitteeseen
 <script type="text/javascript">
 //<![CDATA[
 <!--
