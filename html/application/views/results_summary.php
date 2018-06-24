@@ -72,11 +72,11 @@ if (!empty($summary))
 						$row .= "<td>&nbsp;</td>";
 					}
 				}
-				
+
 				$row .= "	<td>" . $ticksTotal . "</td>";
 				$row .= "</tr>";
 			}
-			
+
 			// Print only rows with observation(s)
 			if ($ticksTotal > 0)
 			{
@@ -89,23 +89,23 @@ if (!empty($summary))
 		}
 
 		echo "</table>";
-		
+
 	}
 */
 	// ---------------------------------------------------------------------------------
 	// Kisaajat
-	
+
 //	echo "<pre>"; print_r ($contest); echo "</pre>"; // debug
 
 	echo "<ul>";
 	echo "	<li><strong><a href=\"" . site_url("/results/species/" . $contest['id']) . "\">Kisan lajiluettelo ja omat puutteet</a></strong></li>";
-	echo "	<li><strong>Pinnakertymä: <a href=\"" . site_url("/results/graph/" . $contest['id'] . "/50") . "\">Top 50</a> | <a href=\"" . site_url("/results/graph/" . $contest['id'] . "/1000") . "\">Kaikki</a></strong></li>"; // limit to 1000 = everyone
+	echo "	<li><strong>Pinnakertymä: <a href=\"" . site_url("/results/graph/" . $contest['id'] . "/10") . "\">Top 10</a> | <a href=\"" . site_url("/results/graph/" . $contest['id'] . "/1000") . "\">Kaikki</a></strong></li>"; // limit to 1000 = everyone
 	if (! empty($contest['comparison']))
 	{
 		echo "	<li><strong><a href=\"" . site_url("/results/comparison/" . $contest['id']) . "\">Oma lajimäärävertailu</a></strong></li>";
 	}
 	echo "</ul>";
-	
+
 	echo "<p>Klikkaamalla osallistujan nimeät näen hänen pinnalistansa. Klikkaamalla otsikkoriviä taulukon voi lajitella.</p>";
 
 	echo "<table class=\"resultTable tablesorter\" id=\"participantTable\">";
@@ -115,9 +115,9 @@ if (!empty($summary))
 	echo "	<th>Nimi</th>";
 	echo "	<th>Sijainti</th>";
 	echo "	<th>Pinnat</th>";
-	echo "	<th title=\"Osallistujan ilmoittama spontaanien lajien määrä.\">Spondet</th>";
+	echo "	<th title=\"Osallistujan ilmoittama spontaanien lajien määrä\">Spondet</th>";
 	echo "	<th title=\"Osallistujan kulkema matka kilometreinä\">km</th>";
-	echo "	<th title=\"Osallistujan retkeilemä aika tunteina..\">h</th>";
+	echo "	<th title=\"Osallistujan retkeilemä aika tunteina\">h</th>";
 	echo "</tr>";
 	echo "</thead>";
 	echo "<tbody>";
@@ -173,16 +173,16 @@ if (!empty($summary))
 		}
 
 		echo "</tr>";
-		
+
 		$previousSpeciesCount = $partArray['species_count'];
 	}
 
 	echo "</tbody>";
 	echo "</table>";
-	
+
 	echo "<div id=\"tickList\"></div>";
-	
-	
+
+
 
 }
 else
