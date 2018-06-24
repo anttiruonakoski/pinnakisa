@@ -117,6 +117,7 @@ $script = "
 
  </script>
 ";
+
 include "page_elements/header.php";
 ?>
 
@@ -134,14 +135,17 @@ echo " (<a href=\"" . site_url("results/summary") . "/" . $contest['id'] . "\">t
 <?php
 if (@$alreadyTakenPart)
 {
-	echo "<p id=\"alreadyParticipated\">Olet jo osallistunut tähän kisaan. Voit kuitenkin osallistua uudelleen toisella alueella, mikäli kisan säännöt sen sallivat.</p>";
+	echo "<p id=\"alreadyParticipated\">Olet jo osallistunut tähän kisaan. Voit kuitenkin osallistua uudelleen toisen henkilön puolesta tai toisella alueella, mikäli kisan säännöt sen sallivat.</p>";
 }
 ?>
 
 <p>
 <?php
-// echo "Kilpailuaika: " . $contest['date_begin'] . "&ndash;" . $contest['date_end'];
-// echo "<a href=\"" . $contest['url'] . "\" target=\"_blank\">Lue lisää &raquo;</a>";
+
+
+echo "Kilpailuaika: " . date2Fin($contest['date_begin']) . "&ndash;" . date2Fin($contest['date_end']);
+echo "<a href=\"" . $contest['url'] . "\" target=\"_blank\"> Lue lisää &raquo;</a>";
+
 ?>
 
 </p>
@@ -229,12 +233,14 @@ if (@$editableData['hours'] > 0 && @$editableData['species_count'] > 0)
 <?php
 // TODO: tämä elegantimmin, modelissa?
 $sponde = @$editableData['spontaneous'];
-if (0 == $sponde)
-{
-	$sponde = "";
-}
+
+// if ($sponde == "")
+// {
+// 	$sponde = null;
+// }
 
 ?>
+
 <input type="text" name="spontaneous" value="<?php echo $sponde; ?>" size="10" />
 
 <?php
