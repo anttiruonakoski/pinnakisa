@@ -6,14 +6,16 @@
  Yhteydenotot: webmaster@lly.fi
  --
 <?php
-echo "<a href=\"" . base_url("pinna-tietosuojaseloste.pdf") . "\">tietosuojaseloste</a>";
+echo "<a target=\"blank\" href=\"" . base_url("lly_pinnakisa_rekisteriseloste.html") . "\">tietosuojaseloste</a>";
 // DEBUG: print_r($userData);
 
 ?>
  --
  <a href="https://www.lly.fi/">Lapin lintutieteellinen yhdistys ry</a>
+
+ <!--
  --
-{elapsed_time} s
+ {elapsed_time} s -->
 
 <?php
 // Cannot be filtered; contains scripts
