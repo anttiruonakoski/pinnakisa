@@ -10,7 +10,7 @@ $bird[2]['sv'] = "Knölsvan";
 $bird[2]['en'] = "Mute Swan";
 */
 
-$speciesList = file_get_contents("species_list.csv");
+$speciesList = file_get_contents("species_list.tsv");
 $lines = explode("\n", $speciesList);
 
 $birds = Array();
@@ -40,7 +40,7 @@ foreach ($lines as $lineNro => $line) {
 }
 
 $json = json_encode($birds);
-file_put_contents("../backups/birds2.json", $json);
+file_put_contents("./birds.json", $json);
 
 print_r ($birds);
 
