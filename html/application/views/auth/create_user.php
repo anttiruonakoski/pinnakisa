@@ -38,6 +38,11 @@ include "application/views/page_elements/header.php";
             <?php echo form_input($password_confirm);?>
       </p>
 
+      <p id="user_terms">
+      Rekisteröitymällä pinnakisa-sovellukseen annat suostumuksen henkilötietojesi käsittelyyn.
+      Henkilötietoja käytetään pinnakisojen järjestämiseen ja tulosten julkaisemiseen. Tiedot ovat vain Lapin lintutieteellinen yhdistys ry:n käytössä, eikä niitä luovuteta mihinkään tarkoitukseen ulkopuolisille tahoille.
+      Osallistuja voi itse sovelluksessa tarkastaa henkilötietonsa, korjata ja poistaa ne.
+      </p>
 
 
       <p><?php echo form_submit('submit', lang('create_user_submit_btn'));?></p>

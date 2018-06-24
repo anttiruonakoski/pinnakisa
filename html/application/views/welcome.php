@@ -4,23 +4,25 @@ include "page_elements/header.php";
 ?>
 
 <h1>Pinnakisapalvelu</h1>
-<p style="margin-top: -10px;">Täällä voit osallistua erilaisiin pinnakisoihin.</p>
+<p style="margin-top: -10px;">Täällä voit osallistua erilaisiin pinnakisoihin.
 
 <?php
 
-$flash = $this->session->flashdata('login');
-if (! empty($flash))
-{
-	echo "<div id=\"infoMessage\">" . $flash . "</div>";
-}
-
-//voi vaatia korjaamista, selvitä toiminta. git cherry-pickin yhteydessä jäi epäselväksi
-
-// if (! $this->ion_auth->logged_in())
+// $flash = $this->session->flashdata('login');
+// if (! empty($flash))
 // {
-// 	echo " <a href=\"" . site_url("/auth/login") . "\">Kirjaudu ensin sisään</a> osallistuaksesi.";
+// 	echo "<div id=\"infoMessage\">" . $flash . "</div>";
 // }
 
+if (! $this->ion_auth->logged_in())
+{
+	echo " <a href=\"" . site_url("/auth/login") . "\"> Kirjaudu ensin sisään</a> osallistuaksesi.";
+}
+
+?>
+
+</p>
+<?php
 
 //echo "<pre>"; print_r ($participations); echo "</pre>"; // debug
 
@@ -115,7 +117,7 @@ foreach ($publishedContests as $rowNumber => $array)
 	}
 	else
 	{
-		echo "<p class=\"notLoggedIn\"><a href=\"" . site_url("/auth/login") . "\">Kirjaudu sisään</a> tai <a href=\"" . site_url("/auth/create_user") . "\">rekisteröidy</a> osallistuaksesi</p>";
+		// echo "<p class=\"notLoggedIn\"><a href=\"" . site_url("/auth/login") . "\">Kirjaudu sisään</a> tai <a href=\"" . site_url("/auth/create_user") . "\">rekisteröidy</a> osallistuaksesi</p>";
 
 	}
 
