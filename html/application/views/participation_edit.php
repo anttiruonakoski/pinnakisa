@@ -281,7 +281,7 @@ foreach ($bird as $key => $arr)
 
 		// Column breakpoints
 
-		if ("CHAMOR" == $arr['abbr'] || "ANTGUS" == $arr['abbr']) {
+		if ("CHAMOR" == $arr['abbr'] || "MOTFLA" == $arr['abbr']) {
 			echo "</div>\n<div class=\"col\">";
 		}
 

@@ -331,7 +331,7 @@
 3740	x	ANTGUS	Anthus gustavi	Tundrakirvinen	Tundrapiplärka	Pechora Pipit
 3750		ANTPRA	Anthus pratensis	Niittykirvinen	Ängspiplärka	Meadow Pipit
 3760		ANTCER	Anthus cervinus	Lapinkirvinen	Rödstrupig piplärka	Red-throated Pipit
-3770		ANTPET	Anthus petrosus	Luotokirvinen	Skärpiplärka	Eurasian Rock Pipit
+3770	x	ANTPET	Anthus petrosus	Luotokirvinen	Skärpiplärka	Eurasian Rock Pipit
 3780		MOTFLA	Motacilla flava	Keltavästäräkki	Gulärla	Yellow Wagtail
 3790	x	MOTCIT	Motacilla citreola	Sitruunavästäräkki	Citronärla	Citrine Wagtail
 3800		MOTCIN	Motacilla cinerea	Virtavästäräkki	Forsärla	Grey Wagtail
@@ -390,8 +390,8 @@
 4390	x	ACRAGR	Acrocephalus agricola	Kenttäkerttunen	Fältsångare	Paddyfield Warbler
 4400		ACRDUM	Acrocephalus dumetorum	Viitakerttunen	Busksångare	Blyth's Reed Warbler
 4410	x	ACRRIS	Acrocephalus palustris	Luhtakerttunen	Kärrsångare	Marsh Warbler
-4420		ACRSCI	Acrocephalus scirpaceus	Rytikerttunen	Rörsångare	Eurasian Reed Warbler
-4430		ACRARU	Acrocephalus arundinaceus	Rastaskerttunen	Trastsångare	Great Reed Warbler
+4420	x	ACRSCI	Acrocephalus scirpaceus	Rytikerttunen	Rörsångare	Eurasian Reed Warbler
+4430	x	ACRARU	Acrocephalus arundinaceus	Rastaskerttunen	Trastsångare	Great Reed Warbler
 4440	x	SYLUND	Sylvia undata	Ruskokerttu	Provencesångare	Dartford Warbler
 4450	x	SYLCAN	Sylvia cantillans	Rusorintakerttu	Rödstrupig sångare	Subalpine Warbler
 4460	x	SYLMEL	Sylvia melanocephala	Samettipääkerttu	Sammetshätta	Sardinian Warbler
