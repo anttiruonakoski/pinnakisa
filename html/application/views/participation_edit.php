@@ -174,7 +174,7 @@ if ("published" == $contest['status'])
 //	echo form_open("foo", array('id' => 'participation-form'));
 
 	echo "<form action method=\"post\" accept-charset=\"utf-8\" id=\"participation-form\"> ";
-	$submitButton = "<p><input type=\"submit\" class=\"submit-button\" value=\"Tallenna\"  disabled=\"disabled\" /></p>";
+	$submitButton = "<input type=\"submit\" class=\"submit-button\" value=\"Tallenna\"  disabled=\"disabled\" />";
 }
 elseif ("archived" == $contest['status'])
 {
@@ -239,7 +239,15 @@ if (0 == $sponde)
 
 <?php
 
-echo $submitButton;
+// Show deletion link only if participation already saved
+
+echo "<div><p>$submitButton";
+
+if (@$editableData['id'])
+{
+	echo "<a href=\"" . site_url("participation/delete") . "/" . $editableData['id'] . "\" id=\"deleteParticipation\";'>Poista osallistuminen</a>";
+}
+echo "</p></div>";
 
 echo "<h4 id=\"participationTotal\">Havaitsemasi lajit ";
 if (isset($editableData['species_count']))
@@ -303,6 +311,7 @@ echo "</div>";
 // Species list ends
 
 echo "<input type=\"hidden\" name=\"form_loaded\" id=\"form_loaded\" value=\"true\">";
+
 echo $submitButton;
 
 

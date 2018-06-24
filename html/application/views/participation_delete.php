@@ -1,6 +1,6 @@
 <?php
 
-$title = "Poista osallistuminen - 100 lajia";
+$title = "Poista osallistuminen";
 include "page_elements/header.php";
 ?>
 

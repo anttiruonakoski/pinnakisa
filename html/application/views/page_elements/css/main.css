@@ -382,6 +382,9 @@ input[type="submit"]
 {
 	font-size: 150%;
 	margin: 0.5em 0;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	margin-right: 2em;
+	border: 0;
 	border-radius: 5px;
 }
 
@@ -475,15 +478,24 @@ h4
 #deleteParticipation {
 	background-color: #a00;
 	color: #fff;
-	padding: 3px;
 	text-decoration: none;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	border: 0;
+	border-radius: 5px;
 }
 
 #cancel {
-	background-color: #060;
+	background-color: #508e35;
 	color: #fff;
-	padding: 3px;
 	text-decoration: none;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	border: 0;
+	border-radius: 5px;
+}
+
+.inline-p {
+     //for buttons
+     display: inline;
 }
 
 
