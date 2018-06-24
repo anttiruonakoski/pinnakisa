@@ -222,7 +222,7 @@ class Auth extends CI_Controller {
                 $this->session->set_flashdata('message', $this->ion_auth->messages());
                 redirect("auth/forgot_password", 'refresh');
             }
-            
+
 			//run the forgotten password method to email an activation code to the user
 			$forgotten = $this->ion_auth->forgotten_password($identity->{$this->config->item('identity', 'ion_auth')});
 
@@ -335,7 +335,7 @@ class Auth extends CI_Controller {
 	function activate($id, $code=false)
 	{
 		$this->check_rights($id);
-		
+
 		if ($code !== false)
 		{
 			$activation = $this->ion_auth->activate($id, $code);
@@ -363,7 +363,7 @@ class Auth extends CI_Controller {
 	function deactivate($id = NULL)
 	{
 		$this->check_rights($id);
-		
+
 		$id = $this->config->item('use_mongodb', 'ion_auth') ? (string) $id : (int) $id;
 
 		$this->load->library('form_validation');
@@ -429,7 +429,7 @@ class Auth extends CI_Controller {
 				'first_name' => $this->input->post('first_name'),
 				'last_name'  => $this->input->post('last_name'),
 			);
-			
+
 		}
 		if ($this->form_validation->run() == true && $this->ion_auth->register($username, $password, $email, $additional_data))
 		{
@@ -533,7 +533,7 @@ class Auth extends CI_Controller {
 			}
 			*/
 
-			
+
 			if ($this->form_validation->run() === TRUE)
 			{
 				$password = $this->input->post('password');
@@ -545,19 +545,19 @@ class Auth extends CI_Controller {
 						'last_name'		=> $this->input->post('last_name'),
 						'email'  		=> $this->input->post('email'),
 					);
-					
+
 					$this->ion_auth->update($user->id, $data);
 
 					//check to see if we are creating the user
 					//redirect them back to the admin page
-					
+
 					$this->session->set_flashdata('message', "Muutokset tallennettu.");
 				}
 				else
 				{
 					$this->session->set_flashdata('message', "Salasana ei täsmää, tarkista salasanasi.");
 				}
-				
+
 				redirect("auth/edit_user/$id", 'refresh');
 			}
 		}

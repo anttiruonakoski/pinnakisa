@@ -135,7 +135,7 @@ echo " (<a href=\"" . site_url("results/summary") . "/" . $contest['id'] . "\">t
 <?php
 if (@$alreadyTakenPart)
 {
-	echo "<p id=\"alreadyParticipated\">Olet jo osallistunut tähän kisaan. Voit kuitenkin osallistua uudelleen toisen henkilön puolesta tai toisella alueella, mikäli kisan säännöt sen sallivat.</p>";
+	echo "<p id=\"alreadyParticipated\">Olet jo osallistunut tähän kisaan. Voit kuitenkin lähettää osallistumisen toisen henkilön puolesta tai osallistua uudelleen toisella alueella, mikäli kisan säännöt sen sallivat.</p>";
 }
 ?>
 
