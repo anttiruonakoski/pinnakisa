@@ -1,3 +1,4 @@
+Customization and configuration for publishing contests in BirdLife Lapland (Lapin lintutieteellinen yhdistys ry)
 
 Pinnakisapalvelu
 ================

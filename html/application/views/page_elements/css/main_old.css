@@ -93,16 +93,11 @@ a:visited
 		color: #003388;
 }
 
-.inactiveLink {
-   pointer-events: none;
-   cursor: default;
-}
-
 #toolNavi
 {
-	border-top: 3px solid #127fb4;
-	background-color: #5b98c7; /* BL light blue */
-	color: #fff;
+	border-top: 3px solid #555;
+	background-color: #B7F300;
+	color: #333;
 }
 
 .development #toolNavi
@@ -111,18 +106,15 @@ a:visited
 }
 
 #toolNavi a:link,
-#toolNavi a:visited,
-#footer a:link,
-#footer a:visited
+#toolNavi a:visited
 {
 	color: #eee;
+		color: #333;
 }
 
 #footer
 {
-	border-top: 3px solid #127fb4;
-	background-color: #5b98c7; /* BL light blue */
-	color: #fff;
+	border-top: 3px solid #B7F300;
 }
 
 
@@ -137,8 +129,7 @@ table th
 
 input[type="submit"]
 {
-	background-color: #508e35;
-	color: #fff;
+	background-color: #B7F300;
 }
 
 
@@ -170,8 +161,6 @@ input[type="submit"]
 
 .notLoggedIn {
 	font-weight: bold;
-	background-color: rgb(195, 235, 248); /* very light BL twitter button blue*/
-	padding: 3px;
 }
 
 /* ADMIN */
@@ -191,7 +180,7 @@ input[type="submit"]
 /*
 .contest
 {
-	border-top: 3px solid #508e35;
+	border-top: 3px solid #B7F300;
 	background-color: #f1f1f1;
 		background-color: #e1e1e1;
 }
@@ -199,7 +188,7 @@ input[type="submit"]
 
 .active .participation
 {
-	background-color: #C1D9B6;
+	background-color: #FFF873;
 }
 
 .passive .participation
@@ -209,19 +198,14 @@ input[type="submit"]
 
 
 
-.takePart {
-	background-color: #508e35;
-	/*
+.takePart
+{
+	background-color: #B7F300;
+	border: 3px solid #D7F970;
 		border-right: 2px solid #9c9c9c;
 		border-bottom: 2px solid #9c9c9c;
 		border-left: 2px solid #f0f0f0;
 		border-top: 2px solid #f0f0f0;
-		*/
-}
-
-.takePart a:link,
-.takePart a:visited {
-		color: #fff;
 }
 
 #speciesList h5
@@ -342,11 +326,11 @@ h3
 
 .takePart {
 		font-size: 130%;
-	width: 11em;
-/*	float: right; */
+	width: 100px;
+	float: right;
 	margin: 10px;
 	text-align: center;
-/*			border-radius: 5px; */
+			border-radius: 5px;
 }
 
 .takePart a {
@@ -398,9 +382,7 @@ input[type="submit"]
 {
 	font-size: 150%;
 	margin: 0.5em 0;
-	padding: 0.2em;
-	border: 0;
-/*	border-radius: 5px; */
+	border-radius: 5px;
 }
 
 .required:after
@@ -459,6 +441,11 @@ h4
 	TOP: 1.6em;
 }
 
+#participantTable td
+{
+	cursor: pointer;
+}
+
 #participant
 {
 	font-weight: normal;
@@ -504,6 +491,7 @@ h4
 Specieslist
 */
 
+
 #speciesList {
 	display: flex;
 	flex-direction: row;
@@ -512,6 +500,7 @@ Specieslist
 
 #speciesList .col {
 	padding-right: 1em;
+
 }
 
 
@@ -520,7 +509,6 @@ Specieslist
 		display: block;
 	}
 }
-
 
 #speciesList p {
 	margin: 0 0 0.2em 0;
@@ -547,8 +535,6 @@ Specieslist
 #speciesList .col h5:first-child {
 	margin-top: 0;
 }
-
-
 
 #speciesList em {
 	margin-right: 0.5em;
@@ -642,8 +628,18 @@ Specieslist
 Media queries
 */
 
-@media only screen and (max-width: 35em)
+@media only screen and (max-width: 45em)
 {
+
+	#speciesList {
+		display: block;
+	}
+
+	h1
+	{
+/*		color: red; */
+	}
+
 	#speciesList p
 	{
 		white-space: nowrap;

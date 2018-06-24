@@ -175,25 +175,7 @@ if ($this->ion_auth->logged_in())
 ?>
 
 <p>
-Jos haluat perustaa uuden kisan, ota yhteyttä osoitteeseen
-<script type="text/javascript">
-//<![CDATA[
-<!--
-var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
-"\\\\,l=x.length;for(i=0;i<l;i++){if(i==52)y+=i;y%=127;o+=String.fromCharCod" +
-"e(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\PZUBU\\\\\\\\\\\\\\\\TO\\\\\\" +
-"\\022JLV4$.-lgz&h!8.*p\\\\\\\\022m=0;? :l<1*;/\\\\\\\\034),6\\\\\\\\016\\\\" +
-"\\\\006\\\\\\\\003M\\\\\\\\002\\\\\\\\014:E=jvTMG\\\\\\\\036x\\\\\\\\007z\\" +
-"\\\\\\005\\\\\\\\026BCXMYn[BX\\\\\\\\\\\\\\\\TU\\\\\\\\033P^\\\\\\\\004\\\\" +
-"\\\\026[\\\\\\\\005\\\\\\\\036\\\\\\\\024\\\\\\\\005\\\\\\\\017{\\\"\\\\,52" +
-")\\\"(f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hct" +
-"ac};l=+l;x=+x{yrt{)35=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o" +
-",i rav{)x(f noitcnuf\")"                                                     ;
-while(x=eval(x));
-//-->
-//]]>
-</script>
+Jos haluat perustaa uuden kisan, ota yhteyttä osoitteeseen <a class="inactiveLink" href="">web<span style="display:none">foo</span>master@lly.fi</a>
 </p>
 
 <?php
@@ -220,6 +202,10 @@ if ($this->ion_auth->logged_in())
 	}
 }
 ?>
+
+<p id="logos">
+   <a href="https://www.lly.fi/"><img src="<?php echo base_url(); ?>application/views/page_elements/lly_logo.gif"></a>
+</p>
 
 <?php
 include "page_elements/footer.php";
