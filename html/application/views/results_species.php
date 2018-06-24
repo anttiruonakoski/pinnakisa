@@ -25,7 +25,7 @@ if (!empty($species))
 
 	$rank = 1;
 	$previousObsCount = 0;
-	
+
 	foreach ($species as $speciesFinnish => $arr)
 	{
 		// Row begins
@@ -47,10 +47,10 @@ if (!empty($species))
 		{
 			echo "<td>$rank.</td>";
 		}
-		
+
 		// Species name
 		echo "	<td>" . htmlspecialchars($speciesFinnish, ENT_COMPAT, 'UTF-8') . "</td>";
-		
+
 		// Observation count & percentage
 		if (1 == $arr['count'])
 		{
@@ -62,16 +62,16 @@ if (!empty($species))
 			echo "	<td>" . htmlspecialchars($arr['count'], ENT_COMPAT, 'UTF-8') . "</td>";
 			echo "	<td>" . htmlspecialchars(round(($arr['count'] / $participantCount * 100), 0), ENT_COMPAT, 'UTF-8') . " %</td>";
 		}
-		
+
 		// Row ends
 		echo "</tr>";
-		
+
 		// Row data to memory
 		$previousObsCount = $arr['count'];
 		$rank++;
 	}
-	
-	
+
+
 	echo "</table>";
 
 	if ($this->ion_auth->logged_in() && ! empty($mySpeciesAbbrs))
@@ -84,8 +84,8 @@ if (!empty($species))
 
 		// Tiira-haku-string
 	//	$tiiraString = $tiiraString . "%2C+" . urlencode($speciesFinnish); // controlleriin, lyhenteillä
-		
-		echo "<p><a href=\"http://tiira.fi/index.php?toiminto=29&laji=" . htmlspecialchars($tiiraString, ENT_COMPAT, 'UTF-8') . "&alue=0&kunta=&kerutoim=1&order1=pvm1&suunta1=desc&order2=syst_ord&suunta2=asc&limit=100&tilat=kaikki&yksmaara=&negahaku=on&paivamaara=2&paivamaara_a=&paivamaara_l=&aikaalue1=&aikaalue2=&haku=Hae\" target=\"_blank\">Tiira-haku puuttuvista lajeista</a> (kirjaudu ensin Tiiraan)</p>";
+
+		// echo "<p><a href=\"http://tiira.fi/index.php?toiminto=29&laji=" . htmlspecialchars($tiiraString, ENT_COMPAT, 'UTF-8') . "&alue=0&kunta=&kerutoim=1&order1=pvm1&suunta1=desc&order2=syst_ord&suunta2=asc&limit=100&tilat=kaikki&yksmaara=&negahaku=on&paivamaara=2&paivamaara_a=&paivamaara_l=&aikaalue1=&aikaalue2=&haku=Hae\" target=\"_blank\">Tiira-haku puuttuvista lajeista</a> (kirjaudu ensin Tiiraan)</p>";
 	}
 
 
