@@ -13,7 +13,7 @@ if (! empty($participation))
 	echo "<tr><th>Laji</th><th>Päivä</th></tr>\n";
 	foreach ($speciesList as $abbr => $date)
 	{
-			echo "<tr><td>" . htmlspecialchars($abbr, ENT_COMPAT, 'UTF-8') . "</td>\n<td>" . htmlspecialchars($date, ENT_COMPAT, 'UTF-8') . "</td>\n</tr>\n";
+			echo "<tr><td>" . htmlspecialchars($abbr, ENT_COMPAT, 'UTF-8') . "</td>\n<td>" . htmlspecialchars(date2Fin($date), ENT_COMPAT, 'UTF-8') . "</td>\n</tr>\n";
 	}
 	echo "</table>\n";
 }
