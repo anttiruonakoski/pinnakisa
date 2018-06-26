@@ -55,9 +55,6 @@ Parannusmahdollisuuksia:
 SHOULD:
 * Pinnojen poistotoiminto admineille
 * Yhteystietojen katselutoiminto admineille
-* Osallistumisen poisto / roskakorittaminen
-* Estetään tallennus päivämäärillä, jotka ovat kisa-ajan ulkopuolella
-* Kisan tietoihin päivämäärät näkyviin suomalaisessa formaatissa p(p).k(k).vvvv
 * Käyttäjälle jonkinlainen mahdollisuus piilottaa rarit tallennuslomakkeelta
 * Tekstimuutos: Väliaikaisesti suljettu -> Tunnus on suljettu väliaikaisesti liian monen epäonnistumisen kirjautumisen takia. Yritä uudelleen X minuutin kuluttua.
 * Lisätietokenttä, joka näkyy kaikille osallistujalistassa, mutta ei liian hallitsevana
@@ -77,7 +74,6 @@ Asentaessa muista
 jos käytät Dockeria
 - tietokantatiedot env-tiedostoon
 
-
 ### Asennus...
 
 admin
@@ -85,6 +81,3 @@ admin
 n...3
 
 user nro 1:n voi deletoida
-
-miten sallitaan kirjoitus backups-kansioon? nyt dockerfile:n chmod ei toimi, piti tehdä käsin containerissa
-hawk
