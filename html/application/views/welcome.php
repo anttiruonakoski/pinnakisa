@@ -144,7 +144,7 @@ foreach ($archivedContests as $rowNumber => $array)
 	echo "<div class=\"contest\">";
 	echo "<h4>" . @$array['name'] . "</h4>
 		<p class='results'><a href=\"" . site_url("results/summary/" . $array['id']) . "\">Tulospalvelu</a></p>
-		<p class='contestTime'>Kilpailuaika: " . @$array['date_begin'] . " &ndash; " . @$array['date_end'] . "</p>
+		<p class='contestTime'>Kilpailuaika: " . date2Fin(@$array['date_begin']) . " &ndash; " . date2Fin(@$array['date_end']) . "</p>
 		<p class='infoURL'><a href='" . @$array['url'] . "'>" . @$array['url'] . "</a></p>
 	</div>
 	";
