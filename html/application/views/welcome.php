@@ -3,8 +3,8 @@ $title = "Pinnakisa";
 include "page_elements/header.php";
 ?>
 
-<h1>Pinnakisapalvelu</h1>
-<p style="margin-top: -10px;">Täällä voit osallistua erilaisiin pinnakisoihin.
+<h1>Lapin lintutieteellisen yhdistyksen pinnakisapalvelu</h1>
+<p style="margin-top: -10px;">Täällä voit osallistua moniin LLY:n pinnakisoihin.
 
 <?php
 
