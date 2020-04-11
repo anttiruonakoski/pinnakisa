@@ -10,7 +10,7 @@ $bird[2]['sv'] = "Knölsvan";
 $bird[2]['en'] = "Mute Swan";
 */
 
-$speciesList = file_get_contents("species_list.tsv");
+$speciesList = file_get_contents("species_list_2020.tsv");
 $lines = explode("\n", $speciesList);
 
 $birds = Array();
