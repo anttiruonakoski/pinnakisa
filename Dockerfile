@@ -1,7 +1,7 @@
 # Build this using following commands
 # docker build -t pinnakisa-dev:latest .
 
-FROM php:7.2-apache
+FROM php:7.4-apache
 
 WORKDIR /var/www/html/
 
