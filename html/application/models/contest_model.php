@@ -91,11 +91,11 @@ class Contest_model extends CI_Model {
 		}
 		elseif ($status == "published")
 		{
-			$query = $this->db->get_where('kisa_contests', array('status' => 'published'));
+			$query = $this->db->order_by('date_end', 'ASC')->get_where('kisa_contests', array('status' => 'published'));
 		}
 		elseif ($status == "archived")
 		{
-			$query = $this->db->get_where('kisa_contests', array('status' => 'archived'));
+			$query = $this->db->order_by('date_end', 'DESC')->get_where('kisa_contests', array('status' => 'archived'));
 		}
 		
 		if (! isset($query))
