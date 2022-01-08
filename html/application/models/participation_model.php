@@ -136,7 +136,7 @@ class Participation_model extends CI_Model {
 	public function my_listing()
 	{
 		$userData = $this->ion_auth->user()->row();
-		$query = $this->db->get_where('kisa_participations', array('meta_edited_user' => $userData->id)); // based on last edited user
+		$query = $this->db->order_by('meta_edited', 'DESC')->get_where('kisa_participations', array('meta_edited_user' => $userData->id)); // based on last edited user
 
 		if (! isset($query))
 		{
