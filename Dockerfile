@@ -1,7 +1,13 @@
 # Build this using following commands
 # docker build -t pinnakisa-dev:latest .
 
-FROM php:7.4-apache
+FROM php:8.1-apache
+
+# Use the default production configuration
+RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+# catch E_DEPRECATED messages in Apache log
+RUN echo "logLevel warn php:info" > /etc/apache2/conf-available/mpm_debug.conf
+RUN a2enconf mpm_debug.conf
 
 WORKDIR /var/www/html/
 
