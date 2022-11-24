@@ -26,6 +26,17 @@ class Results_model extends CI_Model {
 		
 		$resultArray = $query->result_array();
 		
+		// Poista tuloksista, jos lajeja ei ole , mutta spondet on merkitty. estetään väärinkäyttö.
+		$resultArray = array_filter($resultArray, function($v) {
+			if (intval($v['species_count']) == 0 && !is_null($v['spontaneous']) ) {
+				return false;
+			}
+			return true;
+		});
+
+		/* var_dump($resultArray);
+		exit(1); */
+
 		// Sort by species_count
 		usort($resultArray, array("Results_model", "sortBySpeciesCount"));
 		
