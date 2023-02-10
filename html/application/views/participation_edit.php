@@ -5,6 +5,7 @@ $dateBeginParts = explode("-", $contest['date_begin']);
 $dateBeginJS = "new Date(" . $dateBeginParts[0] . "," . ($dateBeginParts[1] - 1) . "," . $dateBeginParts[2] . ")";
 $dateEndParts = explode("-", $contest['date_end']);
 $dateEndJS = "new Date(" . $dateEndParts[0] . "," . ($dateEndParts[1] - 1) . "," . $dateEndParts[2] . ")";
+$todayJS = "new Date() < ";
 
 //echo "<pre>"; print_r ($contest); echo "</pre>"; // debug
 
@@ -85,14 +86,14 @@ $script = "
 
 		// Enable submit button
 		$('.submit-button').prop('disabled', false);
-
+		dateMax = " . $todayJS . $dateEndJS . " ? '0' : " . $dateEndJS . "; 
 		// Initialize datepickers and create alternate iso-8601-format date format field for every datepicker. Finnish format is used for display. Iso-formatted dates are used for data storage.
 		// Clicking datepicker changes css only when any date is selected.
 		$('.datepicker').each(function() {
 	      $(this).datepicker({
 	    	dateFormat: 'd.m.yy',
 	      	minDate: ". $dateBeginJS .",
-	      	maxDate: ". $dateEndJS .",
+	      	maxDate: dateMax,
 	      	altFormat: 'yy-mm-dd',
 	        altField: $(this).parent().find('.iso-8601-format'),
 	        onSelect: function() {
