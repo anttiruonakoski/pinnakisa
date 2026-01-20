@@ -47,3 +47,10 @@ env/*
 # html/*
 # mysqldump/*
 
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
