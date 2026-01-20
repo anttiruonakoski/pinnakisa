@@ -1,0 +1,517 @@
+10		Lahko	Anseriformes	Sorsalinnut				
+20		OXYJAM	Oxyura jamaicensis	Kuparisorsa	Amerikansk kopparand	Ruddy Duck
+30		CYGOLO	Cygnus olor	Kyhmyjoutsen	Knölsvan	Mute Swan
+40		CYGCOL	Cygnus columbianus	Pikkujoutsen	Mindre sångsvan	Tundra Swan
+50		CYGCYG	Cygnus cygnus	Laulujoutsen	Sångsvan	Whooper Swan
+60		BRABER	Branta bernicla	Sepelhanhi	Prutgås	Brant Goose
+70		BRARUF	Branta ruficollis	Punakaulahanhi	Rödhalsad gås	Red-breasted Goose
+80		BRACAN	Branta canadensis	Kanadanhanhi	Kanadagås	Canada Goose
+90		BRALEU	Branta leucopsis	Valkoposkihanhi	Vitkindad gås	Barnacle Goose
+100		BRAHUT	Branta hutchinsii	Pikkukanadanhanhi	Polargås	Cackling Goose
+110		ANSIND	Anser indicus	Tiibetinhanhi	Stripgås	Bar-headed Goose
+120		ANSROS	Anser rossii	Eskimohanhi	Dvärgsnögås	Ross's Goose
+130		ANSANS	Anser anser	Merihanhi	Grågås	Greylag Goose
+140		ANSERY	Anser erythropus	Kiljuhanhi	Fjällgås	Lesser White-fronted Goose
+150		ANSALB	Anser albifrons	Tundrahanhi	Bläsgås	Greater White-fronted Goose
+160		ANSSER	Anser serrirostris	Tundrametsähanhi	Tundragås	Tundra Bean Goose
+170		ANSBRA	Anser brachyrhynchus	Lyhytnokkahanhi	Spetsbergsgås	Pink-footed Goose
+180		ANSLIS	Anser fabalis	Taigametsähanhi	Skogsgås	Taiga Bean Goose
+190		AIXGAL	Aix galericulata	Mandariinisorsa	Mandarinand	Mandarin Duck
+200		TADTAD	Tadorna tadorna	Ristisorsa	Gravand	Common Shelduck
+210		TADFER	Tadorna ferruginea	Ruostesorsa	Rostand	Ruddy Shelduck
+220		CLAHYE	Clangula hyemalis	Alli	Alfågel	Long-tailed Duck
+230		POLSTE	Polysticta stelleri	Allihaahka	Alförrädare	Steller's Eider
+240		SOMSPE	Somateria spectabilis	Kyhmyhaahka	Praktejder	King Eider
+250		SOMMOL	Somateria mollissima	Haahka	Ejder	Common Eider
+260		HISHIS	Histrionicus histrionicus	Virta-alli	Strömand	Harlequin Duck
+270		MELNIG	Melanitta nigra	Mustalintu	Sjöorre	Common Scoter
+280		MELAME	Melanitta americana	Amerikanmustalintu	Amerikansk sjöorre	Black Scoter
+290		MELPER	Melanitta perspicillata	Pilkkaniska	Vitnackad svärta	Surf Scoter
+300		MELFUS	Melanitta fusca	Pilkkasiipi	Svärta	Velvet Scoter
+310		MELDEG	Melanitta deglandi	Amerikanpilkkasiipi	Amerikansk knölsvärta	White-winged Scoter
+320		MELSTE	Melanitta stejnegeri	Siperianpilkkasiipi	Sibirisk knölsvärta	Stejneger's Scoter
+330		BUCCLA	Bucephala clangula	Telkkä	Knipa	Common Goldeneye
+340		MERALB	Mergellus albellus	Uivelo	Salskrake	Smew
+350		MERSER	Mergus serrator	Tukkakoskelo	Småskrake	Red-breasted Merganser
+360		MERMER	Mergus merganser	Isokoskelo	Storskrake	Common Merganser
+370		NETRUF	Netta rufina	Punapäänarsku	Rödhuvad dykand	Red-crested Pochard
+380		AYTNYR	Aythya nyroca	Ruskosotka	Vitögd dykand	Ferruginous Duck
+390		AYTFER	Aythya ferina	Punasotka	Brunand	Common Pochard
+400		AYTCOL	Aythya collaris	Amerikantukkasotka	Ringand	Ring-necked Duck
+410		AYTFUL	Aythya fuligula	Tukkasotka	Vigg	Tufted Duck
+420		AYTAFF	Aythya affinis	Pikkulapasotka	Mindre bergand	Lesser Scaup
+430		AYTMAR	Aythya marila	Lapasotka	Bergand	Greater Scaup
+440		SIBFOR	Sibirionetta formosa	Siperiantavi	Gulkindad kricka	Baikal Teal
+450		SPAQUE	Spatula querquedula	Heinätavi	Årta	Garganey
+460		SPADIS	Spatula discors	Sinisiipitavi	Blåvingad årta	Blue-winged Teal
+470		SPACLY	Spatula clypeata	Lapasorsa	Skedand	Northern Shoveler
+480		MARSTR	Mareca strepera	Harmaasorsa	Snatterand	Gadwall
+490		MARPEN	Mareca penelope	Haapana	Bläsand	Eurasian Wigeon
+500		MARAME	Mareca americana	Amerikanhaapana	Amerikansk bläsand	American Wigeon
+510		ANAPLA	Anas platyrhynchos	Sinisorsa	Gräsand	Mallard
+520		ANARUB	Anas rubripes	Nokisorsa	Svartand	American Black Duck
+530		ANAACU	Anas acuta	Jouhisorsa	Stjärtand	Northern Pintail
+540		ANACRE	Anas crecca	Tavi	Kricka	Green-winged Teal
+550		Lahko	Galliformes	Kanalinnut				
+560		TETBON	Tetrastes bonasia	Pyy	Järpe	Hazel Grouse
+570		LAGMUT	Lagopus muta	Kiiruna	Fjällripa	Rock Ptarmigan
+580		LAGLAG	Lagopus lagopus	Riekko	Dalripa	Willow Ptarmigan
+590		TETURO	Tetrao urogallus	Metso	Tjäder	Western Capercaillie
+600		LYRTET	Lyrurus tetrix	Teeri	Orre	Black Grouse
+610		PERPER	Perdix perdix	Peltopyy	Rapphöna	Grey Partridge
+620		PHACOL	Phasianus colchicus	Fasaani	Fasan	Common Pheasant
+630		COTCOT	Coturnix coturnix	Viiriäinen	Vaktel	Common Quail
+640		Lahko	Podicipediformes	Uikkulinnut				
+650		TACRUF	Tachybaptus ruficollis	Pikku-uikku	Smådopping	Little Grebe
+660		PODAUR	Podiceps auritus	Mustakurkku-uikku	Svarthakedopping	Horned Grebe
+670		PODGRI	Podiceps grisegena	Härkälintu	Gråhakedopping	Red-necked Grebe
+680		PODCRI	Podiceps cristatus	Silkkiuikku	Skäggdopping	Great Crested Grebe
+690		PODNIG	Podiceps nigricollis	Mustakaulauikku	Svarthalsad dopping	Black-necked Grebe
+700		Lahko	Otidiformes	Trappilinnut				
+710		OTITAR	Otis tarda	Isotrappi	Stortrapp	Great Bustard
+720		CHLMAC	Chlamydotis macqueenii	Idänkaulustrappi	Kragtrapp	Asian Houbara
+730		TETTET	Tetrax tetrax	Pikkutrappi	Småtrapp	Little Bustard
+740		Lahko	Cuculiformes	Käkilinnut				
+750		CLAGLA	Clamator glandarius	Harakkakäki	Skatgök	Great Spotted Cuckoo
+760		CUCCAN	Cuculus canorus	Käki	Gök	Common Cuckoo
+770		CUCOPT	Cuculus optatus	Idänkäki	Tajgagök	Oriental Cuckoo
+780		Lahko	Pteroclidiformes	Hietakanalinnut				
+790		SYRPAR	Syrrhaptes paradoxus	Arokyyhky	Stäppflyghöna	Pallas's Sandgrouse
+800		Lahko	Columbiformes	Kyyhkylinnut				
+810		STRORI	Streptopelia orientalis	Idänturturikyyhky	Större turturduva	Oriental Turtle Dove
+820		STRTUR	Streptopelia turtur	Turturikyyhky	Turturduva	European Turtle Dove
+830		STRDEC	Streptopelia decaocto	Turkinkyyhky	Turkduva	Eurasian Collared Dove
+840		COLPAL	Columba palumbus	Sepelkyyhky	Ringduva	Common Wood Pigeon
+850		COLLIV	Columba livia	Kesykyyhky	Tamduva	Feral Pigeon
+860		COLOEN	Columba oenas	Uuttukyyhky	Skogsduva	Stock Dove
+870		Lahko	Gruiformes	Kurkilinnut				
+880		ANTCAN	Antigone canadensis	Hietakurki	Prärietrana	Sandhill Crane
+890		GRUVIR	Grus virgo	Neitokurki	Jungfrutrana	Demoiselle Crane
+900		GRUGRU	Grus grus	Kurki	Trana	Common Crane
+910		RALAQU	Rallus aquaticus	Luhtakana	Vattenrall	Water Rail
+920		CRECRE	Crex crex	Ruisrääkkä	Kornknarr	Corn Crake
+930		PORPOR	Porzana porzana	Luhtahuitti	Småfläckig sumphöna	Spotted Crake
+940		GALCHL	Gallinula chloropus	Liejukana	Rörhöna	Common Moorhen
+950		FULATR	Fulica atra	Nokikana	Sothöna	Eurasian Coot
+960		PORALL	Porphyrio alleni	Kurnuliejukana	Mindre sultanhöna	Allen's Gallinule
+970		ZAPPAR	Zapornia parva	Pikkuhuitti	Mindre sumphöna	Little Crake
+980		ZAPPUS	Zapornia pusilla	Kääpiöhuitti	Dvärgsumphöna	Baillon's Crake
+990		Lahko	Charadriiformes	Rantalinnut				
+1000		BUROED	Burhinus oedicnemus	Paksujalka	Tjockfot	Eurasian Stone-curlew
+1010		RECAVO	Recurvirostra avosetta	Avosetti	Skärfläcka	Pied Avocet
+1020		HIMHIM	Himantopus himantopus	Pitkäjalka	Styltlöpare	Black-winged Stilt
+1030		HAEOST	Haematopus ostralegus	Meriharakka	Strandskata	Eurasian Oystercatcher
+1040		PLUSQU	Pluvialis squatarola	Tundrakurmitsa	Kustpipare	Grey Plover
+1050		PLUAPR	Pluvialis apricaria	Kapustarinta	Ljungpipare	European Golden Plover
+1060		PLUDOM	Pluvialis dominica	Amerikankurmitsa	Amerikansk tundrapipare	American Golden Plover
+1070		PLUFUL	Pluvialis fulva	Siperiankurmitsa	Sibirisk tundrapipare	Pacific Golden Plover
+1080		EUDMOR	Eudromias morinellus	Keräkurmitsa	Fjällpipare	Eurasian Dotterel
+1090		CHAHIA	Charadrius hiaticula	Tylli	Större strandpipare	Common Ringed Plover
+1100		THIDUB	Thinornis dubius	Pikkutylli	Mindre strandpipare	Little Ringed Plover
+1110		VANVAN	Vanellus vanellus	Töyhtöhyyppä	Tofsvipa	Northern Lapwing
+1120		VANGRE	Vanellus gregarius	Arohyyppä	Stäppvipa	Sociable Lapwing
+1130		VANLEU	Vanellus leucurus	Suohyyppä	Sumpvipa	White-tailed Lapwing
+1140		ANAASI	Anarhynchus asiaticus	Kaspiantylli	Kaspisk pipare	Caspian Plover
+1150		ANAVER	Anarhynchus veredus	Gobintylli	Orientpipare	Oriental Plover
+1160		ANAATR	Anarhynchus atrifrons	Ylänkötylli	Tibetpipare	Tibetan Sand Plover
+1170		ANALES	Anarhynchus leschenaultii	Aavikkotylli	Ökenpipare	Greater Sand Plover
+1180		ANAALE	Anarhynchus alexandrinus	Mustajalkatylli	Svartbent strandpipare	Kentish Plover
+1190		BARLON	Bartramia longicauda	Preeriakahlaaja	Piparsnäppa	Upland Sandpiper
+1200		NUMMIN	Numenius minutus	Taigakuovi	Dvärgspov	Little Curlew
+1210		NUMPHA	Numenius phaeopus	Pikkukuovi	Småspov	Eurasian Whimbrel
+1220		NUMARQ	Numenius arquata	Kuovi	Storspov	Eurasian Curlew
+1230		LIMLAP	Limosa lapponica	Punakuiri	Myrspov	Bar-tailed Godwit
+1240		LIMLIM	Limosa limosa	Mustapyrstökuiri	Rödspov	Black-tailed Godwit
+1250		LIMSCO	Limnodromus scolopaceus	Tundrakurppelo	Större beckasinsnäppa	Long-billed Dowitcher
+1260		LYMMIN	Lymnocryptes minimus	Jänkäkurppa	Dvärgbeckasin	Jack Snipe
+1270		SCORUS	Scolopax rusticola	Lehtokurppa	Morkulla	Eurasian Woodcock
+1280		GALMED	Gallinago media	Heinäkurppa	Dubbelbeckasin	Great Snipe
+1290		GALMEG	Gallinago megala	Siperiankurppa	Tajgabeckasin	Swinhoe's Snipe
+1300		GALDEL	Gallinago delicata	Amerikantaivaanvuohi	Amerikansk beckasin	Wilson's Snipe
+1310		GALGAL	Gallinago gallinago	Taivaanvuohi	Enkelbeckasin	Common Snipe
+1320		XENCIN	Xenus cinereus	Rantakurvi	Tereksnäppa	Terek Sandpiper
+1330		ACTHYP	Actitis hypoleucos	Rantasipi	Drillsnäppa	Common Sandpiper
+1340		ACTMAC	Actitis macularius	Amerikansipi	Fläckdrillsnäppa	Spotted Sandpiper
+1350		PHATRI	Phalaropus tricolor	Amerikanvesipääsky	Präriesimsnäppa	Wilson's Phalarope
+1360		PHAFUL	Phalaropus fulicarius	Isovesipääsky	Brednäbbad simsnäppa	Red Phalarope
+1370		PHALOB	Phalaropus lobatus	Vesipääsky	Smalnäbbad simsnäppa	Red-necked Phalarope
+1380		TRIOCH	Tringa ochropus	Metsäviklo	Skogssnäppa	Green Sandpiper
+1390		TRISTA	Tringa stagnatilis	Lampiviklo	Dammsnäppa	Marsh Sandpiper
+1400		TRIGLA	Tringa glareola	Liro	Grönbena	Wood Sandpiper
+1410		TRITOT	Tringa totanus	Punajalkaviklo	Rödbena	Common Redshank
+1420		TRIFLA	Tringa flavipes	Keltajalkaviklo	Mindre gulbena	Lesser Yellowlegs
+1430		TRISEM	Tringa semipalmata	Preeriaviklo	Willet	Willet
+1440		TRIERY	Tringa erythropus	Mustaviklo	Svartsnäppa	Spotted Redshank
+1450		TRINEB	Tringa nebularia	Valkoviklo	Gluttsnäppa	Common Greenshank
+1460		AREINT	Arenaria interpres	Karikukko	Roskarl	Ruddy Turnstone
+1470		CALCAN	Calidris canutus	Isosirri	Kustsnäppa	Red Knot
+1480		CALPUG	Calidris pugnax	Suokukko	Brushane	Ruff
+1490		CALACU	Calidris acuminata	Suippopyrstösirri	Spetsstjärtad snäppa	Sharp-tailed Sandpiper
+1500		CALFAL	Calidris falcinellus	Jänkäsirriäinen	Myrsnäppa	Broad-billed Sandpiper
+1510		CALFER	Calidris ferruginea	Kuovisirri	Spovsnäppa	Curlew Sandpiper
+1520		CALHIM	Calidris himantopus	Pitkäkoipisirri	Styltsnäppa	Stilt Sandpiper
+1530		CALRUF	Calidris ruficollis	Rusokaulasirri	Rödhalsad snäppa	Red-necked Stint
+1540		CALTEM	Calidris temminckii	Lapinsirri	Mosnäppa	Temminck's Stint
+1550		CALSMI	Calidris subminuta	Siperiansirri	Långtåsnäppa	Long-toed Stint
+1560		CALSRU	Calidris subruficollis	Tundravikla	Prärielöpare	Buff-breasted Sandpiper
+1570		CALALB	Calidris alba	Pulmussirri	Sandlöpare	Sanderling
+1580		CALALP	Calidris alpina	Suosirri	Kärrsnäppa	Dunlin
+1590		CALMAR	Calidris maritima	Merisirri	Skärsnäppa	Purple Sandpiper
+1600		CALBAI	Calidris bairdii	Eskimosirri	Gulbröstad snäppa	Baird's Sandpiper
+1610		CALMEL	Calidris melanotos	Palsasirri	Tuvsnäppa	Pectoral Sandpiper
+1620		CALMIN	Calidris minuta	Pikkusirri	Småsnäppa	Little Stint
+1630		CALLLA	Calidris minutilla	Amerikansirri	Dvärgsnäppa	Least Sandpiper
+1640		CALFUS	Calidris fuscicollis	Valkoperäsirri	Vitgumpsnäppa	White-rumped Sandpiper
+1650		CURSOR	Cursorius cursor	Aavikkojuoksija	Ökenlöpare	Cream-colored Courser
+1660		GLAMAL	Glareola maldivarum	Aasianpääskykahlaaja	Orientvadarsvala	Oriental Pratincole
+1670		GLANOR	Glareola nordmanni	Aropääskykahlaaja	Svartvingad vadarsvala	Black-winged Pratincole
+1680		GLAPRA	Glareola pratincola	Pääskykahlaaja	Rödvingad vadarsvala	Collared Pratincole
+1690		STECUS	Stercorarius parasiticus	Merikihu	Kustlabb	Parasitic Jaeger
+1700		STELON	Stercorarius longicaudus	Tunturikihu	Fjällabb	Long-tailed Jaeger
+1710		STEPOM	Stercorarius pomarinus	Leveäpyrstökihu	Bredstjärtad labb	Pomarine Jaeger
+1720		STESKU	Stercorarius skua	Isokihu	Storlabb	Great Skua
+1730		FRAARC	Fratercula arctica	Lunni	Lunnefågel	Atlantic Puffin
+1740		SYNANT	Synthliboramphus antiquus	Mustakurkkumurri	Kragalka	Ancient Murrelet
+1750		CEPGRY	Cepphus grylle	Riskilä	Tobisgrissla	Black Guillemot
+1760		ALCTOR	Alca torda	Ruokki	Tordmule	Razorbill
+1770		ALLALL	Alle alle	Pikkuruokki	Alkekung	Little Auk
+1780		URILOM	Uria lomvia	Pohjankiisla	Spetsbergsgrissla	Thick-billed Murre
+1790		URIAAL	Uria aalge	Etelänkiisla	Sillgrissla	Common Murre
+1800		STEALB	Sternula albifrons	Pikkutiira	Småtärna	Little Tern
+1810		HYDCAS	Hydroprogne caspia	Räyskä	Skräntärna	Caspian Tern
+1820		GELNIL	Gelochelidon nilotica	Hietatiira	Sandtärna	Gull-billed Tern
+1830		CHLHYB	Chlidonias hybrida	Valkoposkitiira	Skäggtärna	Whiskered Tern
+1840		CHLLEU	Chlidonias leucopterus	Valkosiipitiira	Vitvingad tärna	White-winged Tern
+1850		CHLNIG	Chlidonias niger	Mustatiira	Svarttärna	Black Tern
+1860		THASAN	Thalasseus sandvicensis	Riuttatiira	Kentsk tärna	Sandwich Tern
+1870		STEAEA	Sterna paradisaea	Lapintiira	Silvertärna	Arctic Tern
+1880		STEHIR	Sterna hirundo	Kalatiira	Fisktärna	Common Tern
+1890		HYDMIN	Hydrocoloeus minutus	Pikkulokki	Dvärgmås	Little Gull
+1900		RHOROS	Rhodostethia rosea	Ruusulokki	Rosenmås	Ross's Gull
+1910		RISTRI	Rissa tridactyla	Pikkukajava	Tretåig mås	Black-legged Kittiwake
+1920		XEMSAB	Xema sabini	Tiiralokki	Tärnmås	Sabine's Gull
+1930		PAGEBU	Pagophila eburnea	Jäälokki	Ismås	Ivory Gull
+1940		CHRGEN	Chroicocephalus genei	Kaitanokkalokki	Långnäbbad mås	Slender-billed Gull
+1950		CHRRID	Chroicocephalus ridibundus	Naurulokki	Skrattmås	Black-headed Gull
+1960		LEUATR	Leucophaeus atricilla	Nokisiipilokki	Sotvingad mås	Laughing Gull
+1970		LEUPIP	Leucophaeus pipixcan	Preerianaurulokki	Präriemås	Franklin's Gull
+1980		ICHAUD	Ichthyaetus audouinii	Välimerenlokki	Rödnäbbad trut	Audouin's Gull
+1990		ICHMEL	Ichthyaetus melanocephalus	Mustanmerenlokki	Svarthuvad mås	Mediterranean Gull
+2000		LARCAN	Larus canus	Kalalokki	Fiskmås	Common Gull
+2010		LARCAC	Larus cachinnans	Aroharmaalokki	Kaspisk trut	Caspian Gull
+2020		LARARG	Larus argentatus	Harmaalokki	Gråtrut	European Herring Gull
+2030		LARMIC	Larus michahellis	Etelänharmaalokki	Medelhavstrut	Yellow-legged Gull
+2040		LARMAR	Larus marinus	Merilokki	Havstrut	Great Black-backed Gull
+2050		LARHYP	Larus hyperboreus	Isolokki	Vittrut	Glaucous Gull
+2060		LARFUS	Larus fuscus	Selkälokki	Silltrut	Lesser Black-backed Gull
+2070		LARSCH	Larus schistisagus	Ohotanlokki	Skiffertrut	Slaty-backed Gull
+2080		LARGLA	Larus glaucoides	Grönlanninlokki	Vitvingad trut	Iceland Gull
+2090		Lahko	Gaviiformes	Kuikkalinnut				
+2100		GAVSTE	Gavia stellata	Kaakkuri	Smålom	Red-throated Loon
+2110		GAVIMM	Gavia immer	Amerikanjääkuikka	Svartnäbbad islom	Common Loon
+2120		GAVADA	Gavia adamsii	Jääkuikka	Vitnäbbad islom	Yellow-billed Loon
+2130		GAVPAC	Gavia pacifica	Tundrakuikka	Stillahavslom	Pacific Loon
+2140		GAVARC	Gavia arctica	Kuikka	Storlom	Black-throated Loon
+2150		Lahko	Procellariiformes	Ulappalinnut				
+2160		HYDPEL	Hydrobates pelagicus	Merikeiju	Stormsvala	European Storm Petrel
+2170		HYDLEU	Hydrobates leucorhous	Myrskykeiju	Klykstjärtad stormsvala	Leach's Storm Petrel
+2180		FULGLA	Fulmarus glacialis	Myrskylintu	Stormfågel	Northern Fulmar
+2190		ARDGRI	Ardenna grisea	Nokiliitäjä	Grålira	Sooty Shearwater
+2200		ARDVIS	Ardenna gravis	Isoliitäjä	Större lira	Great Shearwater
+2210		PUFPUF	Puffinus puffinus	Pikkuliitäjä	Mindre lira	Manx Shearwater
+2220		Lahko	Ciconiiformes	Kattohaikaralinnut				
+2230		CICNIG	Ciconia nigra	Mustahaikara	Svart stork	Black Stork
+2240		CICCIC	Ciconia ciconia	Kattohaikara	Vit stork	White Stork
+2250		Lahko	Suliformes	Suulalinnut				
+2260		MORBAS	Morus bassanus	Suula	Havssula	Northern Gannet
+2270		MICPYG	Microcarbo pygmaeus	Pikkumerimetso	Dvärgskarv	Pygmy Cormorant
+2280		GULARI	Gulosus aristotelis	Karimetso	Toppskarv	European Shag
+2290		PHACAR	Phalacrocorax carbo	Merimetso	Storskarv	Great Cormorant
+2300		Lahko	Pelecaniformes	Pelikaanilinnut				
+2310		PLEFAL	Plegadis falcinellus	Pronssi-iibis	Bronsibis	Glossy Ibis
+2320		PLALEU	Platalea leucorodia	Kapustahaikara	Skedstork	Eurasian Spoonbill
+2330		PELONO	Pelecanus onocrotalus	Pelikaani	Vit pelikan	Great White Pelican
+2340		PELCRI	Pelecanus crispus	Kiharapelikaani	Krushuvad pelikan	Dalmatian Pelican
+2350		BOTSTE	Botaurus stellaris	Kaulushaikara	Rördrom	Eurasian Bittern
+2360		BOTMIN	Botaurus minutus	Pikkuhaikara	Dvärgrördrom	Little Bittern
+2370		EGRGAR	Egretta garzetta	Silkkihaikara	Silkeshäger	Little Egret
+2380		NYCNYC	Nycticorax nycticorax	Yöhaikara	Natthäger	Black-crowned Night Heron
+2390		ARDRAL	Ardeola ralloides	Rääkkähaikara	Rallhäger	Squacco Heron
+2400		ARDALB	Ardea alba	Jalohaikara	Ägretthäger	Great Egret
+2410		ARDIBI	Ardea ibis	Lehmähaikara	Kohäger	Western Cattle Egret
+2420		ARDPUR	Ardea purpurea	Ruskohaikara	Purpurhäger	Purple Heron
+2430		ARDCIN	Ardea cinerea	Harmaahaikara	Gråhäger	Grey Heron
+2440		Lahko	Caprimulgiformes	Kehrääjälinnut				
+2450		CAPEUR	Caprimulgus europaeus	Kehrääjä	Nattskärra	European Nightjar
+2460		Lahko	Apodiformes	Kirskulinnut				
+2470		HIRCAU	Hirundapus caudacutus	Piikkipyrstökiitäjä	Taggstjärtseglare	White-throated Needletail
+2480		TACMEL	Tachymarptis melba	Alppikiitäjä	Alpseglare	Alpine Swift
+2490		APUCAF	Apus caffer	Häätökiitäjä	Vitgumpseglare	White-rumped Swift
+2500		APUAPU	Apus apus	Tervapääsky	Tornseglare	Common Swift
+2510		APUPAL	Apus pallidus	Vaaleakiitäjä	Blek tornseglare	Pallid Swift
+2520		Lahko	Strigiformes	Pöllölinnut				
+2530		TYTALB	Tyto alba	Tornipöllö	Tornuggla	Western Barn Owl
+2540		AEGFUN	Aegolius funereus	Helmipöllö	Pärluggla	Boreal Owl
+2550		ATHNOC	Athene noctua	Minervanpöllö	Minervauggla	Little Owl
+2560		SURULU	Surnia ulula	Hiiripöllö	Hökuggla	Northern Hawk-Owl
+2570		GLAPAS	Glaucidium passerinum	Varpuspöllö	Sparvuggla	Eurasian Pygmy Owl
+2580		OTUSCO	Otus scops	Kyläpöllönen	Dvärguv	Eurasian Scops Owl
+2590		ASIFLA	Asio flammeus	Suopöllö	Jorduggla	Short-eared Owl
+2600		ASIOTU	Asio otus	Sarvipöllö	Hornuggla	Long-eared Owl
+2610		BUBSCA	Bubo scandiacus	Tunturipöllö	Fjälluggla	Snowy Owl
+2620		BUBBUB	Bubo bubo	Huuhkaja	Berguv	Eurasian Eagle-Owl
+2630		STRALU	Strix aluco	Lehtopöllö	Kattuggla	Tawny Owl
+2640		STRURA	Strix uralensis	Viirupöllö	Slaguggla	Ural Owl
+2650		STRNEB	Strix nebulosa	Lapinpöllö	Lappuggla	Great Grey Owl
+2660		Lahko	Accipitriformes	Päiväpetolinnut				
+2670		PANHAL	Pandion haliaetus	Sääksi	Fiskgjuse	Osprey
+2680		NEOPER	Neophron percnopterus	Pikkukorppikotka	Smutsgam	Egyptian Vulture
+2690		PERAPI	Pernis apivorus	Mehiläishaukka	Bivråk	European Honey Buzzard
+2700		PERPTI	Pernis ptilorhynchus	Idänmehiläishaukka	Tofsbivråk	Crested Honey Buzzard
+2710		AEGMON	Aegypius monachus	Munkkikorppikotka	Grågam	Cinereous Vulture
+2720		GYPFUL	Gyps fulvus	Hanhikorppikotka	Gåsgam	Griffon Vulture
+2730		CIRGAL	Circaetus gallicus	Käärmekotka	Ormörn	Short-toed Snake Eagle
+2740		CLACLA	Clanga clanga	Kiljukotka	Större skrikörn	Greater Spotted Eagle
+2750		CLAPOM	Clanga pomarina	Pikkukiljukotka	Mindre skrikörn	Lesser Spotted Eagle
+2760		HIEPEN	Hieraaetus pennatus	Pikkukotka	Dvärgörn	Booted Eagle
+2770		AQUNIP	Aquila nipalensis	Arokotka	Stäppörn	Steppe Eagle
+2780		AQUHEL	Aquila heliaca	Keisarikotka	Kejsarörn	Eastern Imperial Eagle
+2790		AQUCHR	Aquila chrysaetos	Maakotka	Kungsörn	Golden Eagle
+2800		ACCNIS	Accipiter nisus	Varpushaukka	Sparvhök	Eurasian Sparrowhawk
+2810		ASTGEN	Astur gentilis	Kanahaukka	Duvhök	Eurasian Goshawk
+2820		CIRMAC	Circus macrourus	Arosuohaukka	Stäpphök	Pallid Harrier
+2830		CIRCYA	Circus cyaneus	Sinisuohaukka	Blå kärrhök	Hen Harrier
+2840		CIRPYG	Circus pygargus	Niittysuohaukka	Ängshök	Montagu's Harrier
+2850		CIRAER	Circus aeruginosus	Ruskosuohaukka	Brun kärrhök	Western Marsh Harrier
+2860		MILMIL	Milvus milvus	Isohaarahaukka	Röd glada	Red Kite
+2870		MILMIG	Milvus migrans	Haarahaukka	Brun glada	Black Kite
+2880		HALLEU	Haliaeetus leucoryphus	Aromerikotka	Bandhavsörn	Pallas's Fish Eagle
+2890		HALALB	Haliaeetus albicilla	Merikotka	Havsörn	White-tailed Eagle
+2900		BUTLAG	Buteo lagopus	Piekana	Fjällvråk	Rough-legged Buzzard
+2910		BUTBUT	Buteo buteo	Hiirihaukka	Ormvråk	Common Buzzard
+2920		BUTRUF	Buteo rufinus	Arohiirihaukka	Örnvråk	Long-legged Buzzard
+2930		Lahko	Bucerotiformes	Sarvinokkalinnut				
+2940		UPUEPO	Upupa epops	Harjalintu	Härfågel	Common Hoopoe
+2950		Lahko	Coraciiiformes	Säihkylinnut				
+2960		CORGAR	Coracias garrulus	Sininärhi	Blåkråka	European Roller
+2970		MERAPI	Merops apiaster	Mehiläissyöjä	Biätare	European Bee-eater
+2980		MERPER	Merops persicus	Vihermehiläissyöjä	Grön biätare	Blue-cheeked Bee-eater
+2990		ALCATT	Alcedo atthis	Kuningaskalastaja	Kungsfiskare	Common Kingfisher
+3000		Lahko	Piciformes	Tikkalinnut				
+3010		JYNTOR	Jynx torquilla	Käenpiika	Göktyta	Eurasian Wryneck
+3020		PICCAN	Picus canus	Harmaapäätikka	Gråspett	Grey-headed Woodpecker
+3030		PICVIR	Picus viridis	Vihertikka	Gröngöling	European Green Woodpecker
+3040		DRYMAR	Dryocopus martius	Palokärki	Spillkråka	Black Woodpecker
+3050		PICTRI	Picoides tridactylus	Pohjantikka	Tretåig hackspett	Eurasian Three-toed Woodpecker
+3060		DENMED	Dendrocoptes medius	Tammitikka	Mellanspett	Middle Spotted Woodpecker
+3070		DENLEU	Dendrocopos leucotos	Valkoselkätikka	Vitryggig hackspett	White-backed Woodpecker
+3080		DENMAJ	Dendrocopos major	Käpytikka	Större hackspett	Great Spotted Woodpecker
+3090		DRYMIN	Dryobates minor	Pikkutikka	Mindre hackspett	Lesser Spotted Woodpecker
+3100		Lahko	Falconiformes	Jalohaukkalinnut				
+3110		FALNAU	Falco naumanni	Pikkutuulihaukka	Rödfalk	Lesser Kestrel
+3120		FALTIN	Falco tinnunculus	Tuulihaukka	Tornfalk	Common Kestrel
+3130		FALVES	Falco vespertinus	Punajalkahaukka	Aftonfalk	Red-footed Falcon
+3140		FALCOL	Falco columbarius	Ampuhaukka	Stenfalk	Merlin
+3150		FALELE	Falco eleonorae	Välimerenhaukka	Eleonorafalk	Eleonora's Falcon
+3160		FALSUB	Falco subbuteo	Nuolihaukka	Lärkfalk	Eurasian Hobby
+3170		FALPER	Falco peregrinus	Muuttohaukka	Pilgrimsfalk	Peregrine Falcon
+3180		FALRUS	Falco rusticolus	Tunturihaukka	Jaktfalk	Gyrfalcon
+3190		FALCHE	Falco cherrug	Aavikkohaukka	Tatarfalk	Saker Falcon
+3200		Lahko	Passeriformes	Varpuslinnut				
+3210		ORIORI	Oriolus oriolus	Kuhankeittäjä	Sommargylling	Eurasian Golden Oriole
+3220		LANEXC	Lanius excubitor	Isolepinkäinen	Varfågel	Great Grey Shrike
+3230		LANBOR	Lanius borealis	Taigaisolepinkäinen	Beringvarfågel	Northern Shrike
+3240		LANNUB	Lanius nubicus	Valko-otsalepinkäinen	Masktörnskata	Masked Shrike
+3250		LANMIN	Lanius minor	Mustaotsalepinkäinen	Svartpannad törnskata	Lesser Grey Shrike
+3260		LANSEN	Lanius senator	Punapäälepinkäinen	Rödhuvad törnskata	Woodchat Shrike
+3270		LANISA	Lanius isabellinus	Punapyrstölepinkäinen	Isabellatörnskata	Isabelline Shrike
+3280		LANCOL	Lanius collurio	Pikkulepinkäinen	Törnskata	Red-backed Shrike
+3290		LANPHO	Lanius phoenicuroides	Ruostepäälepinkäinen	Turkestantörnskata	Red-tailed Shrike
+3300		LANCRI	Lanius cristatus	Siperianlepinkäinen	Brun törnskata	Brown Shrike
+3310		PERINF	Perisoreus infaustus	Kuukkeli	Lavskrika	Siberian Jay
+3320		GARGLA	Garrulus glandarius	Närhi	Nötskrika	Eurasian Jay
+3330		PICPIC	Pica pica	Harakka	Skata	Eurasian Magpie
+3340		NUCCAR	Nucifraga caryocatactes	Pähkinähakki	Nötkråka	Northern Nutcracker
+3350		COLDAU	Coloeus dauuricus	Idännaakka	Klippkaja	Daurian Jackdaw
+3360		COLMON	Coloeus monedula	Naakka	Kaja	Western Jackdaw
+3370		CORFRU	Corvus frugilegus	Mustavaris	Råka	Rook
+3380		CORRAX	Corvus corax	Korppi	Korp	Northern Raven
+3390		CORONE	Corvus corone	Varis	Kråka	Carrion Crow
+3400		REMPEN	Remiz pendulinus	Pussitiainen	Pungmes	Eurasian Penduline Tit
+3410		CYACYA	Cyanistes cyanus	Valkopäätiainen	Azurmes	Azure Tit
+3420		CYACAE	Cyanistes caeruleus	Sinitiainen	Blåmes	Eurasian Blue Tit
+3430		PARMAJ	Parus major	Talitiainen	Talgoxe	Great Tit
+3440		PERATE	Periparus ater	Kuusitiainen	Svartmes	Coal Tit
+3450		LOPCRI	Lophophanes cristatus	Töyhtötiainen	Tofsmes	Crested Tit
+3460		POEPAL	Poecile palustris	Viitatiainen	Entita	Marsh Tit
+3470		POEMON	Poecile montanus	Hömötiainen	Talltita	Willow Tit
+3480		POECIN	Poecile cinctus	Lapintiainen	Lappmes	Grey-headed Chickadee
+3490		PANBIA	Panurus biarmicus	Viiksitimali	Skäggmes	Bearded Reedling
+3500		LULARB	Lullula arborea	Kangaskiuru	Trädlärka	Woodlark
+3510		ALALEU	Alauda leucoptera	Valkosiipikiuru	Vitvingad lärka	White-winged Lark
+3520		ALAARV	Alauda arvensis	Kiuru	Sånglärka	Eurasian Skylark
+3530		GALCRI	Galerida cristata	Töyhtökiuru	Tofslärka	Crested Lark
+3540		EREALP	Eremophila alpestris	Tunturikiuru	Berglärka	Horned Lark
+3550		CALBRA	Calandrella brachydactyla	Lyhytvarvaskiuru	Korttålärka	Greater Short-toed Lark
+3560		MELBIM	Melanocorypha bimaculata	Ylänkökiuru	Asiatisk kalanderlärka	Bimaculated Lark
+3570		MELYEL	Melanocorypha yeltoniensis	Mustakiuru	Svartlärka	Black Lark
+3580		MELCAL	Melanocorypha calandra	Arokiuru	Kalanderlärka	Calandra Lark
+3590		HIPICT	Hippolais icterina	Kultarinta	Härmsångare	Icterine Warbler
+3600		ARUAED	Arundinax aedon	Paksunokkakerttunen	Tjocknäbbad sångare	Thick-billed Warbler
+3610		IDUCAL	Iduna caligata	Pikkukultarinta	Stäppsångare	Booted Warbler
+3620		IDURAM	Iduna rama	Aavikkokultarinta	Saxaulsångare	Syke's Warbler
+3630		IDUPAL	Iduna pallida	Vaaleakultarinta	Eksångare	Eastern Olivaceous Warbler
+3640		ACRSCH	Acrocephalus schoenobaenus	Ruokokerttunen	Sävsångare	Sedge Warbler
+3650		ACROLA	Acrocephalus paludicola	Sarakerttunen	Vattensångare	Aquatic Warbler
+3660		ACRAGR	Acrocephalus agricola	Kenttäkerttunen	Fältsångare	Paddyfield Warbler
+3670		ACRDUM	Acrocephalus dumetorum	Viitakerttunen	Busksångare	Blyth's Reed Warbler
+3680		ACRPAL	Acrocephalus palustris	Luhtakerttunen	Kärrsångare	Marsh Warbler
+3690		ACRSCI	Acrocephalus scirpaceus	Rytikerttunen	Rörsångare	Common Reed Warbler
+3700		ACRARU	Acrocephalus arundinaceus	Rastaskerttunen	Trastsångare	Great Reed Warbler
+3710		HELCER	Helopsaltes certhiola	Sarasirkkalintu	Starrsångare	Pallas's Grasshopper Warbler
+3720		LOCLAN	Locustella lanceolata	Viirusirkkalintu	Träsksångare	Lanceolated Warbler
+3730		LOCFLU	Locustella fluviatilis	Viitasirkkalintu	Flodsångare	River Warbler
+3740		LOCLUS	Locustella luscinioides	Ruokosirkkalintu	Vassångare	Savi's Warbler
+3750		LOCNAE	Locustella naevia	Pensassirkkalintu	Gräshoppsångare	Common Grasshopper Warbler
+3760		RIPRIP	Riparia riparia	Törmäpääsky	Backsvala	Sand Martin
+3770		PTYRUP	Ptyonoprogne rupestris	Kalliopääsky	Klippsvala	Eurasian Crag Martin
+3780		HIRRUS	Hirundo rustica	Haarapääsky	Ladusvala	Barn Swallow
+3790		DELURB	Delichon urbicum	Räystäspääsky	Hussvala	Western House Martin
+3800		CECRUF	Cecropis rufula	Ruostepääsky	Rostgumpsvala	European Red-rumped Swallow
+3810		CECDAU	Cecropis daurica	Aasianruostepääsky	Tempelsvala	Eastern Red-rumped Swallow
+3820		AEGCAU	Aegithalos caudatus	Pyrstötiainen	Stjärtmes	Long-tailed Tit
+3830		PHYSIB	Phylloscopus sibilatrix	Sirittäjä	Grönsångare	Wood Warbler
+3840		PHYBON	Phylloscopus bonelli	Vuoriuunilintu	Bergsångare	Western Bonelli's Warbler
+3850		PHYORI	Phylloscopus orientalis	Balkaninuunilintu	Balkansångare	Eastern Bonelli's Warbler
+3860		PHYINO	Phylloscopus inornatus	Taigauunilintu	Tajgasångare	Yellow-browed Warbler
+3870		PHYHUM	Phylloscopus humei	Kashmirinuunilintu	Bergtajgasångare	Hume's Leaf Warbler
+3880		PHYPRO	Phylloscopus proregulus	Hippiäisuunilintu	Kungsfågelsångare	Pallas's Leaf Warbler
+3890		PHYSCH	Phylloscopus schwarzi	Siperianuunilintu	Videsångare	Radde's Warbler
+3900		PHYFUS	Phylloscopus fuscatus	Ruskouunilintu	Brunsångare	Dusky Warbler
+3910		PHYLUS	Phylloscopus trochilus	Pajulintu	Lövsångare	Willow Warbler
+3920		PHYIBE	Phylloscopus ibericus	Iberiantiltaltti	Iberisk gransångare	Iberian Chiffchaff
+3930		PHYCOL	Phylloscopus collybita	Tiltaltti	Gransångare	Common Chiffchaff
+3940		PHYCOR	Phylloscopus coronatus	Amurinuunilintu	Östlig kronsångare	Eastern Crowned Warbler
+3950		PHYNIT	Phylloscopus nitidus	Kaukasianuunilintu	Kaukasisk lundsångare	Green Warbler
+3960		PHYPLU	Phylloscopus plumbeitarsus	Burjatianuunilintu	Sibirisk lundsångare	Two-barred Warbler
+3970		PHYDES	Phylloscopus trochiloides	Idänuunilintu	Lundsångare	Greenish Warbler
+3980		PHYBOR	Phylloscopus borealis	Lapinuunilintu	Nordsångare	Arctic Warbler
+3990		PHYEXA	Phylloscopus examinandus	Kamtšatkanuunilintu	Kamtjaktanordsångare	Kamchatka Leaf Warbler
+4000		SYLBOR	Sylvia borin	Lehtokerttu	Trädgårdssångare	Garden Warbler
+4010		SYLATR	Sylvia atricapilla	Mustapääkerttu	Svarthätta	Eurasian Blackcap
+4020		CURNIS	Curruca nisoria	Kirjokerttu	Höksångare	Barred Warbler
+4030		CURCUR	Curruca curruca	Hernekerttu	Ärtsångare	Lesser Whitethroat
+4040		CURNAN	Curruca nana	Kääpiökerttu	Ökensångare	Asian Desert Warbler
+4050		CURCOM	Curruca communis	Pensaskerttu	Törnsångare	Common Whitethroat
+4060		CURUND	Curruca undata	Ruskokerttu	Provencesångare	Dartford Warbler
+4070		CURRUP	Curruca ruppeli	Mustakurkkukerttu	Svarthakad sångare	Rüppell's Warbler
+4080		CURMEL	Curruca melanocephala	Samettipääkerttu	Sammetshätta	Sardinian Warbler
+4090		CURCAN	Curruca cantillans	Idänrusokerttu	Rödstrupig sångare	Eastern Subalpine Warbler
+4100		BOMGAR	Bombycilla garrulus	Tilhi	Sidensvans	Bohemian Waxwing
+4110		REGIGN	Regulus ignicapilla	Tulipäähippiäinen	Brandkronad kungsfågel	Common Firecrest
+4120		REGREG	Regulus regulus	Hippiäinen	Kungsfågel	Goldcrest
+4130		SITEUR	Sitta europaea	Pähkinänakkeli	Nötväcka	Eurasian Nuthatch
+4140		CERFAM	Certhia familiaris	Puukiipijä	Trädkrypare	Eurasian Treecreeper
+4150		TROTRO	Troglodytes troglodytes	Peukaloinen	Gärdsmyg	Eurasian Wren
+4160		STUVUL	Sturnus vulgaris	Kottarainen	Stare	Common Starling
+4170		PASROS	Pastor roseus	Punakottarainen	Rosenstare	Rosy Starling
+4180		CINCIN	Cinclus cinclus	Koskikara	Strömstare	White-throated Dipper
+4190		ZOOAUR	Zoothera aurea	Kirjorastas	Guldtrast	White's Thrush
+4200		CATUST	Catharus ustulatus	Korpirastas	Beigekindad skogstrast	Swainson's Thrush
+4210		TURVIS	Turdus viscivorus	Kulorastas	Dubbeltrast	Mistle Thrush
+4220		TURPHI	Turdus philomelos	Laulurastas	Taltrast	Song Thrush
+4230		TURILI	Turdus iliacus	Punakylkirastas	Rödvingetrast	Redwing
+4240		TURMER	Turdus merula	Mustarastas	Koltrast	Common Blackbird
+4250		TURPIL	Turdus pilaris	Räkättirastas	Björktrast	Fieldfare
+4260		TURTOR	Turdus torquatus	Sepelrastas	Ringtrast	Ring Ouzel
+4270		TURATR	Turdus atrogularis	Mustakaularastas	Svarthalsad trast	Black-throated Thrush
+4280		TURNAU	Turdus naumanni	Ruosterastas	Rödtrast	Naumann's Thrush
+4290		TUREUN	Turdus eunomus	Ruostesiipirastas	Bruntrast	Dusky Thrush
+4300		TUROBS	Turdus obscurus	Harmaakurkkurastas	Gråhalsad trast	Eyebrowed Thrush
+4310		CERGAL	Cercotrichas galactotes	Ruostepyrstö	Trädnäktergal	Rufous-tailed Scrub Robin
+4320		MUSSTR	Muscicapa striata	Harmaasieppo	Grå flugsnappare	Spotted Flycatcher
+4330		ERIRUB	Erithacus rubecula	Punarinta	Rödhake	European Robin
+4340		IRAGUT	Irania gutturalis	Kivikkosatakieli	Vitstrupig näktergal	White-throated Robin
+4350		LUSLUS	Luscinia luscinia	Satakieli	Näktergal	Thrush Nightingale
+4360		LUSMEG	Luscinia megarhynchos	Etelänsatakieli	Sydnäktergal	Common Nightingale
+4370		LUSSVE	Luscinia svecica	Sinirinta	Blåhake	Bluethroat
+4380		CALCAL	Calliope calliope	Rubiinisatakieli	Rubinnäktergal	Siberian Rubythroat
+4390		FICPAR	Ficedula parva	Pikkusieppo	Mindre flugsnappare	Red-breasted Flycatcher
+4400		FICLLA	Ficedula albicilla	Idänpikkusieppo	Tajgaflugsnappare	Taiga Flycatcher
+4410		FICALB	Ficedula albicollis	Sepelsieppo	Halsbandsflugsnappare	Collared Flycatcher
+4420		FICHYP	Ficedula hypoleuca	Kirjosieppo	Svartvit flugsnappare	European Pied Flycatcher
+4430		TARCYA	Tarsiger cyanurus	Sinipyrstö	Tajgablåstjärt	Red-flanked Bluetail
+4440		PHOOCH	Phoenicurus ochruros	Mustaleppälintu	Svart rödstjärt	Black Redstart
+4450		PHOPHO	Phoenicurus phoenicurus	Leppälintu	Rödstjärt	Common Redstart
+4460		MONSAX	Monticola saxatilis	Kivikkorastas	Stentrast	Common Rock Thrush
+4470		MONSOL	Monticola solitarius	Sinirastas	Blåtrast	Blue Rock Thrush
+4480		SAXRUB	Saxicola rubetra	Pensastasku	Buskskvätta	Whinchat
+4490		SAXCAP	Saxicola caprata	Nokitasku	Svart buskskvätta	Pied Bush Chat
+4500		SAXMAU	Saxicola maurus	Sepeltasku	Vitgumpad buskskvätta	Siberian Stonechat
+4510		SAXOLA	Saxicola rubicola	Mustapäätasku	Svarthakad buskskvätta	European Stonechat
+4520		OENDES	Oenanthe deserti	Aavikkotasku	Ökenstenskvätta	Desert Wheatear
+4530		OENPLE	Oenanthe pleschanka	Nunnatasku	Nunnestenskvätta	Pied Wheatear
+4540		OENMEL	Oenanthe melanoleuca	Kirjotasku	Östlig medelhavsstenskvätta	Eastern Black-eared Wheatear
+4550		OENOEN	Oenanthe oenanthe	Kivitasku	Stenskvätta	Northern Wheatear
+4560		OENISA	Oenanthe isabellina	Arotasku	Isabellastenskvätta	Isabelline Wheatear
+4570		PRUCOL	Prunella collaris	Alppirautiainen	Alpjärnsparv	Alpine Accentor
+4580		PRUATR	Prunella atrogularis	Mustakurkkurautiainen	Svartstrupig järnsparv	Black-throated Accentor
+4590		PRUMOD	Prunella modularis	Rautiainen	Järnsparv	Dunnock
+4600		PRUMON	Prunella montanella	Taigarautiainen	Sibirisk järnsparv	Siberian Accentor
+4610		PASMON	Passer montanus	Pikkuvarpunen	Pilfink	Eurasian Tree Sparrow
+4620		PASHIS	Passer hispaniolensis	Pensasvarpunen	Spansk sparv	Spanish Sparrow
+4630		PASDOM	Passer domesticus	Varpunen	Gråsparv	House Sparrow
+4640		MOTCIN	Motacilla cinerea	Virtavästäräkki	Forsärla	Grey Wagtail
+4650		MOTFLA	Motacilla flava	Keltavästäräkki	Gulärla	Western Yellow Wagtail
+4660		MOTCIT	Motacilla citreola	Sitruunavästäräkki	Citronärla	Citrine Wagtail
+4670		MOTTSC	Motacilla tschutschensis	Aasiankeltavästäräkki	Beringärla	Eastern Yellow Wagtail
+4680		MOTALB	Motacilla alba	Västäräkki	Sädesärla	White Wagtail
+4690		ANTGOD	Anthus godlewskii	Mongoliankirvinen	Mongolpiplärka	Blyth's Pipit
+4700		ANTCAM	Anthus campestris	Nummikirvinen	Fältpiplärka	Tawny Pipit
+4710		ANTRIC	Anthus richardi	Isokirvinen	Större piplärka	Richard's Pipit
+4720		ANTGUS	Anthus gustavi	Tundrakirvinen	Tundrapiplärka	Pechora Pipit
+4730		ANTTRI	Anthus trivialis	Metsäkirvinen	Trädpiplärka	Tree Pipit
+4740		ANTHOD	Anthus hodgsoni	Taigakirvinen	Sibirisk piplärka	Olive-backed Pipit
+4750		ANTCER	Anthus cervinus	Lapinkirvinen	Rödstrupig piplärka	Red-throated Pipit
+4760		ANTPRA	Anthus pratensis	Niittykirvinen	Ängspiplärka	Meadow Pipit
+4770		ANTPET	Anthus petrosus	Luotokirvinen	Skärpiplärka	European Rock Pipit
+4780		FRIMON	Fringilla montifringilla	Järripeippo	Bergfink	Brambling
+4790		FRICOE	Fringilla coelebs	Peippo	Bofink	Eurasian Chaffinch
+4800		COCCOC	Coccothraustes coccothraustes	Nokkavarpunen	Stenknäck	Hawfinch
+4810		CARERY	Carpodacus erythrinus	Punavarpunen	Rosenfink	Common Rosefinch
+4820		PINENU	Pinicola enucleator	Taviokuurna	Tallbit	Pine Grosbeak
+4830		PYRPYR	Pyrrhula pyrrhula	Punatulkku	Domherre	Eurasian Bullfinch
+4840		BUCGIT	Bucanetes githagineus	Aavikkotulkku	Ökentrumpetare	Trumpeter Finch
+4850		CHLCHL	Chloris chloris	Viherpeippo	Grönfink	European Greenfinch
+4860		LINFLA	Linaria flavirostris	Vuorihemppo	Vinterhämpling	Twite
+4870		LINCAN	Linaria cannabina	Hemppo	Hämpling	Common Linnet
+4880		ACAFLA	Acanthis flammea	Urpiainen	Gråsiska	Redpoll
+4890		LOXLEU	Loxia leucoptera	Kirjosiipikäpylintu	Bändelkorsnäbb	Two-barred Crossbill
+4900		LOXPYT	Loxia pytyopsittacus	Isokäpylintu	Större korsnäbb	Parrot Crossbill
+4910		LOXCUR	Loxia curvirostra	Pikkukäpylintu	Mindre korsnäbb	Red Crossbill
+4920		CARCIT	Carduelis citrinella	Sitruunahemppo	Citronsiska	Citril Finch
+4930		CARCAR	Carduelis carduelis	Tikli	Steglits	European Goldfinch
+4940		SERSER	Serinus serinus	Keltahemppo	Gulhämpling	European Serin
+4950		SPISPI	Spinus spinus	Vihervarpunen	Grönsiska	Eurasian Siskin
+4960		PLENIV	Plectrophenax nivalis	Pulmunen	Snösparv	Snow Bunting
+4970		CALLAP	Calcarius lapponicus	Lapinsirkku	Lappsparv	Lapland Longspur
+4980		EMBPAL	Emberiza pallasi	Pikkupajusirkku	Dvärgsävsparv	Pallas's Reed Bunting
+4990		EMBSCH	Emberiza schoeniclus	Pajusirkku	Sävsparv	Common Reed Bunting
+5000		EMBCHR	Emberiza chrysophrys	Kultakulmasirkku	Gulbrynad sparv	Yellow-browed Bunting
+5010		EMBRUT	Emberiza rutila	Kastanjasirkku	Rödbrun sparv	Chestnut Bunting
+5020		EMBAUR	Emberiza aureola	Kultasirkku	Gyllensparv	Yellow-breasted Bunting
+5030		EMBPUS	Emberiza pusilla	Pikkusirkku	Dvärgsparv	Little Bunting
+5040		EMBRUS	Emberiza rustica	Pohjansirkku	Videsparv	Rustic Bunting
+5050		EMBSPO	Emberiza spodocephala	Harmaapääsirkku	Gråhuvad sparv	Black-faced Bunting
+5060		EMBMEL	Emberiza melanocephala	Mustapääsirkku	Svarthuvad sparv	Black-headed Bunting
+5070		EMBBRU	Emberiza bruniceps	Ruskopääsirkku	Stäppsparv	Red-headed Bunting
+5080		EMBCAL	Emberiza calandra	Harmaasirkku	Kornsparv	Corn Bunting
+5090		EMBBUC	Emberiza buchanani	Kivikkosirkku	Bergortolan	Grey-necked Bunting
+5100		EMBHOR	Emberiza hortulana	Peltosirkku	Ortolansparv	Ortolan Bunting
+5110		EMBCAE	Emberiza caesia	Ruostekurkkusirkku	Rostsparv	Cretzschmar's Bunting
+5120		EMBLEU	Emberiza leucocephalos	Mäntysirkku	Tallsparv	Pine Bunting
+5130		EMBCIT	Emberiza citrinella	Keltasirkku	Gulsparv	Yellowhammer
+5140		PASILI	Passerella iliaca	Kettusirkku	Rävsparv	Fox Sparrow
+5150		JUNHYE	Junco hyemalis	Tummajunkko	Mörkögd junco	Dark-eyed Junco
+5160		ZONALB	Zonotrichia albicollis	Valkokurkkusirkku	Vitstrupig sparv	White-throated Sparrow
+5170		SETSTR	Setophaga striata	Viirukerttuli	Vitkindad skogssångare	Blackpoll Warbler
